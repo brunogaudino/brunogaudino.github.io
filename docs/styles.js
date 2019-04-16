@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/brunogaudino/local-repositories/brunogaudino.github.io/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /home/brunogaudino/local-repositories/brunogaudino.github.io/bg-app/src/styles.css */"./src/styles.css");
 
 
 /***/ })
