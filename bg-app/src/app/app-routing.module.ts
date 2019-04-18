@@ -2,6 +2,8 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
 import { HomeComponent } from './content/home/home.component';
+import { RecommendationsComponent } from './content/recommendations/recommendations.component';
+import { LabComponent } from './content/lab/lab.component';
 
 const appRoutes: Routes = [
     {
@@ -9,7 +11,15 @@ const appRoutes: Routes = [
         component: HomeComponent
     },
     {
-        path: '**', 
+        path: 'lab',
+        component: LabComponent
+    },
+    {
+        path: 'recommendations',
+        component: RecommendationsComponent
+    },
+    {
+        path: '**',
         component: HomeComponent
     }
 ];
@@ -19,6 +29,7 @@ const appRoutes: Routes = [
         RouterModule.forRoot(
             appRoutes,
             {
+                //useHash: true
                 enableTracing: false
             }
         )

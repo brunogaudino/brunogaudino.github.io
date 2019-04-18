@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
-import { HomeComponent } from './home.component';
+import { LabComponent } from './lab.component';
 import { SocialModule } from '../../social/social.module';
 import { MenuModule } from 'src/app/menu/menu.module';
 
 @NgModule({
     declarations: [
-        HomeComponent
+        LabComponent
     ],
     imports: [
         CommonModule,
@@ -17,8 +17,8 @@ import { MenuModule } from 'src/app/menu/menu.module';
         MenuModule
     ],
     exports: [
-        HomeComponent
+        LabComponent
     ]
 })
 
-export class HomeModule {}
+export class LabModule {}

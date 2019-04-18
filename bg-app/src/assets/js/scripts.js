@@ -2,8 +2,7 @@ $(document).ready(function() {
 
     //$("body").hide();
     //$("body").delay(1800).fadeIn(3000);
-
-    startLoader();
+    //startLoader();
 
     window.setTimeout(function() {
       stopLoader();
