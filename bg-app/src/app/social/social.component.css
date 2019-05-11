@@ -11,6 +11,8 @@
 #social {
   padding-top: 12px;
   word-spacing: 25px;
+  margin: 0px auto;
+  text-align: center;
 }
 
 #social h4 > a {

@@ -121,4 +121,5 @@
 /*Menu*/
 #menu-nav-open{
   display: block;
+  margin-bottom: 0px;
 }
