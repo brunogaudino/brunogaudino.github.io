@@ -1,0 +1,27 @@
+  /* Custom page Home
+  -------------------------------------------------- */
+  mat-grid-tile {
+    background: lightblue;
+  }
+  
+  #about h3{
+    font-size: 1.3em;
+    margin: 10px auto;
+  }
+  .avatar {
+    padding-top: 1%;
+  }
+  
+  .avatar .img-circle{
+    border: 10px solid #8fd6ff;
+    padding: 5px 10px 3px 10px;
+    margin: 0 auto;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .avatar img{
+    min-width: 160px;
+    height: auto;
+    max-width: 80%;
+  }
