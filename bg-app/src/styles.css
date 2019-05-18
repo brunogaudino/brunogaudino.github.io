@@ -1,14 +1,4 @@
-.environment{
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    background: #72e72e;
-    text-align: center;
-    margin: 0px auto;
-    position: absolute;
-    width: 100%;
-  }
-
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 /* You can add global styles to this file, and also import other style files */
 /*
 ----AZUL----

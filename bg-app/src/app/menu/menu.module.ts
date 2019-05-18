@@ -1,5 +1,8 @@
 import { NgModule } from "@angular/core";
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatMenuModule, MatButtonModule, MatGridListModule } from "@angular/material";
+
 import { MenuComponent } from './menu.component';
 
 @NgModule({
@@ -7,10 +10,15 @@ import { MenuComponent } from './menu.component';
         MenuComponent
     ],
     imports:[
-        RouterModule
+        RouterModule,
+        BrowserAnimationsModule,
+        MatMenuModule,
+        MatButtonModule,
+        MatGridListModule
     ],
     exports: [
-        MenuComponent
+        MenuComponent,
+        MatMenuModule
     ]
 })
 export class MenuModule {}

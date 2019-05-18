@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 import { SocialModule } from '../../social/social.module';
 import { MenuModule } from 'src/app/menu/menu.module';
 
+
 @NgModule({
     declarations: [
         HomeComponent
@@ -14,8 +15,7 @@ import { MenuModule } from 'src/app/menu/menu.module';
         CommonModule,
         HttpClientModule,
         SocialModule,
-        MenuModule
-    ],
+        MenuModule    ],
     exports: [
         HomeComponent
     ]

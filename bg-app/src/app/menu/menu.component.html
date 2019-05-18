@@ -1,15 +1,27 @@
-<nav id="menu-nav-open" class="navbar navbar-default">
+<mat-grid-list cols="3" rowHeight="3:1">
+  <mat-grid-tile>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item [routerLink]="['/']" routerLinkActive="active">Home</button>
+      <button mat-menu-item [routerLink]="['/lab']" routerLinkActive="active">Lab</button>
+      <button mat-menu-item [routerLink]="['/about']" routerLinkActive="active">About</button>
+    </mat-menu>
+  </mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile></mat-grid-tile>
+</mat-grid-list>
+
+<!--nav id="menu-nav-open" class="navbar navbar-default">
   <div class="container">
     <div id="navbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a></li>
         <li><a [routerLink]="['/lab']" routerLinkActive="router-link-active">Lab</a></li>
         <li><a [routerLink]="['/about']" routerLinkActive="router-link-active">About</a></li>
-        <!--li><a [routerLink]="['/recommendations']" routerLinkActive="router-link-active">Recommendations</a></li-->
       </ul>
     </div>
   </div>
-</nav>
+</nav-->
 <!--<div class="backNav"></div>
 <span class="fa fa-bars fa-lg"></span>
 <nav class="navbar navbar-default">
