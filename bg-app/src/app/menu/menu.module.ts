@@ -1,7 +1,5 @@
 import { NgModule } from "@angular/core";
 import { RouterModule } from '@angular/router';
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { MatMenuModule, MatButtonModule, MatGridListModule } from "@angular/material";
 
 import { MenuComponent } from './menu.component';
 
@@ -10,15 +8,10 @@ import { MenuComponent } from './menu.component';
         MenuComponent
     ],
     imports:[
-        RouterModule,
-        BrowserAnimationsModule,
-        MatMenuModule,
-        MatButtonModule,
-        MatGridListModule
+        RouterModule
     ],
     exports: [
-        MenuComponent,
-        MatMenuModule
+        MenuComponent
     ]
 })
 export class MenuModule {}

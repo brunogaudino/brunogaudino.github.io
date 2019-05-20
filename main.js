@@ -38,12 +38,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _content_home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./content/home/home.component */ "./src/app/content/home/home.component.ts");
 /* harmony import */ var _content_lab_lab_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./content/lab/lab.component */ "./src/app/content/lab/lab.component.ts");
 /* harmony import */ var _content_about_about_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./content/about/about.component */ "./src/app/content/about/about.component.ts");
+/* harmony import */ var _content_resume_resume_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./content/resume/resume.component */ "./src/app/content/resume/resume.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -61,6 +63,10 @@ var appRoutes = [
     {
         path: 'about',
         component: _content_about_about_component__WEBPACK_IMPORTED_MODULE_4__["AboutComponent"]
+    },
+    {
+        path: 'resume',
+        component: _content_resume_resume_component__WEBPACK_IMPORTED_MODULE_5__["ResumeComponent"]
     },
     {
         path: '**',
@@ -221,7 +227,7 @@ module.exports = "#aboutme{}\r\n\r\n#aboutme h2{\r\n    text-align: center;\r\n 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"aboutme\">\r\n\r\n    <bg-menu></bg-menu>\r\n  \r\n    <div class=\"container\">\r\n  \r\n        <h2>About me, <span class=\"featured\">Bruno Gaudino</span></h2>\r\n\r\n        <h3>I was born in São Paulo capital but live in metropolitan region of São Paulo in the city of Guarulhos.</h3>\r\n        <h3>I graduated in public school from elementary school to high school and also in College I studied at Fatec(Technology College of State of São Paulo) and I got the Technician's license. </h3>\r\n        <br>\r\n\r\n        <h3><span class=\"featured\">I.T area</span></h3>\r\n        <br>\r\n        <h3>I am a front-end web developer analyst, worked in companies like Ongame(the first brazilian publish games), and also Viewit Mobile a companie focused in m-commerce solutions with clients like Ricardo Eletro, E-fácil, Ponto Frio, etc.</h3>\r\n        <h3>I try to adapt the changes required in the work environment.</h3>\r\n        <h3>I am committed to developing the work, focused on achieving the goals set by the team, and willing to meet new technologies</h3>\r\n        <br>\r\n\r\n        <h3><span class=\"featured\">Education</span></h3>\r\n        <br>\r\n        <h3>I acted as coordinator of the technical course of computer of the Technical School Camargo Aranha(Etec), and professor teaching the disciplines of Programming Logic, Computerized Applications for Accounting.</h3>\r\n\r\n        <!-- social -->\r\n        <bg-social></bg-social>\r\n    \r\n    </div>\r\n  \r\n  </section>"
+module.exports = "<section id=\"aboutme\">\r\n\r\n    <bg-menu></bg-menu>\r\n  \r\n    <div class=\"container\">\r\n  \r\n        <h2>About me, <span class=\"featured\">Bruno Gaudino</span></h2>\r\n\r\n        <h3>I was born in São Paulo capital but I am live in metropolitan region of São Paulo in the city of Guarulhos.</h3>\r\n        <h3>I graduated in public school from elementary school to high school and also in College I studied at Fatec(Technology College of State of São Paulo) and I got the Technician's license. </h3>\r\n        <br>\r\n\r\n        <h3><span class=\"featured\">I.T area</span></h3>\r\n        <br>\r\n        <h3>I am a front-end web developer analyst, worked in companies like Ongame(the first brazilian publish games), and also Viewit Mobile a companie focused in m-commerce solutions with clients like Ricardo Eletro, E-fácil, Ponto Frio, etc.</h3>\r\n        <h3>I try to adapt the changes required in the work environment.</h3>\r\n        <h3>I am committed to developing the work, focused on achieving the goals set by the team, and willing to meet new technologies</h3>\r\n        <br>\r\n\r\n        <h3><span class=\"featured\">Education</span></h3>\r\n        <br>\r\n        <h3>I acted as coordinator of the technical course of computer of the Technical School Camargo Aranha(Etec), and professor teaching the disciplines of Programming Logic, Computerized Applications for Accounting.</h3>\r\n\r\n        <!-- social -->\r\n        <bg-social></bg-social>\r\n    \r\n    </div>\r\n  \r\n  </section>"
 
 /***/ }),
 
@@ -327,12 +333,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home/home.module */ "./src/app/content/home/home.module.ts");
 /* harmony import */ var _lab_lab_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lab/lab.module */ "./src/app/content/lab/lab.module.ts");
 /* harmony import */ var _about_about_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about/about.module */ "./src/app/content/about/about.module.ts");
+/* harmony import */ var _resume_resume_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./resume/resume.module */ "./src/app/content/resume/resume.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -345,7 +353,8 @@ var ContentModule = /** @class */ (function () {
             imports: [
                 _home_home_module__WEBPACK_IMPORTED_MODULE_1__["HomeModule"],
                 _lab_lab_module__WEBPACK_IMPORTED_MODULE_2__["LabModule"],
-                _about_about_module__WEBPACK_IMPORTED_MODULE_3__["AboutModule"]
+                _about_about_module__WEBPACK_IMPORTED_MODULE_3__["AboutModule"],
+                _resume_resume_module__WEBPACK_IMPORTED_MODULE_4__["ResumeModule"]
             ]
         })
     ], ContentModule);
@@ -565,6 +574,104 @@ var LabModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/content/resume/resume.component.html":
+/*!******************************************************!*\
+  !*** ./src/app/content/resume/resume.component.html ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<section id=\"resume\">\r\n\r\n  <bg-menu></bg-menu>\r\n  \r\n  <div class=\"container\">\r\n\r\n    <h3>Resume/Vitae</h3>\r\n\r\n\r\n\r\n\r\n    <div class=\"thirteen columns clearfix\">\r\n\r\n      <section class=\"thirteen columns\">\r\n  <h1>Employment</h1>\r\n  <article>\r\n      <header>\r\n          <h1>Software Engineer</h1>\r\n          <span><address>Edinburgh, UK</address><time>2015 to Present</time></span>\r\n      </header>\r\n      <p>Lorem ipsum dolor sit amet, his et viris petentium philosophia,\r\n          at vix debitis deleniti. At vis velit volumus alienum, agam vocent assueverit usu ex. </p>\r\n  </article>\r\n  <article>\r\n      <header>\r\n          <h1>iOS Developer</h1>\r\n          <span><address>Glasgow, UK</address><time>2014 to 2015</time></span>\r\n      </header>\r\n      <p>Qui bonorum menandri intellegebat ex, mel quando oblique an. Et eam virtute debitis philosophia,\r\n          unum ancillae disputationi vim in. Ipsum vidisse meliore ex eum,\r\n          delectus tacimates conclusionemque has ei. Eam ubique cetero scribentur ne.</p>\r\n  </article>\r\n  <article>\r\n      <header>\r\n          <h1>Teaching Assistant</h1>\r\n          <span><address>University of Glasgow, Glasgow, UK</address><time>2013 to 2014</time></span>\r\n      </header>\r\n      <p>Latine bonorum deserunt at nam. Mea nisl officiis eu, propriae similique has te, mei an brute meliore electram.\r\n          Quo admodum omittantur ei, etiam principes at eos. Sit vocent commodo ceteros in, at mel idque everti.</p>\r\n  </article>\r\n  <article>\r\n      <header>\r\n          <h1>iOS Developer</h1>\r\n          <span><address>Student Start-up, Glasgow, UK</address><time>2013</time></span>\r\n      </header>\r\n      <p>Mucius sententiae et mei, nec an diam ignota, tale epicurei intellegebat ne sit. Sumo pertinacia contentiones duo ei.</p>\r\n  </article>\r\n  <article>\r\n      <header>\r\n          <h1>Web Developer</h1>\r\n          <span><address>Birmingham, UK</address><time>2007 to 2010</time></span>\r\n      </header>\r\n      <p> Et sed tritani volumus, dico rebum facilisis ea sed. His mundi efficiantur concludaturque no.\r\n          Cu eos argumentum constituam repudiandae, eu eum lorem nostrum, ei mel dicam iriure fabellas.\r\n      </p>\r\n  </article>\r\n</section>\r\n\r\n\r\n<section class=\"thirteen columns\">\r\n  <h1>Education</h1>\r\n  <article>\r\n      <header>\r\n          <h1>MSc in Advanced Computing</h1>\r\n          <span>University of Glasgow</span>\r\n          <span><address>Glasgow, UK</address><time>2011 to 2012</time></span>\r\n      </header>\r\n      <p>\r\n          <em>Thesis: Nemore verear an eos, duo accusam placerat urbanitas at, vix libris putent voluptaria ei.</em>\r\n      </p>\r\n  </article>\r\n  <article>\r\n      <header>\r\n          <h1>Major in Computer Science</h1>\r\n          <span>University of College London</span>\r\n          <span><address>London, UK</address><time>2007 to 2011</time></span>\r\n      </header>\r\n      <p>\r\n          <em>Dissertation: Te dicit scripta nec, nec illud decore partem et.</em>\r\n      </p>\r\n  </article>\r\n</section>\r\n\r\n\r\n<section class=\"thirteen columns\">\r\n  <h1>Programming Skills</h1>\r\n  <article>\r\n      <header>\r\n          <h1>Software engineering &amp; web development</h1>\r\n      </header>\r\n      <p>\r\n          <i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star-half-o\"></i>\r\n          &nbsp;&nbsp;<em>C/C++ &amp; Objective-C</em>\r\n      </p><p>\r\n          <i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star-o\"></i>\r\n          &nbsp;&nbsp;<em>Java</em>, <em>Python</em>, <em>PHP</em> &amp; <em>Git</em>\r\n      </p>\r\n      <p>\r\n          <i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star-half-o\"></i><i class=\"fa fa-star-o\"></i>\r\n          &nbsp;&nbsp;<em>HTML/CSS3</em> &amp; <em>Javascript</em>\r\n      </p>\r\n  </article>\r\n</section>\r\n\r\n<section class=\"thirteen columns\">\r\n  <h1>Initiatives</h1>\r\n  <article>\r\n      <header>\r\n          <h1>Graduate Summer Student</h1>\r\n          <span><address>University of Glasgow, UK</address><time>2013</time></span>\r\n      </header>\r\n      <p>\r\n          Courses: Nec et duis iriure temporibus, ullum adolescens eam ea.\r\n      </p>\r\n  </article>\r\n  <article>\r\n      <header>\r\n          <h1>Student Volunteer</h1>\r\n          <span><address>British RedCross, Glasgow, UK</address><time>2013</time></span>\r\n      </header>\r\n      <p>\r\n          Fundraiser: Lorem adipiscing ei eam, eros conceptam maiestatis ne sea.\r\n      </p>\r\n  </article>\r\n</section>\r\n\r\n<section class=\"thirteen columns\">\r\n  <h1>Hobbies</h1>\r\n  <article>\r\n      <p>Music, Movies, Tennis, Travelling, Cooking.</p>\r\n  </article>\r\n</section>\r\n\r\n\r\n  <footer class=\"thirteen columns\">\r\n      <p>© All rights reserved. Powered by <a href=\"http://jekyllrb.com/\">Jekyll</a> and\r\n          <a href=\"https://www.github.com/jekyller/vitae\">vitae</a> with ♥</p>\r\n  </footer>\r\n  </div>\r\n\r\n\r\n\r\n\r\n\r\n    <bg-social></bg-social>\r\n\r\n  </div>\r\n\r\n</section>"
+
+/***/ }),
+
+/***/ "./src/app/content/resume/resume.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/content/resume/resume.component.ts ***!
+  \****************************************************/
+/*! exports provided: ResumeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResumeComponent", function() { return ResumeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var ResumeComponent = /** @class */ (function () {
+    function ResumeComponent() {
+    }
+    ResumeComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            template: __webpack_require__(/*! ./resume.component.html */ "./src/app/content/resume/resume.component.html")
+        })
+    ], ResumeComponent);
+    return ResumeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/content/resume/resume.module.ts":
+/*!*************************************************!*\
+  !*** ./src/app/content/resume/resume.module.ts ***!
+  \*************************************************/
+/*! exports provided: ResumeModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResumeModule", function() { return ResumeModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _resume_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resume.component */ "./src/app/content/resume/resume.component.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var src_app_social_social_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/social/social.module */ "./src/app/social/social.module.ts");
+/* harmony import */ var src_app_menu_menu_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/menu/menu.module */ "./src/app/menu/menu.module.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+var ResumeModule = /** @class */ (function () {
+    function ResumeModule() {
+    }
+    ResumeModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            declarations: [
+                _resume_component__WEBPACK_IMPORTED_MODULE_1__["ResumeComponent"]
+            ],
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
+                src_app_social_social_module__WEBPACK_IMPORTED_MODULE_4__["SocialModule"],
+                src_app_menu_menu_module__WEBPACK_IMPORTED_MODULE_5__["MenuModule"]
+            ],
+            exports: [
+                _resume_component__WEBPACK_IMPORTED_MODULE_1__["ResumeComponent"]
+            ]
+        })
+    ], ResumeModule);
+    return ResumeModule;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/menu/menu.component.css":
 /*!*****************************************!*\
   !*** ./src/app/menu/menu.component.css ***!
@@ -583,7 +690,7 @@ module.exports = "/*Menu Hamburger*/\r\n/*nav.navbar .container{\r\n    backgrou
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav id=\"menu-nav-open\" class=\"navbar navbar-default\">\r\n  <div class=\"container\">\r\n    <div id=\"navbar\">\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li><a [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\">Home</a></li>\r\n        <li><a [routerLink]=\"['/lab']\" routerLinkActive=\"router-link-active\">Lab</a></li>\r\n        <li><a [routerLink]=\"['/about']\" routerLinkActive=\"router-link-active\">About</a></li>\r\n        <!--li><a [routerLink]=\"['/recommendations']\" routerLinkActive=\"router-link-active\">Recommendations</a></li-->\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n<!--<div class=\"backNav\"></div>\r\n<span class=\"fa fa-bars fa-lg\"></span>\r\n<nav class=\"navbar navbar-default\">\r\n  <div class=\"container\">\r\n    <div class=\"navbar-header\">\r\n      \r\n      <a class=\"navbar-brand\" href=\"/\"><i class=\"fa fa-home\"></i></a>\r\n\r\n      <a class=\"navbar-brand\" href=\"/\">\r\n        <img src=\"../assets/img/home/logo-bcw.png\" alt=\"Bruno Gaudino's logo\" title=\"Bruno Gaudino's logo\">\r\n      </a>\r\n    </div>\r\n    <div id=\"navbar\">\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li><a [routerLink]=\"['/lab']\" routerLinkActive=\"router-link-active\">Lab</a></li>\r\n        <li><a [routerLink]=\"['/recommendations']\" routerLinkActive=\"router-link-active\">Recommendations</a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>-->\r\n"
+module.exports = "<nav id=\"menu-nav-open\" class=\"navbar navbar-default\">\r\n  <div class=\"container\">\r\n    <div id=\"navbar\">\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li><a [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\">Home</a></li>\r\n        <li><a [routerLink]=\"['/lab']\" routerLinkActive=\"router-link-active\">Lab</a></li>\r\n        <li><a [routerLink]=\"['/about']\" routerLinkActive=\"router-link-active\">About</a></li>\r\n        <!--li><a [routerLink]=\"['/resume']\" routerLinkActive=\"router-link-active\">Resume</a></li-->\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n<!--<div class=\"backNav\"></div>\r\n<span class=\"fa fa-bars fa-lg\"></span>\r\n<nav class=\"navbar navbar-default\">\r\n  <div class=\"container\">\r\n    <div class=\"navbar-header\">\r\n      \r\n      <a class=\"navbar-brand\" href=\"/\"><i class=\"fa fa-home\"></i></a>\r\n\r\n      <a class=\"navbar-brand\" href=\"/\">\r\n        <img src=\"../assets/img/home/logo-bcw.png\" alt=\"Bruno Gaudino's logo\" title=\"Bruno Gaudino's logo\">\r\n      </a>\r\n    </div>\r\n    <div id=\"navbar\">\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li><a [routerLink]=\"['/lab']\" routerLinkActive=\"router-link-active\">Lab</a></li>\r\n        <li><a [routerLink]=\"['/recommendations']\" routerLinkActive=\"router-link-active\">Recommendations</a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>-->\r\n"
 
 /***/ }),
 
