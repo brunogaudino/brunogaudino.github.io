@@ -47,6 +47,14 @@ body{
     display: none !important;
 }
 
+.text-align-left{
+  text-align: left;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
 /* Wrapper for page content to push down footer */
 #wrap {
     padding-bottom: 50px;
@@ -163,7 +171,7 @@ hr{
     z-index: 1;
     cursor: pointer;
     display: inline;
-    margin-top: 5px;
+/*    margin-top: 5px;*/
     margin-left: 20px;
     padding: 3px;
     right: 5px;
@@ -177,9 +185,8 @@ hr{
         -o-border-radius: 5px;
   }
   
-  span.fa:before{}
-  
-  /*#wrap{
+  /*span.fa:before{}
+  #wrap{
     position: relative;
   }*/
 
@@ -516,8 +523,8 @@ hr{
   }
   
   section#depositions .flexslider figure img{
-    width: 80px;
-    height: 80px;
+/*    width: 80px;
+    height: 80px;*/
     display: inline;
     margin-right: 10px;
     border:  3px solid #8fd6ff;
@@ -864,8 +871,7 @@ section#portfolio #boxContent .extra{
     padding-bottom: 10px;
   }
   
-  section#post .container .row.line span.data{
-   }
+/*  section#post .container .row.line span.data{}*/
   
   section#post .container .row.line span.tags{
     text-align: center;
@@ -878,7 +884,7 @@ section#portfolio #boxContent .extra{
     color: #6b6b6b;
     font-size: 0.9em;
     margin: 5px auto;
-    vertical-align: center;
+/*    vertical-align: center;*/
   }
   
   section#post .container .blog-title h4 span.category{
@@ -896,9 +902,7 @@ section#portfolio #boxContent .extra{
     font-size: 0.9em;
   }
   
-  section#post .container section{
-  
-  }
+/*  section#post .container section{}*/
   
   section#post .container section header{
     margin: 0px auto 10px auto;
@@ -908,9 +912,7 @@ section#portfolio #boxContent .extra{
     text-align: center;
   }
   
-  section#post .container section article{
-  
-  }
+/*  section#post .container section article{}*/
   
   section#post .container section article p{
     font-size: 0.9em;
@@ -1050,7 +1052,7 @@ section#resume .container section#resume-info article{
   padding-bottom: 15px;
 }
 
-section#resume .container section#resume-info article header h1{
+section#resume .container section#resume-info article header h2{
   display: inline-block;
   margin-right: 10px;
 }
@@ -1062,4 +1064,11 @@ section#resume .container section#resume-info article header span{
 
 section#resume .container section#resume-info article header span address{
   display: inline;
+}
+
+
+/* RESUME
+  -------------------------------------------------- */
+section#aboutme .container section#aboutme-info{
+  margin: 20px auto 0px auto;
 }
