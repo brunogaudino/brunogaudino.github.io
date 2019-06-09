@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/*Paleta de cores*/
+/*
+(base) - #8fd6ff
+1-#6BA0BF
+2-#476B80
+3-#243540
+4-#81C0E6
+5-cinza claro bootstrap - #f8f9fa
+6-cinza tom mais escuro - #eee
+7-branco
+8-Preto
+*/
+.background-base-color{background: #8fd6ff;}
+.background-blue-color-dark1{background: #6BA0BF;}
+.background-blue-color-dark2{background: #476B80;}
+.background-blue-color-dark3{background: #243540;}
+.background-blue-color-light1{background: #81C0E6;}
+.background-gray-light{background: #f8f9fa;}
+.background-gray-light-dark{background: #eee;}
+.background-white{background: white;}
+.background-black{background: black;}
+
+*{
+  color: #243540;
+}
+
+/* body{background: #eee;} */
+a{color: #6BA0BF;}
+a:hover,a:focus{color: #81C0E6;}
+.text-align-center{text-align: center;}
+.margin-top20{margin-top: 20px;}
+.font-weight-bold{
+  font-weight: bold;
+}
