@@ -9,6 +9,7 @@ import { HomeModule } from './home/home.module';
   imports: [
     HomeModule
   ],
+  exports: [],
   declarations: []
 })
 export class ContentModule { }

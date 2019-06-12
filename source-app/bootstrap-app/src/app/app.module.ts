@@ -14,7 +14,6 @@ import { ContentModule } from './content/content.module';
   ],
   declarations: [
     AppComponent
-//    MenuComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

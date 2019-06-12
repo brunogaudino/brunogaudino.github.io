@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
 import { HomeComponent } from './home.component';
-// import { SocialModule } from '../../social/social.module';
 import { MenuModule } from 'src/app/shared/component/menu/menu.module';
+import { SocialNetworkModule } from 'src/app/shared/component/social-network/social-network.module';
+import { FooterModule } from 'src/app/shared/component/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,9 @@ import { MenuModule } from 'src/app/shared/component/menu/menu.module';
   imports: [
       CommonModule,
       HttpClientModule,
-      MenuModule
-      // SocialModule,
+      MenuModule,
+      SocialNetworkModule,
+      FooterModule
   ],
   exports: [
       HomeComponent
