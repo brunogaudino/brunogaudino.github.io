@@ -2,27 +2,28 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
-import { HomeComponent } from './home.component';
+import { AboutComponent } from './about.component';
 import { MenuModule } from 'src/app/shared/component/menu/menu.module';
 import { SocialNetworkModule } from 'src/app/shared/component/social-network/social-network.module';
 import { FooterModule } from 'src/app/shared/component/footer/footer.module';
 import { LoadSpinnerModule } from 'src/app/shared/component/load-spinner/load-spinner.module';
+import { LogoPresentationModule } from 'src/app/shared/component/logo-presentation/logo-presentation.module';
 
 @NgModule({
-  declarations: [
-      HomeComponent
-  ],
   imports: [
     CommonModule,
     HttpClientModule,
     MenuModule,
     SocialNetworkModule,
     FooterModule,
-    LoadSpinnerModule
+    LoadSpinnerModule,
+    LogoPresentationModule
+  ],
+  declarations: [
+    AboutComponent
   ],
   exports: [
-      HomeComponent
+    AboutComponent
   ]
 })
-
-export class HomeModule { }
+export class AboutModule { }

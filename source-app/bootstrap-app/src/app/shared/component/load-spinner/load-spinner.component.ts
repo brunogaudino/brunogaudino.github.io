@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'bg-load-spinner',
@@ -10,6 +11,10 @@ export class LoadSpinnerComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    setTimeout(function(){
+      $('.hide').fadeIn('slow');
+      $(".wrap-spinner").fadeOut('fast');
+    }, 1500);
   }
 
 }

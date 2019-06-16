@@ -26,11 +26,13 @@
   color: #243540;
 }
 
-/* body{background: #eee;} */
+/* body{display: none;} */
 a{color: #6BA0BF;}
 a:hover,a:focus{color: #81C0E6;}
 .text-align-center{text-align: center;}
+.text-align-left{text-align: left;}
 .margin-top20{margin-top: 20px;}
-.font-weight-bold{
-  font-weight: bold;
-}
+.margin-bottom20{margin-bottom: 20px;}
+.font-weight-bold{font-weight: bold;}
+.wrap-spinner{display: block;}
+.hide{ display: none;}

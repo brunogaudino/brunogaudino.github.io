@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AtomSpinnerModule } from "angular-epic-spinners";
+
 import { LoadSpinnerComponent } from './load-spinner.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    AtomSpinnerModule
   ],
   exports: [
-    LoadSpinnerComponent
+    LoadSpinnerComponent,
+    AtomSpinnerModule
   ],
   declarations: [
     LoadSpinnerComponent
