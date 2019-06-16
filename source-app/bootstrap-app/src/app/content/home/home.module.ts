@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { AtomSpinnerModule } from "angular-epic-spinners";
 
 import { HomeComponent } from './home.component';
 import { MenuModule } from 'src/app/shared/component/menu/menu.module';
@@ -16,7 +17,8 @@ import { FooterModule } from 'src/app/shared/component/footer/footer.module';
       HttpClientModule,
       MenuModule,
       SocialNetworkModule,
-      FooterModule
+      FooterModule,
+      AtomSpinnerModule
   ],
   exports: [
       HomeComponent
