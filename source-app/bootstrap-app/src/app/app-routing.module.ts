@@ -2,8 +2,8 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
 import { HomeComponent } from './content/home/home.component';
-//import { LabComponent } from './content/lab/lab.component';
 import { AboutComponent } from './content/about/about.component';
+import { LabComponent } from "./content/lab/lab.component";
 //import { ResumeComponent } from "./content/resume/resume.component";
 
 const appRoutes: Routes = [
@@ -14,12 +14,12 @@ const appRoutes: Routes = [
     {
         path: 'about',
         component: AboutComponent
-    }
-    /*
+    },
     {
         path: 'lab',
         component: LabComponent
-    },
+    }
+        /*,
     {
         path: 'resume',
         component: ResumeComponent
