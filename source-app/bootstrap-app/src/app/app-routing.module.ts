@@ -19,15 +19,28 @@ const appRoutes: Routes = [
         path: 'lab',
         component: LabComponent
     }
-        /*,
+/*
     {
         path: 'resume',
         component: ResumeComponent
     },
     {
+        path: 'mention',
+        component: MentionComponent
+    },
+    {
+        path: 'professional',
+        component: ProfessionalComponent
+    },
+    {
+        path: 'pastimes',
+        component: PastimesComponent
+    },
+    {
         path: '**',
         component: HomeComponent
-    }*/
+    }
+*/
 ];
 
 @NgModule({

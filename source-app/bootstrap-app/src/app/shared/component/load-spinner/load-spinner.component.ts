@@ -14,7 +14,7 @@ export class LoadSpinnerComponent implements OnInit {
     setTimeout(function(){
       $('.hide').fadeIn('slow');
       $(".wrap-spinner").fadeOut('fast');
-    }, 1500);
+    }, 1000);
   }
 
 }
