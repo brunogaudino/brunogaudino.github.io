@@ -22,6 +22,16 @@
 .background-white{background: white;}
 .background-black{background: black;}
 
+.font-color-base-color{color: #8fd6ff;}
+.font-color-blue-color-dark1{color: #6BA0BF;}
+.font-color-blue-color-dark2{color: #476B80;}
+.font-color-blue-color-dark3{color: #243540;}
+.font-color-blue-color-light1{color: #81C0E6;}
+.font-color-gray-light{color: #f8f9fa;}
+.font-color-gray-light-dark{color: #eee;}
+.font-color-white{color: white;}
+.font-color-black{color: black;}
+
 *{
   color: #243540;
 }

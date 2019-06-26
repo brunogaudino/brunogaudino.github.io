@@ -1,1 +1,0 @@
-jQuery(document).ready(function(t){t(".scroll").click(function(e){e.preventDefault(),t("html,body").animate({scrollTop:t(this.hash).offset().top},1e3)})});

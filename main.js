@@ -36,8 +36,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _content_home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./content/home/home.component */ "./src/app/content/home/home.component.ts");
-/* harmony import */ var _content_lab_lab_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./content/lab/lab.component */ "./src/app/content/lab/lab.component.ts");
-/* harmony import */ var _content_about_about_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./content/about/about.component */ "./src/app/content/about/about.component.ts");
+/* harmony import */ var _content_about_about_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./content/about/about.component */ "./src/app/content/about/about.component.ts");
+/* harmony import */ var _content_lab_lab_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./content/lab/lab.component */ "./src/app/content/lab/lab.component.ts");
 /* harmony import */ var _content_resume_resume_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./content/resume/resume.component */ "./src/app/content/resume/resume.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -51,27 +51,45 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+//import { ResumeComponent } from "./content/resume/resume.component";
 var appRoutes = [
     {
         path: '',
         component: _content_home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"]
     },
     {
-        path: 'lab',
-        component: _content_lab_lab_component__WEBPACK_IMPORTED_MODULE_3__["LabComponent"]
+        path: 'home',
+        component: _content_home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"]
     },
     {
         path: 'about',
-        component: _content_about_about_component__WEBPACK_IMPORTED_MODULE_4__["AboutComponent"]
+        component: _content_about_about_component__WEBPACK_IMPORTED_MODULE_3__["AboutComponent"]
+    },
+    {
+        path: 'lab',
+        component: _content_lab_lab_component__WEBPACK_IMPORTED_MODULE_4__["LabComponent"]
     },
     {
         path: 'resume',
         component: _content_resume_resume_component__WEBPACK_IMPORTED_MODULE_5__["ResumeComponent"]
-    },
-    {
-        path: '**',
-        component: _content_home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"]
     }
+    /*    {
+            path: 'mention',
+            component: MentionComponent
+        },
+        {
+            path: 'professional',
+            component: ProfessionalComponent
+        },
+        {
+            path: 'pastimes',
+            component: PastimesComponent
+        },
+        {
+            path: '**',
+            component: HomeComponent
+        }
+    */
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -103,7 +121,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"
+module.exports = ""
 
 /***/ }),
 
@@ -138,7 +156,10 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
+        this.title = 'bootstrap-app';
     }
+    AppComponent.prototype.ngOnInit = function () {
+    };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'bg-root',
@@ -216,7 +237,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#aboutme{}\r\n\r\n/*#aboutme h3{\r\n    text-align: center;\r\n    margin: 0px auto 40px auto;\r\n}\r\n#aboutme h3{\r\n    font-size: 1.3em;\r\n    margin: 10px auto;\r\n}*/\r\n\r\n#aboutme .container{\r\n    text-align: left;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGVudC9hYm91dC9hYm91dC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLFNBQVM7O0FBRVQ7Ozs7Ozs7RUFPRTs7QUFFRjtJQUNJLGdCQUFnQjtBQUNwQiIsImZpbGUiOiJzcmMvYXBwL2NvbnRlbnQvYWJvdXQvYWJvdXQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNhYm91dG1le31cclxuXHJcbi8qI2Fib3V0bWUgaDN7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBtYXJnaW46IDBweCBhdXRvIDQwcHggYXV0bztcclxufVxyXG4jYWJvdXRtZSBoM3tcclxuICAgIGZvbnQtc2l6ZTogMS4zZW07XHJcbiAgICBtYXJnaW46IDEwcHggYXV0bztcclxufSovXHJcblxyXG4jYWJvdXRtZSAuY29udGFpbmVye1xyXG4gICAgdGV4dC1hbGlnbjogbGVmdDtcclxufSJdfQ== */"
+module.exports = ""
 
 /***/ }),
 
@@ -227,7 +248,7 @@ module.exports = "#aboutme{}\r\n\r\n/*#aboutme h3{\r\n    text-align: center;\r\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"aboutme\">\r\n\r\n    <bg-menu></bg-menu>\r\n  \r\n    <div class=\"container\">\r\n        \r\n        <h3 class=\"text-align-center\">About me, <span class=\"featured\">Bruno Gaudino</span></h3>\r\n        <section id=\"aboutme-info\">\r\n            <h4>I was born in São Paulo capital but I am live in metropolitan region of São Paulo in the city of Guarulhos.</h4>\r\n            <h4>I graduated in public school from elementary school to high school and also in College I studied at Fatec(Technology College of State of São Paulo) and I got the Technician's license. </h4>\r\n            <br>\r\n\r\n            <h3><span class=\"featured\">I.T area</span></h3>\r\n            <br>\r\n            <h4>I am a analyst developer web front-end, worked in companies like Ongame(the first brazilian publish games), and also Viewit Mobile a companie focused in m-commerce solutions with clients like Ricardo Eletro, E-fácil, Ponto Frio, etc.</h4>\r\n            <h4>I am try to adapt the changes required in the work environment.</h4>\r\n            <h4>I am committed to developing the work, focused on achieving the goals set by the team, and willing to meet new technologies</h4>\r\n            <br>\r\n\r\n            <h3><span class=\"featured\">Education</span></h3>\r\n            <br>\r\n            <h4>I acted as coordinator of the technical course of computer of the Technical School Camargo Aranha(Etec), and professor teaching the disciplines of Programming Logic, Computerized Applications for Accounting.</h4>\r\n        </section>\r\n        <!-- social -->\r\n        <bg-social></bg-social>\r\n    \r\n    </div>\r\n  \r\n  </section>"
+module.exports = "<main class=\"hide\">\r\n  \r\n  <bg-logo-presentation></bg-logo-presentation>\r\n\r\n  <bg-menu></bg-menu>\r\n\r\n  <div class=\"container\">\r\n    <div class=\"row text-align-center margin-top20\">\r\n  \r\n      <div class=\"col-1\"></div>\r\n  \r\n      <div class=\"col-10\">\r\n        \r\n        <h1 class=\"margin-bottom20\">About me</h1>\r\n        <p class=\"text-align-left\">I was born in São Paulo capital but I am live in metropolitan region of São Paulo in the city of Guarulhos.</p>\r\n        <p class=\"text-align-left\">I graduated in public school from elementary school to high school and also in College I studied at Fatec(Technology College of State of São Paulo) and I got the Technician's license.</p>\r\n        \r\n        <h2 class=\"text-align-left margin-top20 margin-bottom20\">I.T. area</h2>\r\n        <p class=\"text-align-left\">I am a analyst developer web front-end, worked in companies like Ongame(the first brazilian publish games), and also Viewit Mobile a companie focused in m-commerce solutions with clients like Ricardo Eletro, E-fácil, Ponto Frio, etc.</p>\r\n        <p class=\"text-align-left\">I am try to adapt the changes required in the work environment.</p>\r\n        <p class=\"text-align-left\">I am committed to developing the work, focused on achieving the goals set by the team, and willing to meet new technologies</p>\r\n        \r\n        <h2 class=\"text-align-left margin-top20 margin-bottom20\">Education</h2>\r\n        <p class=\"text-align-left\">I acted as coordinator of the technical course of computer of the Technical School Camargo Aranha(Etec), and professor teaching the disciplines of Programming Logic, Computerized Applications for Accounting.</p>\r\n\r\n      </div>\r\n\r\n      <div class=\"col-1\"></div>\r\n\r\n    </div>\r\n  </div>\r\n\r\n  <bg-social-network></bg-social-network>\r\n\r\n  <bg-footer></bg-footer>\r\n\r\n</main>\r\n\r\n<bg-load-spinner></bg-load-spinner>"
 
 /***/ }),
 
@@ -248,15 +269,21 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 var AboutComponent = /** @class */ (function () {
     function AboutComponent() {
     }
+    AboutComponent.prototype.ngOnInit = function () {
+    };
     AboutComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             template: __webpack_require__(/*! ./about.component.html */ "./src/app/content/about/about.component.html"),
             styles: [__webpack_require__(/*! ./about.component.css */ "./src/app/content/about/about.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [])
     ], AboutComponent);
     return AboutComponent;
 }());
@@ -278,9 +305,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _social_social_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../social/social.module */ "./src/app/social/social.module.ts");
-/* harmony import */ var src_app_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/menu/menu.module */ "./src/app/menu/menu.module.ts");
-/* harmony import */ var _about_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./about.component */ "./src/app/content/about/about.component.ts");
+/* harmony import */ var _about_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about.component */ "./src/app/content/about/about.component.ts");
+/* harmony import */ var src_app_shared_component_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/shared/component/menu/menu.module */ "./src/app/shared/component/menu/menu.module.ts");
+/* harmony import */ var src_app_shared_component_social_network_social_network_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/shared/component/social-network/social-network.module */ "./src/app/shared/component/social-network/social-network.module.ts");
+/* harmony import */ var src_app_shared_component_footer_footer_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/shared/component/footer/footer.module */ "./src/app/shared/component/footer/footer.module.ts");
+/* harmony import */ var src_app_shared_component_load_spinner_load_spinner_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/shared/component/load-spinner/load-spinner.module */ "./src/app/shared/component/load-spinner/load-spinner.module.ts");
+/* harmony import */ var src_app_shared_component_logo_presentation_logo_presentation_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/shared/component/logo-presentation/logo-presentation.module */ "./src/app/shared/component/logo-presentation/logo-presentation.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -293,22 +323,28 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 var AboutModule = /** @class */ (function () {
     function AboutModule() {
     }
     AboutModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            declarations: [
-                _about_component__WEBPACK_IMPORTED_MODULE_5__["AboutComponent"]
-            ],
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
-                _social_social_module__WEBPACK_IMPORTED_MODULE_3__["SocialModule"],
-                src_app_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__["MenuModule"]
+                src_app_shared_component_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__["MenuModule"],
+                src_app_shared_component_social_network_social_network_module__WEBPACK_IMPORTED_MODULE_5__["SocialNetworkModule"],
+                src_app_shared_component_footer_footer_module__WEBPACK_IMPORTED_MODULE_6__["FooterModule"],
+                src_app_shared_component_load_spinner_load_spinner_module__WEBPACK_IMPORTED_MODULE_7__["LoadSpinnerModule"],
+                src_app_shared_component_logo_presentation_logo_presentation_module__WEBPACK_IMPORTED_MODULE_8__["LogoPresentationModule"]
+            ],
+            declarations: [
+                _about_component__WEBPACK_IMPORTED_MODULE_3__["AboutComponent"]
             ],
             exports: [
-                _about_component__WEBPACK_IMPORTED_MODULE_5__["AboutComponent"]
+                _about_component__WEBPACK_IMPORTED_MODULE_3__["AboutComponent"]
             ]
         })
     ], AboutModule);
@@ -331,8 +367,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContentModule", function() { return ContentModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _home_home_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home/home.module */ "./src/app/content/home/home.module.ts");
-/* harmony import */ var _lab_lab_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lab/lab.module */ "./src/app/content/lab/lab.module.ts");
-/* harmony import */ var _about_about_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about/about.module */ "./src/app/content/about/about.module.ts");
+/* harmony import */ var _about_about_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about/about.module */ "./src/app/content/about/about.module.ts");
+/* harmony import */ var _lab_lab_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lab/lab.module */ "./src/app/content/lab/lab.module.ts");
 /* harmony import */ var _resume_resume_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./resume/resume.module */ "./src/app/content/resume/resume.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -352,10 +388,12 @@ var ContentModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
             imports: [
                 _home_home_module__WEBPACK_IMPORTED_MODULE_1__["HomeModule"],
-                _lab_lab_module__WEBPACK_IMPORTED_MODULE_2__["LabModule"],
-                _about_about_module__WEBPACK_IMPORTED_MODULE_3__["AboutModule"],
+                _about_about_module__WEBPACK_IMPORTED_MODULE_2__["AboutModule"],
+                _lab_lab_module__WEBPACK_IMPORTED_MODULE_3__["LabModule"],
                 _resume_resume_module__WEBPACK_IMPORTED_MODULE_4__["ResumeModule"]
-            ]
+            ],
+            exports: [],
+            declarations: []
         })
     ], ContentModule);
     return ContentModule;
@@ -372,7 +410,7 @@ var ContentModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "  /* Custom page Home\r\n  -------------------------------------------------- */\r\n  #about h3{\r\n    font-size: 1.3em;\r\n    margin: 10px auto;\r\n  }\r\n  .avatar {\r\n    padding-top: 1%;\r\n  }\r\n  .avatar .img-circle{\r\n    border: 10px solid #8fd6ff;\r\n    padding: 5px 10px 3px 10px;\r\n    margin: 0 auto;\r\n    max-width: 300px;\r\n    height: auto;\r\n  }\r\n  .avatar img{\r\n    min-width: 160px;\r\n    height: auto;\r\n    max-width: 80%;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGVudC9ob21lL2hvbWUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiRUFBRTtzREFDb0Q7RUFDcEQ7SUFDRSxnQkFBZ0I7SUFDaEIsaUJBQWlCO0VBQ25CO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBRUE7SUFDRSwwQkFBMEI7SUFDMUIsMEJBQTBCO0lBQzFCLGNBQWM7SUFDZCxnQkFBZ0I7SUFDaEIsWUFBWTtFQUNkO0VBRUE7SUFDRSxnQkFBZ0I7SUFDaEIsWUFBWTtJQUNaLGNBQWM7RUFDaEIiLCJmaWxlIjoic3JjL2FwcC9jb250ZW50L2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiICAvKiBDdXN0b20gcGFnZSBIb21lXHJcbiAgLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0gKi9cclxuICAjYWJvdXQgaDN7XHJcbiAgICBmb250LXNpemU6IDEuM2VtO1xyXG4gICAgbWFyZ2luOiAxMHB4IGF1dG87XHJcbiAgfVxyXG4gIC5hdmF0YXIge1xyXG4gICAgcGFkZGluZy10b3A6IDElO1xyXG4gIH1cclxuICBcclxuICAuYXZhdGFyIC5pbWctY2lyY2xle1xyXG4gICAgYm9yZGVyOiAxMHB4IHNvbGlkICM4ZmQ2ZmY7XHJcbiAgICBwYWRkaW5nOiA1cHggMTBweCAzcHggMTBweDtcclxuICAgIG1hcmdpbjogMCBhdXRvO1xyXG4gICAgbWF4LXdpZHRoOiAzMDBweDtcclxuICAgIGhlaWdodDogYXV0bztcclxuICB9XHJcbiAgXHJcbiAgLmF2YXRhciBpbWd7XHJcbiAgICBtaW4td2lkdGg6IDE2MHB4O1xyXG4gICAgaGVpZ2h0OiBhdXRvO1xyXG4gICAgbWF4LXdpZHRoOiA4MCU7XHJcbiAgfSJdfQ== */"
+module.exports = ".border-size-color{\r\n  border: 5px solid #81C0E6;\r\n  width: 257px;\r\n}"
 
 /***/ }),
 
@@ -383,7 +421,7 @@ module.exports = "  /* Custom page Home\r\n  -----------------------------------
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"about\">\r\n\r\n  <bg-menu></bg-menu>\r\n\r\n  <div class=\"container\">\r\n\r\n    <div class=\"avatar\">\r\n      <div class=\"img-circle\">\r\n        <img width=\"300\" src=\"assets/img/home/logo-bcw.png\" alt=\"Bruno Gaudino's logo\" title=\"Bruno Gaudino's logo\">\r\n      </div>\r\n    </div>\r\n\r\n    <h3><strong>Bruno Gaudino</strong> {{workPosition}}.</h3>\r\n    <h3><strong>Technician's license </strong> by Fatec(Technology College of State of São Paulo).</h3>\r\n    <h3>Web development with <span class=\"featured\">HTML</span>, <span class=\"featured\">CSS</span>, <span class=\"featured\">JavaScript</span>/<span class=\"featured\">jQuery</span>.</h3>\r\n    <h3>Versioning control with <span class=\"featured\">Git</span>.</h3>\r\n    <h3>Front-end performance with <span class=\"featured\">Gulp</span>.</h3>\r\n    <h3>Specialist in <span class=\"featured\">web accessibility</span>.</h3>\r\n    <h3><span class=\"featured\">Node.js</span> and <span class=\"featured\">Angular</span> frameworks.</h3>\r\n    \r\n    <!-- social -->\r\n    <bg-social></bg-social>\r\n  </div>\r\n\r\n</section>"
+module.exports = "<main class=\"hide\">\r\n  <bg-menu></bg-menu>\r\n\r\n  <div class=\"container\">\r\n\r\n    <div class=\"row text-align-center margin-top20\">\r\n      <div class=\"col\"></div>\r\n      <div class=\"col\">\r\n        <span class=\"border-size-color p-4 d-block rounded-circle\">\r\n          <img class=\"d-block\" width=\"200\" src=\"assets/img/home/logo-bcw.png\" alt=\"Bruno Gaudino's logo\" title=\"Bruno Gaudino's logo\">\r\n        </span>\r\n      </div>\r\n      <div class=\"col\"></div>\r\n    </div>\r\n\r\n    <div class=\"row text-align-center margin-top20\">\r\n      <div class=\"col-1\"></div>\r\n      <div class=\"col-10\">\r\n        <h5><strong>Bruno Gaudino</strong> analyst developer web front-end.</h5>\r\n        <h5><strong>Technician's license </strong> by Fatec(Technology College of State of São Paulo).</h5>\r\n        <h5>Web development with <span class=\"font-weight-bold\">HTML</span>, <span class=\"font-weight-bold\">CSS</span>, <span class=\"font-weight-bold\">JavaScript</span>/<span class=\"font-weight-bold\">jQuery</span>.</h5>\r\n        <h5>Versioning control with <span class=\"font-weight-bold\">Git</span>.</h5>\r\n        <h5>Front-end performance with <span class=\"font-weight-bold\">Gulp</span>.</h5>\r\n        <h5>Specialist in <span class=\"font-weight-bold\">web accessibility</span>.</h5>\r\n        <h5><span class=\"font-weight-bold\">Node.js</span> and <span class=\"font-weight-bold\">Angular</span> frameworks.</h5>\r\n      </div>\r\n      <div class=\"col-1\"></div>\r\n    </div>\r\n  \r\n  </div>\r\n\r\n  <bg-social-network></bg-social-network>\r\n\r\n  <bg-footer></bg-footer>\r\n</main>\r\n\r\n<bg-load-spinner></bg-load-spinner>"
 
 /***/ }),
 
@@ -404,16 +442,21 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 var HomeComponent = /** @class */ (function () {
     function HomeComponent() {
-        this.workPosition = 'analyst developer web front-end';
     }
+    HomeComponent.prototype.ngOnInit = function () {
+    };
     HomeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/content/home/home.component.html"),
             styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/content/home/home.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -436,14 +479,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home.component */ "./src/app/content/home/home.component.ts");
-/* harmony import */ var _social_social_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../social/social.module */ "./src/app/social/social.module.ts");
-/* harmony import */ var src_app_menu_menu_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/menu/menu.module */ "./src/app/menu/menu.module.ts");
+/* harmony import */ var src_app_shared_component_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/shared/component/menu/menu.module */ "./src/app/shared/component/menu/menu.module.ts");
+/* harmony import */ var src_app_shared_component_social_network_social_network_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/shared/component/social-network/social-network.module */ "./src/app/shared/component/social-network/social-network.module.ts");
+/* harmony import */ var src_app_shared_component_footer_footer_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/shared/component/footer/footer.module */ "./src/app/shared/component/footer/footer.module.ts");
+/* harmony import */ var src_app_shared_component_load_spinner_load_spinner_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/shared/component/load-spinner/load-spinner.module */ "./src/app/shared/component/load-spinner/load-spinner.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -461,8 +508,10 @@ var HomeModule = /** @class */ (function () {
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
-                _social_social_module__WEBPACK_IMPORTED_MODULE_4__["SocialModule"],
-                src_app_menu_menu_module__WEBPACK_IMPORTED_MODULE_5__["MenuModule"]
+                src_app_shared_component_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__["MenuModule"],
+                src_app_shared_component_social_network_social_network_module__WEBPACK_IMPORTED_MODULE_5__["SocialNetworkModule"],
+                src_app_shared_component_footer_footer_module__WEBPACK_IMPORTED_MODULE_6__["FooterModule"],
+                src_app_shared_component_load_spinner_load_spinner_module__WEBPACK_IMPORTED_MODULE_7__["LoadSpinnerModule"]
             ],
             exports: [
                 _home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"]
@@ -476,6 +525,17 @@ var HomeModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/content/lab/lab.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/content/lab/lab.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
 /***/ "./src/app/content/lab/lab.component.html":
 /*!************************************************!*\
   !*** ./src/app/content/lab/lab.component.html ***!
@@ -483,7 +543,7 @@ var HomeModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"lab\">\r\n\r\n  <bg-menu></bg-menu>\r\n\r\n    <div class=\"container\">\r\n          <h3>Lab</h3>\r\n          <section id=\"labProjects\">\r\n                          <article>\r\n      <!--  PROJETOS/CURSOS  -->\r\n              <h2>Course projects <span>Projects developed during Alura courses</span> </h2>\r\n              <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/api.payment\" target=\"_blank\">API Payment</a></strong>\r\n                                      - NodeJs API development. The code is available in github and is accessible through the link <a href=\"https://github.com/brunogaudino/api.payment\" target=\"_blank\">API Payment</a>.\r\n                </p>\r\n              </h5>\r\n      <!--<hr>-->\r\n              <h5>\r\n                <p>\r\n                                      <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/casadocodigo/\" target=\"_blank\">Casa do código home</a></strong>\r\n                                      - Development of the home of the \"Casa do código\" website in Nodejs, as a NodeJs course project. The code is available in github and can be accessed from the Home Code link. <a href=\"https://github.com/brunogaudino/casadocodigo/\" target=\"_blank\">Casa do código home</a>.\r\n                </p>\r\n              </h5>\r\n      <!--<hr>-->\r\n              <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/angular-alurapic/\" target=\"_blank\">Web application Angular</a></strong>\r\n                                      - Webapp development with <a href=\"https://angular.io/\" target=\"_blank\">angular</a>. The code is available in github and is accessible through the Webapp Angular link. <a href=\"https://github.com/brunogaudino/angular-alurapic/\" target=\"_blank\">webapp angular</a>.\r\n                </p>\r\n              </h5>\r\n      <!--<hr>-->\r\n              <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/website-workflow-gulp\" target=\"_blank\">Website workflow gulp</a></strong>\r\n                  - Workflow development with automatization tool <a href=\"http://gulpjs.com/\" target=\"_blank\">Gulp</a>.\r\n                                      The code is available in github and is accessible through the Website Workflow <a href=\"https://brunogaudino.github.io/website-workflow-gulp/\" target=\"_blank\">website workflow gulp</a>.\r\n                </p>\r\n              </h5>\r\n      <!--<hr>-->\r\n<!--\t\t\t\t\t\t\t\t<h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/aparecidanutricao\" target=\"_blank\">Aparecida Nutrition</a></strong>\r\n                                      - Web application development calculate body fat. A sample page can be accessed on the Aparecida nutrition link <a href=\"https://brunogaudino.github.io/aparecidanutricao/\" target=\"_blank\">Aparecida nutrition</a>.\r\n                </p>\r\n              </h5>-->\r\n      <!--<hr>-->\r\n<!--                <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/portal-news-rwd\" target=\"_blank\">News Portal Responsive</a></strong>\r\n                                      - Development a news web page responsive. A sample page can be accessed on the News Portal link <a href=\"https://brunogaudino.github.io/portal-news-rwd/\" target=\"_blank\">News Portal Responsive</a>.\r\n                </p>\r\n              </h5>-->\r\n      <!--<hr>-->\r\n<!--                <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/webpage-joao-da-silva\" target=\"_blank\">Web page João da Silva</a></strong>\r\n                                      - Development personal web page of fictional person(João da Silva) for HTML and CSS in <a href=\"http://www.alura.com.br/\">Alura course</a>. A sample page can be accessed on the João da Silva page link <a href=\"https://brunogaudino.github.io/webpage-joao-da-silva/\" target=\"_blank\">web page João da Silva</a>.\r\n                </p>\r\n              </h5>-->\r\n      <!--  PROJETOS/CURSOS  -->\r\n              <!--  PROJETOS  -->\r\n                              <h2>Projects <span>Developed projects</span></h2> \r\n                              <h5>\r\n                                  <p>\r\n                                      <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/developer-nodejs-project/\" target=\"_blank\">Developer nodejs project</a></strong>\r\n                                          - A project built with HTML5, CSS3, javascipt, node.js and mongodb, as a complement to the training. The code is available in github and is accessible through the link<a href = \"https://github.com/brunogaudino/developer-nodejs-project/\"target =\" _ blank \"> developer nodejs project</a>.\r\n                                  </p>\r\n                              </h5>\r\n                              <h5>\r\n                        <p>\r\n                          <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/shot-on-the-target\" target=\"_blank\">Shot on the target</a></strong>\r\n                                          - Development of a simple game with javascript in which the user needs to hit the target. This page is usually blocked by the browser for security, it is necessary to unlock to see the game by running the example page can be accessed on the link<a href = \"https://brunogaudino.github.io/shot-on-the-target/ \"target =\" _ blank \"> shot on the target </a>.\r\n                        </p>\r\n                      </h5>\r\n                      <!--<hr>-->\r\n                              <h5>\r\n                                  <p>\r\n                                      <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/minimalist-jekyll-blog\" target=\"_blank\">Minimalist jekyll blog</a></strong>\r\n                                      - Minimalist blog development using jekyll, with posts lists, pagination, commentary with <a href=\"https://disqus.com/\" target=\"_blank\">disqus</a>, and contact form. A sample page can be accessed on the <a href=\"https://brunogaudino.github.io/minimalist-jekyll-blog/\" target=\"_blank\">minimalist jekyll blog</a>.\r\n                                  </p>\r\n                              </h5>\r\n                              <!--<hr>-->\r\n                              <h5>\r\n                                  <p>\r\n                                      <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/framework-grid-css\" target=\"_blank\">Framework Grid CSS</a></strong>\r\n                                      - CSS framework adaptation based on grid concept, for facilitates the website interface development. A sample page can be accessed on the Framework Grid CSS. <a href=\"https://brunogaudino.github.io/framework-grid-css/\" target=\"_blank\">framework grid css</a>.\r\n                                  </p>\r\n                              </h5>\r\n                              <!--<hr>-->\r\n<!--\t\t\t\t\t\t\t\t<h5>\r\n                                  <p>\r\n                                      <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/calculate-gestation-time\" target=\"_blank\">Calculate gestation time</a></strong>\r\n                                      - Online gestation time calculator development. A sample page can be accessed on the Calculate gestation time link. <a href=\"https://brunogaudino.github.io/calculate-gestation-time/\" target=\"_blank\">Calculate Gestation Time</a>.\r\n                                  </p>\r\n                              </h5>-->\r\n                              <!--<hr>\r\n                              <h5>\r\n                                  <p>\r\n                                      <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/my-patients\" target=\"_blank\">My patients</a></strong>\r\n                                      - Desenvolvimento de uma aplicação web que calcula o IMC e adiciona novos pacientes a uma tabela usando javascript. A página de exemplo pode ser acessada no link <a href=\"https://brunogaudino.github.io/my-patients/\" target=\"_blank\">my patients</a>.\r\n                                  </p>\r\n                              </h5>-->\r\n              <!--  PROJETOS  -->\r\n              <!--  GUIA  -->\r\n              <!-- <h2>Guides <span>Web pages with information guides</span> </h2>\r\n              <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/guide-viewit-processes\" target=\"_blank\">Guide Viewit Processes</a></strong>\r\n                                      - Web page with process documentation in Viewit Mobile. A sample page can be accessed on the Guide Viewit Processes link <a href=\"https://brunogaudino.github.io/guide-viewit-processes/\" target=\"_blank\">Guide Viewit Processes</a>.\r\n                </p>\r\n              </h5>\r\n              <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/simple-git-guide\" target=\"_blank\">Simple Git Guide</a></strong>\r\n                                      - Development of a simple guide with some basic git commands using html, css for query. A sample page can be accessed on the Simple Git Guide link <a href=\"https://brunogaudino.github.io/simple-git-guide/\" target=\"_blank\">Simple Git Guide</a>.\r\n                </p>\r\n              </h5> -->\r\n      <!--  GUIA  -->\r\n                          </article>\r\n      <!--<hr>-->\r\n      <!--\r\n              <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/sources-exercises\" target=\"_blank\">Sources exercises</a></strong>\r\n                  - Desenvolvimento de uma lista com exercícios resolvidos. A página de exemplo com os exercícios pode ser acessada no link <a href=\"https://brunogaudino.github.io/sources-exercises/\" target=\"_blank\">sources exercises</a>.\r\n                </p>\r\n              </h5>\r\n      -->\r\n              <!--<h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/projects-list\" target=\"_blank\">Projects list</a></strong>\r\n                  - Página com uma lista de pequenos projetos desenvolvidos e em desenvolvimento como menus, layout em colunas, galeria com efeitos em css3, etc. Desenvolvidos com html, css e javascript/jquery. A página de exemplo com os exercícios pode ser acessada no link <a href=\"https://brunogaudino.github.io/projects-list/\" target=\"_blank\">projects list</a>.\r\n                </p>\r\n              </h5>-->\r\n      <!--  SOURCES  -->\r\n      <!--<hr>\r\n             <h5>\r\n               <p>\r\n                 <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/flip-effect-cards\" target=\"_blank\">Cards Flip Effect CSS3</a></strong>\r\n                 - Página html desenvolvida utilizando html, css, javascript/jQuery e o plugin <a href=\"http://www.jacklmoore.com/colorbox/\" target=\"_blank\">colorbox</a>. <br />\r\n                A página contém 5 cartas que são rotacionadas quando o mouse é possicionado sobre elas, e ao clicar o efeito colorbox é aplicado sobre a carta clicada. A página de exemplo pode ser acessada no link <a href=\"https://brunogaudino.github.io/flip-effect-cards/\" target=\"_blank\">flip card effect cards</a>.\r\n               </p>\r\n             </h5>\r\n      <hr>\r\n              <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/gallery-css3\" target=\"_blank\">Gallery CSS 3</a></strong>\r\n                  - Página html desenvolvida utilizando html, e efeitos css3. A página de exemplo pode ser acessada no link <a href=\"https://brunogaudino.github.io/gallery-css3/\" target=\"_blank\">gallery css3</a>.\r\n                </p>\r\n              </h5>\r\n      <hr>\r\n              <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/columns-layout\" target=\"_blank\">Columns layout</a></strong>\r\n                  - Desenvolvimento de estrutura html/css para construção de websites com dimensões de largura e altura do monitor de 1024px por 768px utilizando 2 e 3 colunas. A página de exemplo pode ser acessada no link <a href=\"https://brunogaudino.github.io/columns-layout/\" target=\"_blank\">columns layout</a>.\r\n                </p>\r\n              </h5>\r\n      <hr>\r\n              <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/selection-checkbox-js\" target=\"_blank\">Selection checkbox js</a></strong>\r\n                  - Desenvolvimento de página html utilizando alguns itens de formulário(radio, checkbox), a página mostra um exemplo de seleção de itens checkbox ao selecionar um item radio. A página de exemplo pode ser acessada no link <a href=\"https://brunogaudino.github.io/selection-checkbox-js/\" target=\"_blank\">selection checkbox js</a>.\r\n                </p>\r\n              </h5>\r\n      <hr>\r\n               <h5>\r\n                 <p>\r\n                   <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/megamenu\" target=\"_blank\">Megamenu</a></strong>\r\n                   - Criação de um mega menu com várias opções e dimensões definidas utilizando html e css sem javascript. A página de exemplo pode ser acessada no link <a href=\"https://brunogaudino.github.io/megamenu/\" target=\"_blank\">megamenu</a>.\r\n                 </p>\r\n               </h5>\r\n      <hr>\r\n              <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/table-to-list-convert\" target=\"_blank\">Table to list convert</a></strong>\r\n                      - Página em html com uma tabela(table) e a sua conversão em lista (ul - li) utilizando jQuery, esse código foi desenvolvido para mostrar como alterar o html com jQuery. A página de exemplo no github está no link <a href=\"https://brunogaudino.github.io/table-to-list-convert/\" target=\"_blank\">table to list convert</a>.\r\n                </p>\r\n                  </h5>\r\n      <hr>\r\n                  <h5>\r\n                <p>\r\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;<strong><a href=\"https://github.com/brunogaudino/cadastro-teste\" target=\"_blank\">Cadastro teste</a></strong>\r\n                      - Desenvolvimento de página de cadastro com formulário e validação de dados, nesse projeto foi utilizado um plugin de validação de dados o jquery validate que pode ser obtido no site <a href=\"http://bassistance.de/jquery-plugins/jquery-plugin-validation/\" target=\"_blank\">Bassistance</a>.\r\n                </p>\r\n                  </h5>\r\n                  <h5>\r\n                      <i class=\"fa fa-globe\"></i>&nbsp;&nbsp;<strong><a href=\"#\" target=\"_blank\">Project 5</a></strong>\r\n                      - Dicta causae meliore ex vel, in vix erant integre petentium. Vix ei nisl scripta recusabo,\r\n                      eam doming blandit facilisis.\r\n                  </h5>\r\n                  <h5>\r\n                      <i class=\"fa fa-cog\"></i>&nbsp;&nbsp;<strong><a href=\"#\" target=\"_blank\">Project 6</a></strong>\r\n                      - Inermis recusabo elaboraret mea et, dicat neglegentur vim te. Nec et sanctus scriptorem,\r\n                      usu ex sapientem gubergren. Tamquam admodum ei usu.\r\n                  </h5> -->\r\n          </section>\r\n          \r\n          <!-- social -->\r\n          <bg-social></bg-social>\r\n\r\n        </div>\r\n\r\n      </section>\r\n"
+module.exports = "<main class=\"hide\">\n  \n  <bg-logo-presentation></bg-logo-presentation>\n\n  <bg-menu></bg-menu>\n\n  <div class=\"container\">\n    <div class=\"row text-align-center margin-top20\">\n      <div class=\"col-12\">        \n        <h1 class=\"margin-bottom20\">Lab</h1>\n        <p class=\"text-align-left\">In the section Lab contains some projects than I developed.</p>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"container\">\n    <div class=\"row text-align-center margin-top20\">\n        <div class=\"col-md-12 col-12 margin-bottom20\">\n          <h2>Course projects</h2>\n          <p>Projects developed during courses.</p>\n        </div>\n        <div class=\"col-md-4 col-12 margin-bottom20\">\n          <div class=\"card\">\n            <div class=\"card-header\">\n              <i class=\"fa fa-2x fa-github\"></i><h3>API Payment</h3>\n            </div>\n            <div class=\"card-body text-align-left\">\n              <blockquote class=\"blockquote mb-0\">\n                <p>NodeJs API development. The code is available in github and is accessible through the link below.</p>\n                <footer><cite title=\"Link api payment\"><a href=\"https://github.com/brunogaudino/api.payment\" target=\"_blank\">API Payment</a></cite></footer>\n              </blockquote>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4 col-12 margin-bottom20\">\n          <div class=\"card\">\n            <div class=\"card-header\">\n              <i class=\"fa fa-2x fa-github\"></i><h3>Casa do código</h3>\n            </div>\n            <div class=\"card-body text-align-left\">\n              <blockquote class=\"blockquote mb-0\">\n                <p>Development of the home of the \"Casa do código\" website in Nodejs, as a NodeJs course project. The code is available in github and can be accessed from the Home Code link.</p>\n                <footer><cite title=\"Link api payment\"><a href=\"https://github.com/brunogaudino/casadocodigo/\" target=\"_blank\">Casa do código home</a></cite></footer> \n              </blockquote>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4 col-12 margin-bottom20\">\n          <div class=\"card\">\n            <div class=\"card-header\">\n              <i class=\"fa fa-2x fa-github\"></i><h3>Webapp Angular</h3>\n            </div>\n            <div class=\"card-body text-align-left\">\n              <blockquote class=\"blockquote mb-0\">\n                <p>Web application development with angular. The code is available in github and is accessible through the Webapp Angular link.</p>\n                <footer><cite title=\"Link api payment\"><a href=\"https://github.com/brunogaudino/angular-alurapic/\" target=\"_blank\">webapp angular</a></cite></footer> \n              </blockquote>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-md-4 col-12 margin-bottom20\">\n          <div class=\"card\">\n            <div class=\"card-header\">\n              <i class=\"fa fa-2x fa-github\"></i><h3>Workflow gulp</h3>\n            </div>\n            <div class=\"card-body text-align-left\">\n              <blockquote class=\"blockquote mb-0\">\n                <p>Workflow development with automatization tool gulp. The code is available in github and is accessible through the Website Workflow link below.</p>\n                <footer><cite title=\"Link api payment\"><a href=\"https://brunogaudino.github.io/website-workflow-gulp/\" target=\"_blank\">website workflow gulp</a>, <a href=\"http://gulpjs.com/\" target=\"_blank\">gulp</a></cite></footer> \n              </blockquote>\n            </div>\n          </div>\n        </div>\n    </div>\n  </div>\n\n  <div class=\"container\">\n      <div class=\"row text-align-center margin-top20\">\n          <div class=\"col-md-12 col-12 margin-bottom20\">\n            <h2>Course projects</h2>\n            <p>Projects developed during courses.</p>\n          </div>\n          <div class=\"col-md-4 col-12 margin-bottom20\">\n            <div class=\"card\">\n              <div class=\"card-header\">\n                <i class=\"fa fa-2x fa-github\"></i><h3>Developer nodejs project</h3>\n              </div>\n              <div class=\"card-body text-align-left\">\n                <blockquote class=\"blockquote mb-0\">\n                  <p>A project built with HTML5, CSS3, javascipt, node.js and mongodb, as a complement to the training. The code is available in github and is accessible through the link developer nodejs project.</p>\n                  <footer>\n                    <cite title=\"Link api payment\"><a href= \"https://github.com/brunogaudino/developer-nodejs-project/\"target =\" _ blank \">developer nodejs project</a></cite>\n                  </footer>\n                </blockquote>\n              </div>\n            </div>\n          </div>\n  \n          <div class=\"col-md-4 col-12 margin-bottom20\">\n            <div class=\"card\">\n              <div class=\"card-header\">\n                <i class=\"fa fa-2x fa-github\"></i><h3>Shot on the target</h3>\n              </div>\n              <div class=\"card-body text-align-left\">\n                <blockquote class=\"blockquote mb-0\">                \n                  <p>Development of a simple game with javascript in which the user needs to hit the target. This page is usually blocked by the browser for security, it is necessary to unlock to see the game by running the example page can be accessed on the link shot on the target.</p>\n                  <footer>\n                    <cite title=\"Link api payment\"><a href=\"https://brunogaudino.github.io/shot-on-the-target/ \"target =\" _ blank \">shot on the target </a></cite>\n                  </footer>\n                </blockquote>\n              </div>\n            </div>\n          </div>\n  \n          <div class=\"col-md-4 col-12 margin-bottom20\">\n            <div class=\"card\">\n              <div class=\"card-header\">\n                <i class=\"fa fa-2x fa-github\"></i><h3>Minimalist jekyll blog</h3>\n              </div>\n              <div class=\"card-body text-align-left\">\n                <blockquote class=\"blockquote mb-0\">\n                  <p>Minimalist blog development using jekyll, with posts lists, pagination, commentary with disqus, and contact form. A sample page can be accessed on the minimalist jekyll blog.</p>\n                  <footer>\n                    <cite title=\"Link api payment\"><a href=\"https://brunogaudino.github.io/minimalist-jekyll-blog/\" target=\"_blank\">minimalist jekyll blog</a>, <a href=\"https://disqus.com/\" target=\"_blank\">disqus</a></cite>\n                  </footer>\n                </blockquote>\n              </div>\n            </div>\n          </div>\n  \n          <div class=\"col-md-4 col-12 margin-bottom20\">\n              <div class=\"card\">\n                <div class=\"card-header\">\n                  <i class=\"fa fa-2x fa-github\"></i><h3>Framework Grid CSS</h3>\n                </div>\n                <div class=\"card-body text-align-left\">\n                  <blockquote class=\"blockquote mb-0\">\n                    <p>CSS framework adaptation based on grid concept, for facilitates the website interface development. A sample page can be accessed on the Framework Grid CSS.</p>\n                    <footer>\n                      <cite title=\"Link api payment\"><a href=\"https://brunogaudino.github.io/framework-grid-css/\" target=\"_blank\">framework grid css</a></cite>\n                    </footer>\n                  </blockquote>\n                </div>\n              </div>\n            </div>\n  \n      </div>\n    </div>\n\n  <bg-social-network></bg-social-network>\n\n  <bg-footer></bg-footer>\n\n</main>\n\n<bg-load-spinner></bg-load-spinner>"
 
 /***/ }),
 
@@ -504,14 +564,20 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 var LabComponent = /** @class */ (function () {
     function LabComponent() {
     }
+    LabComponent.prototype.ngOnInit = function () { };
     LabComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            template: __webpack_require__(/*! ./lab.component.html */ "./src/app/content/lab/lab.component.html")
-        })
+            template: __webpack_require__(/*! ./lab.component.html */ "./src/app/content/lab/lab.component.html"),
+            styles: [__webpack_require__(/*! ./lab.component.css */ "./src/app/content/lab/lab.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
     ], LabComponent);
     return LabComponent;
 }());
@@ -534,8 +600,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _lab_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lab.component */ "./src/app/content/lab/lab.component.ts");
-/* harmony import */ var _social_social_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../social/social.module */ "./src/app/social/social.module.ts");
-/* harmony import */ var src_app_menu_menu_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/menu/menu.module */ "./src/app/menu/menu.module.ts");
+/* harmony import */ var src_app_shared_component_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/shared/component/menu/menu.module */ "./src/app/shared/component/menu/menu.module.ts");
+/* harmony import */ var src_app_shared_component_social_network_social_network_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/shared/component/social-network/social-network.module */ "./src/app/shared/component/social-network/social-network.module.ts");
+/* harmony import */ var src_app_shared_component_footer_footer_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/shared/component/footer/footer.module */ "./src/app/shared/component/footer/footer.module.ts");
+/* harmony import */ var src_app_shared_component_load_spinner_load_spinner_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/shared/component/load-spinner/load-spinner.module */ "./src/app/shared/component/load-spinner/load-spinner.module.ts");
+/* harmony import */ var src_app_shared_component_logo_presentation_logo_presentation_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/shared/component/logo-presentation/logo-presentation.module */ "./src/app/shared/component/logo-presentation/logo-presentation.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -548,19 +617,25 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 var LabModule = /** @class */ (function () {
     function LabModule() {
     }
     LabModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            declarations: [
-                _lab_component__WEBPACK_IMPORTED_MODULE_3__["LabComponent"]
-            ],
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
-                _social_social_module__WEBPACK_IMPORTED_MODULE_4__["SocialModule"],
-                src_app_menu_menu_module__WEBPACK_IMPORTED_MODULE_5__["MenuModule"]
+                src_app_shared_component_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__["MenuModule"],
+                src_app_shared_component_social_network_social_network_module__WEBPACK_IMPORTED_MODULE_5__["SocialNetworkModule"],
+                src_app_shared_component_footer_footer_module__WEBPACK_IMPORTED_MODULE_6__["FooterModule"],
+                src_app_shared_component_load_spinner_load_spinner_module__WEBPACK_IMPORTED_MODULE_7__["LoadSpinnerModule"],
+                src_app_shared_component_logo_presentation_logo_presentation_module__WEBPACK_IMPORTED_MODULE_8__["LogoPresentationModule"]
+            ],
+            declarations: [
+                _lab_component__WEBPACK_IMPORTED_MODULE_3__["LabComponent"]
             ],
             exports: [
                 _lab_component__WEBPACK_IMPORTED_MODULE_3__["LabComponent"]
@@ -581,7 +656,7 @@ var LabModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbnRlbnQvcmVzdW1lL3Jlc3VtZS5jb21wb25lbnQuY3NzIn0= */"
+module.exports = ""
 
 /***/ }),
 
@@ -592,7 +667,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"resume\">\r\n\r\n  <bg-menu></bg-menu>\r\n  \r\n  <div class=\"container\">\r\n\r\n    <h3 class=\"text-align-center\">Resume</h3>\r\n\r\n\r\n\r\n\r\n        <section id=\"resume-info\">\r\n            <h2 class=\"text-align-center\">Employment in IT area</h2>\r\n            <article>\r\n                <header>\r\n                    <h2>Analyst developer web - Front-end</h2>\r\n                    <span>at <a href=\"http://www.brq.com/\" target=\"_blank\">BRQ Digital Solutions</a> <time> - 2017 to Present</time></span>\r\n                </header>\r\n                <p>Analyst developer web front-end, development with HTML, CSS, JavaScript, NodeJS, Angular.</p>\r\n            </article>\r\n            <article>\r\n                <header>\r\n                    <h2>Front-end developer</h2>\r\n                    <span>at <a href=\"https://www.linkedin.com/company/viewit-tecnologia/\" target=\"_blank\">Viewit Mobile</a> <time> - 2014 to 2017</time></span>\r\n                </header>\r\n                <p>Development of mobile-oriented websites in a Mac OS development environment using HTML, CSS, JavaScript, Jquery, Sass, Git technologies.</p>\r\n            </article>\r\n            <article>\r\n                <header>\r\n                    <h2>Front-end / Web designer</h2>\r\n                    <span>at <a href=\"https://br.ongame.net/\" target=\"_blank\">Ongame online games </a> <time> - 2010 to 2014</time></span>\r\n                </header>\r\n                <p>Ongame is the frist brazilian company to distribute online games in Brazil, located in the city of São Paulo, it takes care of all the game placement and supports all players registered.</p>\r\n            </article>\r\n            <h2 class=\"text-align-center\">Employment in education area</h2>\r\n            <article>\r\n                <header>\r\n                    <h2>Teacher/Coordinator</h2>\r\n                    <span>at <a href=\"http://eteccamargoaranha.com.br/\" target=\"_blank\">Technical School Camargo Aranha</a> <time> - 2011 to 2012</time></span>\r\n                </header>\r\n                <p>I taught the courses of Applications for Projects, for the courses of Computer science and Computer science for Internet. Computerized Accounting Applications for Accounting Course. I also acted as coordinator of the Informatics course.</p>\r\n            </article>\r\n            <h2 class=\"text-align-center\">Employment in other areas</h2>\r\n            <article>\r\n                <header>\r\n                    <h2>Administrative assistant for Quality Management</h2>\r\n                    <span>Rigiline Ind. e Com. de Plásticos LTDA <time> - 2009 to 2010</time></span>\r\n                </header>\r\n                <p>Development routines for quality assurance using quality tools, developed indicative graphics for quality control, documentation control.</p>\r\n            </article>\r\n            <article>\r\n                <header>\r\n                    <h2>Computing instructor</h2>\r\n                    <span>Escola Escotec LTDA <time> - 2009</time></span>\r\n                </header>\r\n                <p>Instructor - He taught computer science at basic level, Windows XP, Word 2007, Excel 2007, Internet.</p>\r\n            </article>\r\n        </section>\r\n        \r\n        <!--h2 class=\"text-align-center\">Employment</h2>\r\n        <article>\r\n            <header>\r\n                <h2>Analyst developer web - Front-end</h2>\r\n                <span><address>Edinburgh, UK</address><time>2015 to Present</time></span>\r\n            </header>\r\n            <p>Lorem ipsum dolor sit amet, his et viris petentium philosophia,\r\n            at vix debitis deleniti. At vis velit volumus alienum, agam vocent assueverit usu ex. </p>\r\n        </article>\r\n        <section class=\"thirteen columns\">\r\n            <h1>Education</h1>\r\n            <article>\r\n                <header>\r\n                    <h1>MSc in Advanced Computing</h1>\r\n                    <span>University of Glasgow</span>\r\n                    <span><address>Glasgow, UK</address><time>2011 to 2012</time></span>\r\n                </header>\r\n                <p>\r\n                    <em>Thesis: Nemore verear an eos, duo accusam placerat urbanitas at, vix libris putent voluptaria ei.</em>\r\n                </p>\r\n            </article>\r\n            <article>\r\n                <header>\r\n                    <h1>Major in Computer Science</h1>\r\n                    <span>University of College London</span>\r\n                    <span><address>London, UK</address><time>2007 to 2011</time></span>\r\n                </header>\r\n                <p>\r\n                    <em>Dissertation: Te dicit scripta nec, nec illud decore partem et.</em>\r\n                </p>\r\n            </article>\r\n        </section>\r\n\r\n        <section class=\"thirteen columns\">\r\n            <h1>Programming Skills</h1>\r\n            <article>\r\n                <header>\r\n                    <h1>Software engineering &amp; web development</h1>\r\n                </header>\r\n                <p>\r\n                    <i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star-half-o\"></i>\r\n                    &nbsp;&nbsp;<em>C/C++ &amp; Objective-C</em>\r\n                </p><p>\r\n                    <i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star-o\"></i>\r\n                    &nbsp;&nbsp;<em>Java</em>, <em>Python</em>, <em>PHP</em> &amp; <em>Git</em>\r\n                </p>\r\n                <p>\r\n                    <i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star-half-o\"></i><i class=\"fa fa-star-o\"></i>\r\n                    &nbsp;&nbsp;<em>HTML/CSS3</em> &amp; <em>Javascript</em>\r\n                </p>\r\n            </article>\r\n        </section>\r\n\r\n        <section class=\"thirteen columns\">\r\n            <h1>Initiatives</h1>\r\n            <article>\r\n                <header>\r\n                    <h1>Graduate Summer Student</h1>\r\n                    <span><address>University of Glasgow, UK</address><time>2013</time></span>\r\n                </header>\r\n                <p>\r\n                    Courses: Nec et duis iriure temporibus, ullum adolescens eam ea.\r\n                </p>\r\n            </article>\r\n            <article>\r\n                <header>\r\n                    <h1>Student Volunteer</h1>\r\n                    <span><address>British RedCross, Glasgow, UK</address><time>2013</time></span>\r\n                </header>\r\n                <p>\r\n                    Fundraiser: Lorem adipiscing ei eam, eros conceptam maiestatis ne sea.\r\n                </p>\r\n            </article>\r\n        </section>\r\n\r\n        <section class=\"thirteen columns\">\r\n            <h1>Hobbies</h1>\r\n            <article>\r\n                <p>Music, Movies, Tennis, Travelling, Cooking.</p>\r\n            </article>\r\n        </section-->\r\n\r\n    <bg-social></bg-social>\r\n\r\n  </div>\r\n\r\n</section>"
+module.exports = "<main class=\"hide\">\n  \n    <bg-logo-presentation></bg-logo-presentation>\n  \n    <bg-menu></bg-menu>\n  \n    <div class=\"container\">\n      <div class=\"row text-align-center margin-top20\">\n        <div class=\"col-12\">        \n          <h1 class=\"margin-bottom20\">Resume</h1>\n          <p class=\"text-align-left\">Section Resume contains informations about my work experience and works realized in companies.</p>\n        </div>\n      </div>\n    </div>\n\n  <div class=\"container\">\n    <div class=\"row text-align-center margin-top20\">\n      <div class=\"col-1\"></div>\n      <div class=\"col-10 card padding-top15 padding-bottom15\">\n        <h2 class=\"margin-bottom20\">I.T. Companies</h2>       \n        <div class=\"accordion text-align-left\" id=\"accordion-course\">\n\n          <div class=\"card\">\n            <div class=\"card-header\" id=\"headingOne\">\n              <h2 class=\"mb-0\">\n                <i class=\"fa fa-xs fa-laptop\"></i>\n                <button class=\"btn btn-link collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseOne\" aria-expanded=\"false\" aria-controls=\"collapseOne\">\n                  BRQ Digital Solutions\n                </button>\n              </h2>\n            </div>\n        \n            <div id=\"collapseOne\" class=\"collapse\" aria-labelledby=\"headingOne\" data-parent=\"#accordion-course\">\n              <div class=\"card-body\">\n                <p>\n                  <i class=\"fa fa-github\"></i>&nbsp;&nbsp;\n                  <strong>\n                    <a href=\"https://github.com/brunogaudino/api.payment\" target=\"_blank\">API Payment</a>\n                  </strong> \n                  - NodeJs API development. The code is available in github and is accessible through the link \n                  <a href=\"https://github.com/brunogaudino/api.payment\" target=\"_blank\">API Payment</a>. \n                </p>\n              </div>\n            </div>\n          </div>\n         \n          <div class=\"card\">\n            <div class=\"card-header\" id=\"headingTwo\">\n              <h2 class=\"mb-0\">\n                <i class=\"fa fa-xs fa-mobile\"></i>\n                <button class=\"btn btn-link collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">\n                  Viewit Mobile\n                </button>\n              </h2>\n            </div>\n            <div id=\"collapseTwo\" class=\"collapse\" aria-labelledby=\"headingTwo\" data-parent=\"#accordion-course\">\n              <div class=\"card-body\">\n                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.\n              </div>\n            </div>\n          </div>\n\n          <div class=\"card\">\n            <div class=\"card-header\" id=\"headingThree\">\n              <h2 class=\"mb-0\">\n                <i class=\"fa fa-xs fa-gamepad\"></i>\n                <button class=\"btn btn-link collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">\n                  Ongame Entertainment\n                </button>\n              </h2>\n            </div>\n            <div id=\"collapseThree\" class=\"collapse\" aria-labelledby=\"headingThree\" data-parent=\"#accordion-course\">\n              <div class=\"card-body\">\n                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.\n              </div>\n            </div>\n          </div>\n\n        </div>\n\n      </div>\n      <div class=\"col-1\"></div>\n    </div>\n  </div>\n\n  <div class=\"container\">\n      <div class=\"row text-align-center margin-top20\">\n        <div class=\"col-1\"></div>\n        <div class=\"col-10 card padding-top15 padding-bottom15\">\n          <h2 class=\"margin-bottom20\">Education experience</h2>\n          <div class=\"accordion text-align-left\" id=\"accordion-projects\">\n            \n            <div class=\"card\">\n              <div class=\"card-header\" id=\"headingOne\">\n                <h2 class=\"mb-0\">\n                  <i class=\"fa fa-xs fa-book\"></i>\n                  <button class=\"btn btn-link collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapseOne\">\n                    ETEC - Carmargo Aranha\n                  </button>\n                </h2>\n              </div>\n          \n              <div id=\"collapse1\" class=\"collapse\" aria-labelledby=\"headingOne\" data-parent=\"#accordion-projects\">\n                <div class=\"card-body\">\n                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.\n                </div>\n              </div>\n            </div>\n            <div class=\"card\">\n                <div class=\"card-header\" id=\"headingOne\">\n                  <h2 class=\"mb-0\">\n                    <i class=\"fa fa-xs fa-desktop\"></i>\n                    <button class=\"btn btn-link collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapseOne\">\n                      Escotec\n                    </button>\n                  </h2>\n                </div>\n            \n                <div id=\"collapse1\" class=\"collapse\" aria-labelledby=\"headingOne\" data-parent=\"#accordion-projects\">\n                  <div class=\"card-body\">\n                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.\n                  </div>\n                </div>\n              </div>\n          </div>\n        </div>\n        <div class=\"col-1\"></div>\n      </div>\n    </div>\n\n   <div class=\"container\">\n    <div class=\"row text-align-center margin-top20\">\n      <div class=\"col-1\"></div>\n      <div class=\"col-10 card padding-top15 padding-bottom15\">\n        <h2 class=\"margin-bottom20\">Others companies</h2>\n        <div class=\"accordion text-align-left\" id=\"accordion-projects\">\n\n          <div class=\"card\">\n            <div class=\"card-header\" id=\"headingOne\">\n              <h2 class=\"mb-0\">\n                <i class=\"fa fa-xs fa-building\"></i>\n                <button class=\"btn btn-link collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapse1\" aria-expanded=\"false\" aria-controls=\"collapseOne\">\n                  Collapsible Group Item #1\n                </button>\n              </h2>\n            </div>\n        \n            <div id=\"collapse1\" class=\"collapse\" aria-labelledby=\"headingOne\" data-parent=\"#accordion-projects\">\n              <div class=\"card-body\">\n                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.\n              </div>\n            </div>\n          </div>\n\n          <div class=\"card\">\n            <div class=\"card-header\" id=\"headingTwo\">\n              <h2 class=\"mb-0\">\n                <i class=\"fa fa-xs fa-industry\"></i>\n                <button class=\"btn btn-link collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapse2\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">\n                  Collapsible Group Item #2\n                </button>\n              </h2>\n            </div>\n            <div id=\"collapse2\" class=\"collapse\" aria-labelledby=\"headingTwo\" data-parent=\"#accordion-projects\">\n              <div class=\"card-body\">\n                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.\n              </div>\n            </div>\n          </div>\n\n        </div>\n      </div>\n      <div class=\"col-1\"></div>\n    </div>\n  </div>\n\n  <bg-social-network></bg-social-network>\n\n  <bg-footer></bg-footer>\n\n</main>\n\n<bg-load-spinner></bg-load-spinner>\n"
 
 /***/ }),
 
@@ -613,15 +688,20 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 var ResumeComponent = /** @class */ (function () {
     function ResumeComponent() {
     }
+    ResumeComponent.prototype.ngOnInit = function () { };
     ResumeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             template: __webpack_require__(/*! ./resume.component.html */ "./src/app/content/resume/resume.component.html"),
             styles: [__webpack_require__(/*! ./resume.component.css */ "./src/app/content/resume/resume.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [])
     ], ResumeComponent);
     return ResumeComponent;
 }());
@@ -641,11 +721,14 @@ var ResumeComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResumeModule", function() { return ResumeModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _resume_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resume.component */ "./src/app/content/resume/resume.component.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var src_app_social_social_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/social/social.module */ "./src/app/social/social.module.ts");
-/* harmony import */ var src_app_menu_menu_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/menu/menu.module */ "./src/app/menu/menu.module.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var src_app_shared_component_menu_menu_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/shared/component/menu/menu.module */ "./src/app/shared/component/menu/menu.module.ts");
+/* harmony import */ var src_app_shared_component_social_network_social_network_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/shared/component/social-network/social-network.module */ "./src/app/shared/component/social-network/social-network.module.ts");
+/* harmony import */ var src_app_shared_component_footer_footer_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/shared/component/footer/footer.module */ "./src/app/shared/component/footer/footer.module.ts");
+/* harmony import */ var src_app_shared_component_load_spinner_load_spinner_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/shared/component/load-spinner/load-spinner.module */ "./src/app/shared/component/load-spinner/load-spinner.module.ts");
+/* harmony import */ var src_app_shared_component_logo_presentation_logo_presentation_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/shared/component/logo-presentation/logo-presentation.module */ "./src/app/shared/component/logo-presentation/logo-presentation.module.ts");
+/* harmony import */ var _resume_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./resume.component */ "./src/app/content/resume/resume.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -658,22 +741,28 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 var ResumeModule = /** @class */ (function () {
     function ResumeModule() {
     }
     ResumeModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            declarations: [
-                _resume_component__WEBPACK_IMPORTED_MODULE_1__["ResumeComponent"]
-            ],
             imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
-                src_app_social_social_module__WEBPACK_IMPORTED_MODULE_4__["SocialModule"],
-                src_app_menu_menu_module__WEBPACK_IMPORTED_MODULE_5__["MenuModule"]
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
+                src_app_shared_component_menu_menu_module__WEBPACK_IMPORTED_MODULE_3__["MenuModule"],
+                src_app_shared_component_social_network_social_network_module__WEBPACK_IMPORTED_MODULE_4__["SocialNetworkModule"],
+                src_app_shared_component_footer_footer_module__WEBPACK_IMPORTED_MODULE_5__["FooterModule"],
+                src_app_shared_component_load_spinner_load_spinner_module__WEBPACK_IMPORTED_MODULE_6__["LoadSpinnerModule"],
+                src_app_shared_component_logo_presentation_logo_presentation_module__WEBPACK_IMPORTED_MODULE_7__["LogoPresentationModule"]
+            ],
+            declarations: [
+                _resume_component__WEBPACK_IMPORTED_MODULE_8__["ResumeComponent"]
             ],
             exports: [
-                _resume_component__WEBPACK_IMPORTED_MODULE_1__["ResumeComponent"]
+                _resume_component__WEBPACK_IMPORTED_MODULE_8__["ResumeComponent"]
             ]
         })
     ], ResumeModule);
@@ -684,32 +773,349 @@ var ResumeModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/menu/menu.component.css":
-/*!*****************************************!*\
-  !*** ./src/app/menu/menu.component.css ***!
-  \*****************************************/
+/***/ "./src/app/shared/component/footer/footer.component.css":
+/*!**************************************************************!*\
+  !*** ./src/app/shared/component/footer/footer.component.css ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/*Menu Hamburger*/\r\n/*nav.navbar .container{\r\n    background: white;\r\n    padding: 20px 10px 10px 0px;\r\n    height: 100%;\r\n}\r\n  \r\n.backNav{\r\n    position: fixed;\r\n    background: rgba(10,23,55,0.5);\r\n    height: 100%;\r\n    width: 100%;\r\n    top: 0px;\r\n    z-index: 2;\r\n    display: none;\r\n}\r\n  \r\n.navbar.navbar-default{\r\n    position: fixed;\r\n    z-index: 3;\r\n    height: 100%;\r\n    width: 140px;\r\n    top: 0px;\r\n    right: -140px;\r\n    border-radius: 0px !important;\r\n}\r\n  \r\n.navbar.navbar-default .container .navbar-header,\r\n.navbar.navbar-default .container .navbar-header a{\r\n    width: 100%;\r\n    text-align: center;\r\n}\r\n\r\n.navbar.navbar-default #navbar ul.nav{\r\n    width: 100%;\r\n}\r\n\r\n.navbar.navbar-default #navbar ul.nav li{\r\n    width: 100%;\r\n}\r\n\r\n.navbar.navbar-default #navbar ul.nav li a{\r\n    text-align: left;\r\n}*/\r\n/*@media (max-width: 767px) {\r\n    \r\n      span.fa{\r\n        cursor: pointer;\r\n        display: inline;\r\n        margin-top: 5px;\r\n        margin-left: 20px;\r\n        padding: 3px;\r\n        right: 15px;\r\n        position: absolute;\r\n        background-color: white;\r\n        border: 1px solid black;\r\n        border-radius: 5px;\r\n            -webkit-border-radius: 5px;\r\n            -moz-border-radius: 5px;\r\n            -ms-border-radius: 5px;\r\n            -o-border-radius: 5px;\r\n      }\r\n    \r\n      span.fa:before{}\r\n    \r\n      #wrap{\r\n        position: relative;\r\n      }\r\n    \r\n      nav.navbar .container{\r\n        position: absolute;\r\n        background: white;\r\n        padding: 20px 20px 10px 30px;\r\n        height: 100%;\r\n      }\r\n    \r\n      .backNav{\r\n        position: fixed;\r\n        background: rgba(10,23,55,0.5);\r\n        height: 100%;\r\n        width: 100%;\r\n        top: 0px;\r\n        z-index: 1;\r\n        display: none;\r\n      }\r\n    \r\n      .navbar.navbar-default{\r\n        position: fixed;\r\n        z-index: 3;\r\n        height: 100%;\r\n        width: 140px;\r\n        top: 0px;\r\n        right: -140px;\r\n      }\r\n    \r\n      .navbar.navbar-default .container .navbar-header,\r\n      .navbar.navbar-default .container .navbar-header a{\r\n        text-align: right;\r\n        margin: 0px 0px 0px auto;\r\n      }\r\n    \r\n      .navbar.navbar-default #navbar ul.nav li a{\r\n        text-align: right;\r\n      }\r\n    \r\n      .navbar-default .navbar-nav .open .dropdown-menu > li > a {\r\n        color: #6b6b6b;\r\n      }\r\n      .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {\r\n        color: #6b6b6b;\r\n      }\r\n      .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {\r\n        color: #6b6b6b;\r\n        background-color: #ffffff;\r\n      }\r\n    \r\n}  @media (max-width: 767px) */\r\n/*MENU hambuger*/\r\n/*Menu*/\r\n#menu-nav-open{\r\n  display: block;\r\n  margin-bottom: 0px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWVudS9tZW51LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsaUJBQWlCO0FBQ2pCOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7RUEwQ0U7QUFFRjs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzhCQXdFOEI7QUFDOUIsZ0JBQWdCO0FBRWhCLE9BQU87QUFDUDtFQUNFLGNBQWM7RUFDZCxrQkFBa0I7QUFDcEIiLCJmaWxlIjoic3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qTWVudSBIYW1idXJnZXIqL1xyXG4vKm5hdi5uYXZiYXIgLmNvbnRhaW5lcntcclxuICAgIGJhY2tncm91bmQ6IHdoaXRlO1xyXG4gICAgcGFkZGluZzogMjBweCAxMHB4IDEwcHggMHB4O1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG59XHJcbiAgXHJcbi5iYWNrTmF2e1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgYmFja2dyb3VuZDogcmdiYSgxMCwyMyw1NSwwLjUpO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICB0b3A6IDBweDtcclxuICAgIHotaW5kZXg6IDI7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG59XHJcbiAgXHJcbi5uYXZiYXIubmF2YmFyLWRlZmF1bHR7XHJcbiAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICB6LWluZGV4OiAzO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgd2lkdGg6IDE0MHB4O1xyXG4gICAgdG9wOiAwcHg7XHJcbiAgICByaWdodDogLTE0MHB4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogMHB4ICFpbXBvcnRhbnQ7XHJcbn1cclxuICBcclxuLm5hdmJhci5uYXZiYXItZGVmYXVsdCAuY29udGFpbmVyIC5uYXZiYXItaGVhZGVyLFxyXG4ubmF2YmFyLm5hdmJhci1kZWZhdWx0IC5jb250YWluZXIgLm5hdmJhci1oZWFkZXIgYXtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4ubmF2YmFyLm5hdmJhci1kZWZhdWx0ICNuYXZiYXIgdWwubmF2e1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5uYXZiYXIubmF2YmFyLWRlZmF1bHQgI25hdmJhciB1bC5uYXYgbGl7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLm5hdmJhci5uYXZiYXItZGVmYXVsdCAjbmF2YmFyIHVsLm5hdiBsaSBhe1xyXG4gICAgdGV4dC1hbGlnbjogbGVmdDtcclxufSovXHJcblxyXG4vKkBtZWRpYSAobWF4LXdpZHRoOiA3NjdweCkge1xyXG4gICAgXHJcbiAgICAgIHNwYW4uZmF7XHJcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgICAgIGRpc3BsYXk6IGlubGluZTtcclxuICAgICAgICBtYXJnaW4tdG9wOiA1cHg7XHJcbiAgICAgICAgbWFyZ2luLWxlZnQ6IDIwcHg7XHJcbiAgICAgICAgcGFkZGluZzogM3B4O1xyXG4gICAgICAgIHJpZ2h0OiAxNXB4O1xyXG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcclxuICAgICAgICBib3JkZXItcmFkaXVzOiA1cHg7XHJcbiAgICAgICAgICAgIC13ZWJraXQtYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gICAgICAgICAgICAtbW96LWJvcmRlci1yYWRpdXM6IDVweDtcclxuICAgICAgICAgICAgLW1zLWJvcmRlci1yYWRpdXM6IDVweDtcclxuICAgICAgICAgICAgLW8tYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gICAgICB9XHJcbiAgICBcclxuICAgICAgc3Bhbi5mYTpiZWZvcmV7fVxyXG4gICAgXHJcbiAgICAgICN3cmFwe1xyXG4gICAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgICAgfVxyXG4gICAgXHJcbiAgICAgIG5hdi5uYXZiYXIgLmNvbnRhaW5lcntcclxuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICAgICAgYmFja2dyb3VuZDogd2hpdGU7XHJcbiAgICAgICAgcGFkZGluZzogMjBweCAyMHB4IDEwcHggMzBweDtcclxuICAgICAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICAgIH1cclxuICAgIFxyXG4gICAgICAuYmFja05hdntcclxuICAgICAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICAgICAgYmFja2dyb3VuZDogcmdiYSgxMCwyMyw1NSwwLjUpO1xyXG4gICAgICAgIGhlaWdodDogMTAwJTtcclxuICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICB0b3A6IDBweDtcclxuICAgICAgICB6LWluZGV4OiAxO1xyXG4gICAgICAgIGRpc3BsYXk6IG5vbmU7XHJcbiAgICAgIH1cclxuICAgIFxyXG4gICAgICAubmF2YmFyLm5hdmJhci1kZWZhdWx0e1xyXG4gICAgICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgICAgICB6LWluZGV4OiAzO1xyXG4gICAgICAgIGhlaWdodDogMTAwJTtcclxuICAgICAgICB3aWR0aDogMTQwcHg7XHJcbiAgICAgICAgdG9wOiAwcHg7XHJcbiAgICAgICAgcmlnaHQ6IC0xNDBweDtcclxuICAgICAgfVxyXG4gICAgXHJcbiAgICAgIC5uYXZiYXIubmF2YmFyLWRlZmF1bHQgLmNvbnRhaW5lciAubmF2YmFyLWhlYWRlcixcclxuICAgICAgLm5hdmJhci5uYXZiYXItZGVmYXVsdCAuY29udGFpbmVyIC5uYXZiYXItaGVhZGVyIGF7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogcmlnaHQ7XHJcbiAgICAgICAgbWFyZ2luOiAwcHggMHB4IDBweCBhdXRvO1xyXG4gICAgICB9XHJcbiAgICBcclxuICAgICAgLm5hdmJhci5uYXZiYXItZGVmYXVsdCAjbmF2YmFyIHVsLm5hdiBsaSBhe1xyXG4gICAgICAgIHRleHQtYWxpZ246IHJpZ2h0O1xyXG4gICAgICB9XHJcbiAgICBcclxuICAgICAgLm5hdmJhci1kZWZhdWx0IC5uYXZiYXItbmF2IC5vcGVuIC5kcm9wZG93bi1tZW51ID4gbGkgPiBhIHtcclxuICAgICAgICBjb2xvcjogIzZiNmI2YjtcclxuICAgICAgfVxyXG4gICAgICAubmF2YmFyLWRlZmF1bHQgLm5hdmJhci1uYXYgLm9wZW4gLmRyb3Bkb3duLW1lbnUgPiBsaSA+IGE6aG92ZXIsIC5uYXZiYXItZGVmYXVsdCAubmF2YmFyLW5hdiAub3BlbiAuZHJvcGRvd24tbWVudSA+IGxpID4gYTpmb2N1cyB7XHJcbiAgICAgICAgY29sb3I6ICM2YjZiNmI7XHJcbiAgICAgIH1cclxuICAgICAgLm5hdmJhci1kZWZhdWx0IC5uYXZiYXItbmF2IC5vcGVuIC5kcm9wZG93bi1tZW51ID4gLmFjdGl2ZSA+IGEsIC5uYXZiYXItZGVmYXVsdCAubmF2YmFyLW5hdiAub3BlbiAuZHJvcGRvd24tbWVudSA+IC5hY3RpdmUgPiBhOmhvdmVyLCAubmF2YmFyLWRlZmF1bHQgLm5hdmJhci1uYXYgLm9wZW4gLmRyb3Bkb3duLW1lbnUgPiAuYWN0aXZlID4gYTpmb2N1cyB7XHJcbiAgICAgICAgY29sb3I6ICM2YjZiNmI7XHJcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcclxuICAgICAgfVxyXG4gICAgXHJcbn0gIEBtZWRpYSAobWF4LXdpZHRoOiA3NjdweCkgKi9cclxuLypNRU5VIGhhbWJ1Z2VyKi9cclxuXHJcbi8qTWVudSovXHJcbiNtZW51LW5hdi1vcGVue1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIG1hcmdpbi1ib3R0b206IDBweDtcclxufSJdfQ== */"
+module.exports = ""
 
 /***/ }),
 
-/***/ "./src/app/menu/menu.component.html":
-/*!******************************************!*\
-  !*** ./src/app/menu/menu.component.html ***!
-  \******************************************/
+/***/ "./src/app/shared/component/footer/footer.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/shared/component/footer/footer.component.html ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav id=\"menu-nav-open\" class=\"navbar navbar-default\">\r\n  <div class=\"container\">\r\n    <div id=\"navbar\">\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li><a [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\">Home</a></li>\r\n        <li><a [routerLink]=\"['/lab']\" routerLinkActive=\"router-link-active\">Lab</a></li>\r\n        <li><a [routerLink]=\"['/about']\" routerLinkActive=\"router-link-active\">About</a></li>\r\n        <li><a [routerLink]=\"['/resume']\" routerLinkActive=\"router-link-active\">Resume</a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n<!--<div class=\"backNav\"></div>\r\n<span class=\"fa fa-bars fa-lg\"></span>\r\n<nav class=\"navbar navbar-default\">\r\n  <div class=\"container\">\r\n    <div class=\"navbar-header\">\r\n      \r\n      <a class=\"navbar-brand\" href=\"/\"><i class=\"fa fa-home\"></i></a>\r\n\r\n      <a class=\"navbar-brand\" href=\"/\">\r\n        <img src=\"../assets/img/home/logo-bcw.png\" alt=\"Bruno Gaudino's logo\" title=\"Bruno Gaudino's logo\">\r\n      </a>\r\n    </div>\r\n    <div id=\"navbar\">\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li><a [routerLink]=\"['/lab']\" routerLinkActive=\"router-link-active\">Lab</a></li>\r\n        <li><a [routerLink]=\"['/recommendations']\" routerLinkActive=\"router-link-active\">Recommendations</a></li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>-->\r\n"
+module.exports = "<footer class=\"footer navbar-fixed-bottom\">\r\n  <p class=\"text-center\"><em>Developed using <a href=\"https://angular.io/\" alt=\"Angular link\" title=\"Angular link\" target=\"_blank\">Angular</a> and <a href=\"https://getbootstrap.com/\" alt=\"Bootstrap link\" title=\"Bootstrap link\" target=\"_blank\">Bootstrap</a>!</em></p>\r\n</footer>"
 
 /***/ }),
 
-/***/ "./src/app/menu/menu.component.ts":
-/*!****************************************!*\
-  !*** ./src/app/menu/menu.component.ts ***!
-  \****************************************/
+/***/ "./src/app/shared/component/footer/footer.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/shared/component/footer/footer.component.ts ***!
+  \*************************************************************/
+/*! exports provided: FooterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FooterComponent = /** @class */ (function () {
+    function FooterComponent() {
+    }
+    FooterComponent.prototype.ngOnInit = function () {
+    };
+    FooterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'bg-footer',
+            template: __webpack_require__(/*! ./footer.component.html */ "./src/app/shared/component/footer/footer.component.html"),
+            styles: [__webpack_require__(/*! ./footer.component.css */ "./src/app/shared/component/footer/footer.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FooterComponent);
+    return FooterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/component/footer/footer.module.ts":
+/*!**********************************************************!*\
+  !*** ./src/app/shared/component/footer/footer.module.ts ***!
+  \**********************************************************/
+/*! exports provided: FooterModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterModule", function() { return FooterModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _footer_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer.component */ "./src/app/shared/component/footer/footer.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var FooterModule = /** @class */ (function () {
+    function FooterModule() {
+    }
+    FooterModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]
+            ],
+            declarations: [
+                _footer_component__WEBPACK_IMPORTED_MODULE_2__["FooterComponent"]
+            ],
+            exports: [
+                _footer_component__WEBPACK_IMPORTED_MODULE_2__["FooterComponent"]
+            ]
+        })
+    ], FooterModule);
+    return FooterModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/component/load-spinner/load-spinner.component.css":
+/*!**************************************************************************!*\
+  !*** ./src/app/shared/component/load-spinner/load-spinner.component.css ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".wrap-spinner{\r\n  position: fixed;\r\n  z-index: 999;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: black;\r\n  opacity: 0.9;\r\n}\r\n.central-spinner{\r\n  left:50%;\r\n  top:50%;\r\n  position: relative;\r\n  margin-left:-60px; /* -1/2 width */\r\n  margin-top:-60px; /* -1/2 height */\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/shared/component/load-spinner/load-spinner.component.html":
+/*!***************************************************************************!*\
+  !*** ./src/app/shared/component/load-spinner/load-spinner.component.html ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- \r\nhttps://github.com/hackafro/angular-epic-spinners\r\n-->\r\n\r\n<div class=\"wrap-spinner\">\r\n  <div class=\"central-spinner\">\r\n    <app-atom-spinner\r\n      [animationDuration]=\"1000\"\r\n      [size]=\"130\"\r\n      [color]=\"'#8fd6ff'\">\r\n    </app-atom-spinner>\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/shared/component/load-spinner/load-spinner.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/shared/component/load-spinner/load-spinner.component.ts ***!
+  \*************************************************************************/
+/*! exports provided: LoadSpinnerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoadSpinnerComponent", function() { return LoadSpinnerComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LoadSpinnerComponent = /** @class */ (function () {
+    function LoadSpinnerComponent() {
+    }
+    LoadSpinnerComponent.prototype.ngOnInit = function () {
+        setTimeout(function () {
+            jquery__WEBPACK_IMPORTED_MODULE_1__('.hide').fadeIn('slow');
+            jquery__WEBPACK_IMPORTED_MODULE_1__(".wrap-spinner").fadeOut('fast');
+        }, 1000);
+    };
+    LoadSpinnerComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'bg-load-spinner',
+            template: __webpack_require__(/*! ./load-spinner.component.html */ "./src/app/shared/component/load-spinner/load-spinner.component.html"),
+            styles: [__webpack_require__(/*! ./load-spinner.component.css */ "./src/app/shared/component/load-spinner/load-spinner.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], LoadSpinnerComponent);
+    return LoadSpinnerComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/component/load-spinner/load-spinner.module.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/shared/component/load-spinner/load-spinner.module.ts ***!
+  \**********************************************************************/
+/*! exports provided: LoadSpinnerModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoadSpinnerModule", function() { return LoadSpinnerModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var angular_epic_spinners__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! angular-epic-spinners */ "./node_modules/angular-epic-spinners/fesm5/angular-epic-spinners.js");
+/* harmony import */ var _load_spinner_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./load-spinner.component */ "./src/app/shared/component/load-spinner/load-spinner.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var LoadSpinnerModule = /** @class */ (function () {
+    function LoadSpinnerModule() {
+    }
+    LoadSpinnerModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+                angular_epic_spinners__WEBPACK_IMPORTED_MODULE_2__["AtomSpinnerModule"]
+            ],
+            exports: [
+                _load_spinner_component__WEBPACK_IMPORTED_MODULE_3__["LoadSpinnerComponent"],
+                angular_epic_spinners__WEBPACK_IMPORTED_MODULE_2__["AtomSpinnerModule"]
+            ],
+            declarations: [
+                _load_spinner_component__WEBPACK_IMPORTED_MODULE_3__["LoadSpinnerComponent"]
+            ]
+        })
+    ], LoadSpinnerModule);
+    return LoadSpinnerModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/component/logo-presentation/logo-presentation.component.html":
+/*!*************************************************************************************!*\
+  !*** ./src/app/shared/component/logo-presentation/logo-presentation.component.html ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n  <div class=\"py-2 text-center\">\r\n    <!-- <img class=\"d-block mx-auto mb-4\" src=\"/docs/4.3/assets/brand/bootstrap-solid.svg\" alt=\"Teste\" width=\"72\" height=\"72\"> -->\r\n    <img width=\"80\" src=\"assets/img/home/logo-bcw.png\" alt=\"Bruno Gaudino's logo\" title=\"Bruno Gaudino's logo\">\r\n    <p class=\"lead\">Analyst developer web front-end</p>\r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/shared/component/logo-presentation/logo-presentation.component.ts":
+/*!***********************************************************************************!*\
+  !*** ./src/app/shared/component/logo-presentation/logo-presentation.component.ts ***!
+  \***********************************************************************************/
+/*! exports provided: LogoPresentationComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LogoPresentationComponent", function() { return LogoPresentationComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var LogoPresentationComponent = /** @class */ (function () {
+    function LogoPresentationComponent() {
+    }
+    LogoPresentationComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'bg-logo-presentation',
+            template: __webpack_require__(/*! ./logo-presentation.component.html */ "./src/app/shared/component/logo-presentation/logo-presentation.component.html")
+        })
+    ], LogoPresentationComponent);
+    return LogoPresentationComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/component/logo-presentation/logo-presentation.module.ts":
+/*!********************************************************************************!*\
+  !*** ./src/app/shared/component/logo-presentation/logo-presentation.module.ts ***!
+  \********************************************************************************/
+/*! exports provided: LogoPresentationModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LogoPresentationModule", function() { return LogoPresentationModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _logo_presentation_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./logo-presentation.component */ "./src/app/shared/component/logo-presentation/logo-presentation.component.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var LogoPresentationModule = /** @class */ (function () {
+    function LogoPresentationModule() {
+    }
+    LogoPresentationModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            declarations: [
+                _logo_presentation_component__WEBPACK_IMPORTED_MODULE_1__["LogoPresentationComponent"]
+            ],
+            exports: [
+                _logo_presentation_component__WEBPACK_IMPORTED_MODULE_1__["LogoPresentationComponent"]
+            ],
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"]
+            ]
+        })
+    ], LogoPresentationModule);
+    return LogoPresentationModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/shared/component/menu/menu.component.css":
+/*!**********************************************************!*\
+  !*** ./src/app/shared/component/menu/menu.component.css ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/shared/component/menu/menu.component.html":
+/*!***********************************************************!*\
+  !*** ./src/app/shared/component/menu/menu.component.html ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\r\n    <ul class=\"navbar-nav\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/about']\" routerLinkActive=\"router-link-active\">About</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/lab']\" routerLinkActive=\"router-link-active\">Lab</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/resume']\" routerLinkActive=\"router-link-active\">Resume</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link disabled\" [routerLink]=\"['/mention']\" routerLinkActive=\"router-link-active\">Mention</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link disabled\" [routerLink]=\"['/professional']\" routerLinkActive=\"router-link-active\">Professional</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link disabled\" [routerLink]=\"['/pastimes']\" routerLinkActive=\"router-link-active\">Pastimes</a>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</nav>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/shared/component/menu/menu.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/shared/component/menu/menu.component.ts ***!
+  \*********************************************************/
 /*! exports provided: MenuComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -723,16 +1129,22 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
 var MenuComponent = /** @class */ (function () {
     function MenuComponent() {
     }
+    MenuComponent.prototype.ngOnInit = function () {
+    };
     MenuComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'bg-menu',
-            template: __webpack_require__(/*! ./menu.component.html */ "./src/app/menu/menu.component.html"),
-            styles: [__webpack_require__(/*! ./menu.component.css */ "./src/app/menu/menu.component.css")]
-        })
+            template: __webpack_require__(/*! ./menu.component.html */ "./src/app/shared/component/menu/menu.component.html"),
+            styles: [__webpack_require__(/*! ./menu.component.css */ "./src/app/shared/component/menu/menu.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
     ], MenuComponent);
     return MenuComponent;
 }());
@@ -741,10 +1153,10 @@ var MenuComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/menu/menu.module.ts":
-/*!*************************************!*\
-  !*** ./src/app/menu/menu.module.ts ***!
-  \*************************************/
+/***/ "./src/app/shared/component/menu/menu.module.ts":
+/*!******************************************************!*\
+  !*** ./src/app/shared/component/menu/menu.module.ts ***!
+  \******************************************************/
 /*! exports provided: MenuModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -753,7 +1165,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuModule", function() { return MenuModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-/* harmony import */ var _menu_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu.component */ "./src/app/menu/menu.component.ts");
+/* harmony import */ var _menu_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu.component */ "./src/app/shared/component/menu/menu.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -768,11 +1180,11 @@ var MenuModule = /** @class */ (function () {
     }
     MenuModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            declarations: [
-                _menu_component__WEBPACK_IMPORTED_MODULE_2__["MenuComponent"]
-            ],
             imports: [
                 _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]
+            ],
+            declarations: [
+                _menu_component__WEBPACK_IMPORTED_MODULE_2__["MenuComponent"]
             ],
             exports: [
                 _menu_component__WEBPACK_IMPORTED_MODULE_2__["MenuComponent"]
@@ -786,38 +1198,38 @@ var MenuModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/social/social.component.css":
-/*!*********************************************!*\
-  !*** ./src/app/social/social.component.css ***!
-  \*********************************************/
+/***/ "./src/app/shared/component/social-network/social-network.component.css":
+/*!******************************************************************************!*\
+  !*** ./src/app/shared/component/social-network/social-network.component.css ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "        /* Social\r\n  -------------------------------------------------- */\r\n  i.fa:before{\r\n    width: 30px;\r\n    font-size: 30px;\r\n    height: 30px;\r\n    display: block;\r\n    margin: 5px auto;\r\n}\r\n  #social {\r\n  padding-top: 12px;\r\n  word-spacing: 25px;\r\n  margin: 0px auto;\r\n  text-align: center;\r\n}\r\n  #social h4 > a {\r\n  color: #000000;\r\n  margin: 0px 3px;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc29jaWFsL3NvY2lhbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJRQUFRO3NEQUM4QztFQUNwRDtJQUNFLFdBQVc7SUFDWCxlQUFlO0lBQ2YsWUFBWTtJQUNaLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7RUFFQTtFQUNFLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjtFQUVBO0VBQ0UsY0FBYztFQUNkLGVBQWU7QUFDakIiLCJmaWxlIjoic3JjL2FwcC9zb2NpYWwvc29jaWFsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIgICAgICAgIC8qIFNvY2lhbFxyXG4gIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICovXHJcbiAgaS5mYTpiZWZvcmV7XHJcbiAgICB3aWR0aDogMzBweDtcclxuICAgIGZvbnQtc2l6ZTogMzBweDtcclxuICAgIGhlaWdodDogMzBweDtcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgbWFyZ2luOiA1cHggYXV0bztcclxufVxyXG5cclxuI3NvY2lhbCB7XHJcbiAgcGFkZGluZy10b3A6IDEycHg7XHJcbiAgd29yZC1zcGFjaW5nOiAyNXB4O1xyXG4gIG1hcmdpbjogMHB4IGF1dG87XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG4jc29jaWFsIGg0ID4gYSB7XHJcbiAgY29sb3I6ICMwMDAwMDA7XHJcbiAgbWFyZ2luOiAwcHggM3B4O1xyXG59XHJcbiJdfQ== */"
+module.exports = ""
 
 /***/ }),
 
-/***/ "./src/app/social/social.component.html":
-/*!**********************************************!*\
-  !*** ./src/app/social/social.component.html ***!
-  \**********************************************/
+/***/ "./src/app/shared/component/social-network/social-network.component.html":
+/*!*******************************************************************************!*\
+  !*** ./src/app/shared/component/social-network/social-network.component.html ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section id=\"social\">\r\n    <h4>\r\n        <a href=\"https://linkedin.com/in/brunocesarweb/?locale=en_US\" target=\"blank\"><i class=\"fa fa-linkedin\"></i></a>\r\n        <a href=\"https://github.com/brunogaudino\" target=\"blank\"><i class=\"fa fa-github\"></i></a>\r\n        <a href=\"http://codepen.io/brunocesaragweb/\" target=\"blank\"><i class=\"fa fa-codepen\"></i></a>\r\n        <a href=\"https://www.behance.net/brunocesarweb\" target=\"blank\"><i class=\"fa fa-behance\"></i></a>\r\n    </h4>\r\n</section>\r\n\r\n<footer>\r\n    <div id=\"footer\">\r\n        <div class=\"container\">\r\n            <p class=\"text-muted\">\r\n                Developed using <a href=\"http://angular.io\" target=\"_blank\">Angular</a> and <a href=\"http://www.github.com/biomadeira/sustain\" target=\"_blank\">sustain</a> theme.\r\n            </p>\r\n        </div>\r\n    </div>\r\n</footer>"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row text-align-center margin-top20\">\r\n    <div class=\"col-1\"></div>\r\n    <div class=\"col-10\">\r\n      <ul class=\"list-inline\">\r\n        <li class=\"d-inline p-2\"><a title=\"LinkedIn\" alt=\"LinkedIn\" href=\"https://linkedin.com/in/brunocesarweb/?locale=en_US\" target=\"blank\"><i class=\"fa fa-linkedin fa-2x\"></i></a></li>\r\n        <li class=\"d-inline p-2\"><a title=\"GitHub\" alt=\"GitHub\" href=\"https://github.com/brunogaudino\" target=\"blank\"><i class=\"fa fa-github fa-2x\" ></i></a></li>\r\n        <li class=\"d-inline p-2\"><a title=\"CodePen\" alt=\"CodePen\" href=\"http://codepen.io/brunocesaragweb/\" target=\"blank\"><i class=\"fa fa-codepen fa-2x\"></i></a></li>\r\n        <li class=\"d-inline p-2\"><a title=\"Behance\" alt=\"Behance\" href=\"https://www.behance.net/brunocesarweb\" target=\"blank\"><i class=\"fa fa-behance fa-2x\"></i></a></li>\r\n      </ul>\r\n    </div>\r\n    <div class=\"col-1\"></div>\r\n  </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
-/***/ "./src/app/social/social.component.ts":
-/*!********************************************!*\
-  !*** ./src/app/social/social.component.ts ***!
-  \********************************************/
-/*! exports provided: SocialComponent */
+/***/ "./src/app/shared/component/social-network/social-network.component.ts":
+/*!*****************************************************************************!*\
+  !*** ./src/app/shared/component/social-network/social-network.component.ts ***!
+  \*****************************************************************************/
+/*! exports provided: SocialNetworkComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SocialComponent", function() { return SocialComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SocialNetworkComponent", function() { return SocialNetworkComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -825,36 +1237,43 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
-var SocialComponent = /** @class */ (function () {
-    function SocialComponent() {
+var SocialNetworkComponent = /** @class */ (function () {
+    function SocialNetworkComponent() {
     }
-    SocialComponent = __decorate([
+    SocialNetworkComponent.prototype.ngOnInit = function () {
+    };
+    SocialNetworkComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'bg-social',
-            template: __webpack_require__(/*! ./social.component.html */ "./src/app/social/social.component.html"),
-            styles: [__webpack_require__(/*! ./social.component.css */ "./src/app/social/social.component.css")]
-        })
-    ], SocialComponent);
-    return SocialComponent;
+            selector: 'bg-social-network',
+            template: __webpack_require__(/*! ./social-network.component.html */ "./src/app/shared/component/social-network/social-network.component.html"),
+            styles: [__webpack_require__(/*! ./social-network.component.css */ "./src/app/shared/component/social-network/social-network.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], SocialNetworkComponent);
+    return SocialNetworkComponent;
 }());
 
 
 
 /***/ }),
 
-/***/ "./src/app/social/social.module.ts":
-/*!*****************************************!*\
-  !*** ./src/app/social/social.module.ts ***!
-  \*****************************************/
-/*! exports provided: SocialModule */
+/***/ "./src/app/shared/component/social-network/social-network.module.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/shared/component/social-network/social-network.module.ts ***!
+  \**************************************************************************/
+/*! exports provided: SocialNetworkModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SocialModule", function() { return SocialModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SocialNetworkModule", function() { return SocialNetworkModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _social_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./social.component */ "./src/app/social/social.component.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _social_network_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./social-network.component */ "./src/app/shared/component/social-network/social-network.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -863,20 +1282,24 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 };
 
 
-var SocialModule = /** @class */ (function () {
-    function SocialModule() {
+
+var SocialNetworkModule = /** @class */ (function () {
+    function SocialNetworkModule() {
     }
-    SocialModule = __decorate([
+    SocialNetworkModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]
+            ],
             declarations: [
-                _social_component__WEBPACK_IMPORTED_MODULE_1__["SocialComponent"]
+                _social_network_component__WEBPACK_IMPORTED_MODULE_2__["SocialNetworkComponent"]
             ],
             exports: [
-                _social_component__WEBPACK_IMPORTED_MODULE_1__["SocialComponent"]
+                _social_network_component__WEBPACK_IMPORTED_MODULE_2__["SocialNetworkComponent"]
             ]
         })
-    ], SocialModule);
-    return SocialModule;
+    ], SocialNetworkModule);
+    return SocialNetworkModule;
 }());
 
 
@@ -943,7 +1366,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\www\brunogaudino.github.io\bg-app\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\www\brunogaudino.github.io\source-app\bootstrap-app\src\main.ts */"./src/main.ts");
 
 
 /***/ })
