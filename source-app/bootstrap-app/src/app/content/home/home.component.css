@@ -1,4 +1,10 @@
-.border-size-color{
+.wrap-logo{
   border: 5px solid #81C0E6;
-  width: 257px;
+  width: 255px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.wrap-logo img{
+  margin: 0px auto;
 }
