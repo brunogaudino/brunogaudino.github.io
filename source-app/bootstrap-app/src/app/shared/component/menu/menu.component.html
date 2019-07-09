@@ -13,14 +13,24 @@
       <li class="nav-item">
         <a class="nav-link" [routerLink]="['/lab']" routerLinkActive="router-link-active">Lab</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Professional
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" [routerLink]="['/resume']" routerLinkActive="router-link-active">Resume</a>
+          <!-- <a class="dropdown-item disabled" href="#">Skills</a>
+          <a class="dropdown-item disabled" href="#">Works</a> -->
+        </div>
+      </li>
+      <!--<li class="nav-item">
         <a class="nav-link" [routerLink]="['/resume']" routerLinkActive="router-link-active">Resume</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" [routerLink]="['/mention']" routerLinkActive="router-link-active">Mention</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link disabled" [routerLink]="['/professional']" routerLinkActive="router-link-active">Professional</a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link disabled" [routerLink]="['/mention']" routerLinkActive="router-link-active">Mention</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" [routerLink]="['/pastimes']" routerLinkActive="router-link-active">Pastimes</a>
