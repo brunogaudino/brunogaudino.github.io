@@ -5,7 +5,7 @@ import { HomeComponent } from './content/home/home.component';
 import { AboutComponent } from './content/about/about.component';
 import { LabComponent } from "./content/lab/lab.component";
 import { ResumeComponent } from "./content/resume/resume.component";
-import { MentionComponent } from "./content/mention/mention.component";
+//import { MentionComponent } from "./content/mention/mention.component";
 //import { ResumeComponent } from "./content/resume/resume.component";
 
 const appRoutes: Routes = [
@@ -28,11 +28,11 @@ const appRoutes: Routes = [
     {
         path: 'resume',
         component: ResumeComponent
-    },
+    }/*,
     {
         path: 'mention',
         component: MentionComponent
-    }/*,
+    },
     {
         path: 'professional',
         component: ProfessionalComponent

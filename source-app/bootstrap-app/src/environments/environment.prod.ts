@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  jobPosition: 'System analist',
+  college: 'Technician\'s license'
 };
