@@ -31,6 +31,11 @@ export class LabComponent implements OnInit {
 
   independentProjects: Array<any> = [
     {
+      'title':'API service',
+      'description':'An API who provides CRUD(create, read, update, delete) operations services. The code is available in github and is accessible through the link bellow.',
+      'link':'https://github.com/brunogaudino/api-service/'
+    },
+    {
       'title':'Developer nodejs project',
       'description':'A project built with HTML5, CSS3, javascipt, node.js and mongodb, as a complement to the training. The code is available in github and is accessible through the link developer nodejs project.',
       'link':'https://github.com/brunogaudino/developer-nodejs-project/'
