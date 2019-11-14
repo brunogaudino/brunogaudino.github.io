@@ -15,6 +15,6 @@ import { PastimeModule } from './pastime/pastime.module';
     PastimeModule
   ],
   exports: [],
-  declarations: []
+  declarations: [ ]
 })
 export class ContentModule { }
