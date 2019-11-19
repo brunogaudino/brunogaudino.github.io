@@ -65,10 +65,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/content/resume/resume.component.html":
-/*!********************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/content/resume/resume.component.html ***!
-  \********************************************************************************************/
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/content/professional/resume/resume.component.html":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/content/professional/resume/resume.component.html ***!
+  \*********************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -139,7 +139,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\r\n    <ul class=\"navbar-nav\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/about']\" routerLinkActive=\"router-link-active\">About</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/lab']\" routerLinkActive=\"router-link-active\">Lab</a>\r\n      </li>\r\n      <li class=\"nav-item dropdown\">\r\n        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n          Professional\r\n        </a>\r\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n          <a class=\"dropdown-item\" [routerLink]=\"['/resume']\" routerLinkActive=\"router-link-active\">Resume</a>\r\n          <!-- <a class=\"dropdown-item disabled\" href=\"#\">Skills</a>\r\n          <a class=\"dropdown-item disabled\" href=\"#\">Works</a> -->\r\n        </div>\r\n      </li>\r\n      <!--<li class=\"nav-item\">\r\n        <a class=\"nav-link disabled\" [routerLink]=\"['/pastime']\" routerLinkActive=\"router-link-active\">Pastimes</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/resume']\" routerLinkActive=\"router-link-active\">Resume</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link disabled\" [routerLink]=\"['/professional']\" routerLinkActive=\"router-link-active\">Professional</a>\r\n      </li> \r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/mention']\" routerLinkActive=\"router-link-active\">Mention</a>\r\n      </li>-->\r\n    </ul>\r\n  </div>\r\n</nav>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">\r\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n    <span class=\"navbar-toggler-icon\"></span>\r\n  </button>\r\n  <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\r\n    <ul class=\"navbar-nav\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/']\" routerLinkActive=\"router-link-active\">Home <span class=\"sr-only\">(current)</span></a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/about']\" routerLinkActive=\"router-link-active\">About</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/lab']\" routerLinkActive=\"router-link-active\">Lab</a>\r\n      </li>\r\n      <li class=\"nav-item dropdown\">\r\n        <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdownMenuLink\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n          Professional\r\n        </a>\r\n        <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n          <a class=\"dropdown-item\" [routerLink]=\"['/professional/resume']\" routerLinkActive=\"router-link-active\">Resume</a>\r\n          <!-- <a class=\"dropdown-item disabled\" href=\"#\">Skills</a>\r\n          <a class=\"dropdown-item disabled\" href=\"#\">Works</a> -->\r\n        </div>\r\n      </li>\r\n      <!--<li class=\"nav-item\">\r\n        <a class=\"nav-link disabled\" [routerLink]=\"['/pastime']\" routerLinkActive=\"router-link-active\">Pastimes</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/resume']\" routerLinkActive=\"router-link-active\">Resume</a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link disabled\" [routerLink]=\"['/professional']\" routerLinkActive=\"router-link-active\">Professional</a>\r\n      </li> \r\n      <li class=\"nav-item\">\r\n        <a class=\"nav-link\" [routerLink]=\"['/mention']\" routerLinkActive=\"router-link-active\">Mention</a>\r\n      </li>-->\r\n    </ul>\r\n  </div>\r\n</nav>\r\n");
 
 /***/ }),
 
@@ -161,21 +161,29 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./src/$$_lazy_route_resource lazy namespace object ***!
   \**********************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncaught exception popping up in devtools
+var map = {
+	"./content/professional/professional.module": "./src/app/content/professional/professional.module.ts"
+};
+
+function webpackAsyncContext(req) {
 	return Promise.resolve().then(function() {
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
+		if(!__webpack_require__.o(map, req)) {
+			var e = new Error("Cannot find module '" + req + "'");
+			e.code = 'MODULE_NOT_FOUND';
+			throw e;
+		}
+
+		var id = map[req];
+		return __webpack_require__(id);
 	});
 }
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+module.exports = webpackAsyncContext;
 
 /***/ }),
 
@@ -194,7 +202,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _content_home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./content/home/home.component */ "./src/app/content/home/home.component.ts");
 /* harmony import */ var _content_about_about_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./content/about/about.component */ "./src/app/content/about/about.component.ts");
 /* harmony import */ var _content_lab_lab_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./content/lab/lab.component */ "./src/app/content/lab/lab.component.ts");
-/* harmony import */ var _content_resume_resume_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./content/resume/resume.component */ "./src/app/content/resume/resume.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -204,7 +211,6 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-
 
 
 
@@ -231,8 +237,8 @@ var appRoutes = [
         component: _content_lab_lab_component__WEBPACK_IMPORTED_MODULE_4__["LabComponent"]
     },
     {
-        path: 'resume',
-        component: _content_resume_resume_component__WEBPACK_IMPORTED_MODULE_5__["ResumeComponent"]
+        path: 'professional',
+        loadChildren: './content/professional/professional.module#ProfessionalModule'
     } /*,
     {
         path: 'pastime',
@@ -531,8 +537,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home/home.module */ "./src/app/content/home/home.module.ts");
 /* harmony import */ var _about_about_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about/about.module */ "./src/app/content/about/about.module.ts");
 /* harmony import */ var _lab_lab_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./lab/lab.module */ "./src/app/content/lab/lab.module.ts");
-/* harmony import */ var _resume_resume_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./resume/resume.module */ "./src/app/content/resume/resume.module.ts");
-/* harmony import */ var _pastime_pastime_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pastime/pastime.module */ "./src/app/content/pastime/pastime.module.ts");
+/* harmony import */ var _pastime_pastime_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pastime/pastime.module */ "./src/app/content/pastime/pastime.module.ts");
+/* harmony import */ var _professional_professional_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./professional/professional.module */ "./src/app/content/professional/professional.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -557,8 +563,8 @@ var ContentModule = /** @class */ (function () {
                 _home_home_module__WEBPACK_IMPORTED_MODULE_1__["HomeModule"],
                 _about_about_module__WEBPACK_IMPORTED_MODULE_2__["AboutModule"],
                 _lab_lab_module__WEBPACK_IMPORTED_MODULE_3__["LabModule"],
-                _resume_resume_module__WEBPACK_IMPORTED_MODULE_4__["ResumeModule"],
-                _pastime_pastime_module__WEBPACK_IMPORTED_MODULE_5__["PastimeModule"]
+                _professional_professional_module__WEBPACK_IMPORTED_MODULE_5__["ProfessionalModule"],
+                _pastime_pastime_module__WEBPACK_IMPORTED_MODULE_4__["PastimeModule"]
             ],
             exports: [],
             declarations: []
@@ -1106,23 +1112,139 @@ var PastimeModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/content/resume/resume.component.css":
-/*!*****************************************************!*\
-  !*** ./src/app/content/resume/resume.component.css ***!
-  \*****************************************************/
+/***/ "./src/app/content/professional/professional-routing.module.ts":
+/*!*********************************************************************!*\
+  !*** ./src/app/content/professional/professional-routing.module.ts ***!
+  \*********************************************************************/
+/*! exports provided: ProfessionalRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfessionalRoutingModule", function() { return ProfessionalRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _resume_resume_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resume/resume.component */ "./src/app/content/professional/resume/resume.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+var routes = [
+    {
+        path: '',
+        component: _resume_resume_component__WEBPACK_IMPORTED_MODULE_2__["ResumeComponent"]
+    },
+    {
+        path: 'resume',
+        component: _resume_resume_component__WEBPACK_IMPORTED_MODULE_2__["ResumeComponent"]
+    }
+];
+var ProfessionalRoutingModule = /** @class */ (function () {
+    function ProfessionalRoutingModule() {
+    }
+    ProfessionalRoutingModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
+        })
+    ], ProfessionalRoutingModule);
+    return ProfessionalRoutingModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/content/professional/professional.module.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/content/professional/professional.module.ts ***!
+  \*************************************************************/
+/*! exports provided: ProfessionalModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfessionalModule", function() { return ProfessionalModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _professional_routing_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./professional-routing.module */ "./src/app/content/professional/professional-routing.module.ts");
+/* harmony import */ var _resume_resume_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resume/resume.component */ "./src/app/content/professional/resume/resume.component.ts");
+/* harmony import */ var src_app_shared_component_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/shared/component/menu/menu.module */ "./src/app/shared/component/menu/menu.module.ts");
+/* harmony import */ var src_app_shared_component_social_network_social_network_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/shared/component/social-network/social-network.module */ "./src/app/shared/component/social-network/social-network.module.ts");
+/* harmony import */ var src_app_shared_component_footer_footer_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/shared/component/footer/footer.module */ "./src/app/shared/component/footer/footer.module.ts");
+/* harmony import */ var src_app_shared_component_load_spinner_load_spinner_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/shared/component/load-spinner/load-spinner.module */ "./src/app/shared/component/load-spinner/load-spinner.module.ts");
+/* harmony import */ var src_app_shared_component_logo_presentation_logo_presentation_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! src/app/shared/component/logo-presentation/logo-presentation.module */ "./src/app/shared/component/logo-presentation/logo-presentation.module.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
+  return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+
+
+
+
+
+
+
+
+
+var ProfessionalModule = /** @class */ (function () {
+    function ProfessionalModule() {
+    }
+    ProfessionalModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+                src_app_shared_component_menu_menu_module__WEBPACK_IMPORTED_MODULE_4__["MenuModule"],
+                src_app_shared_component_social_network_social_network_module__WEBPACK_IMPORTED_MODULE_5__["SocialNetworkModule"],
+                src_app_shared_component_footer_footer_module__WEBPACK_IMPORTED_MODULE_6__["FooterModule"],
+                src_app_shared_component_load_spinner_load_spinner_module__WEBPACK_IMPORTED_MODULE_7__["LoadSpinnerModule"],
+                src_app_shared_component_logo_presentation_logo_presentation_module__WEBPACK_IMPORTED_MODULE_8__["LogoPresentationModule"],
+                _professional_routing_module__WEBPACK_IMPORTED_MODULE_2__["ProfessionalRoutingModule"]
+            ],
+            declarations: [
+                _resume_resume_component__WEBPACK_IMPORTED_MODULE_3__["ResumeComponent"]
+            ],
+            exports: [],
+            providers: []
+        })
+    ], ProfessionalModule);
+    return ProfessionalModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/content/professional/resume/resume.component.css":
+/*!******************************************************************!*\
+  !*** ./src/app/content/professional/resume/resume.component.css ***!
+  \******************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("#resume .card .card-header .btn:hover{\r\n  color: #81C0E6;\r\n  text-decoration: underline;\r\n}\r\n\r\ni{\r\n  margin-right: 10px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGVudC9yZXN1bWUvcmVzdW1lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxjQUFjO0VBQ2QsMEJBQTBCO0FBQzVCOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCIiwiZmlsZSI6InNyYy9hcHAvY29udGVudC9yZXN1bWUvcmVzdW1lLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjcmVzdW1lIC5jYXJkIC5jYXJkLWhlYWRlciAuYnRuOmhvdmVye1xyXG4gIGNvbG9yOiAjODFDMEU2O1xyXG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xyXG59XHJcblxyXG5pe1xyXG4gIG1hcmdpbi1yaWdodDogMTBweDtcclxufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("#resume .card .card-header .btn:hover{\r\n  color: #81C0E6;\r\n  text-decoration: underline;\r\n}\r\n\r\ni{\r\n  margin-right: 10px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29udGVudC9wcm9mZXNzaW9uYWwvcmVzdW1lL3Jlc3VtZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBYztFQUNkLDBCQUEwQjtBQUM1Qjs7QUFFQTtFQUNFLGtCQUFrQjtBQUNwQiIsImZpbGUiOiJzcmMvYXBwL2NvbnRlbnQvcHJvZmVzc2lvbmFsL3Jlc3VtZS9yZXN1bWUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNyZXN1bWUgLmNhcmQgLmNhcmQtaGVhZGVyIC5idG46aG92ZXJ7XHJcbiAgY29sb3I6ICM4MUMwRTY7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XHJcbn1cclxuXHJcbml7XHJcbiAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xyXG59Il19 */");
 
 /***/ }),
 
-/***/ "./src/app/content/resume/resume.component.ts":
-/*!****************************************************!*\
-  !*** ./src/app/content/resume/resume.component.ts ***!
-  \****************************************************/
+/***/ "./src/app/content/professional/resume/resume.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/content/professional/resume/resume.component.ts ***!
+  \*****************************************************************/
 /*! exports provided: ResumeComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1130,7 +1252,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResumeComponent", function() { return ResumeComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../environments/environment.prod */ "./src/environments/environment.prod.ts");
+/* harmony import */ var _environments_environment_prod__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../environments/environment.prod */ "./src/environments/environment.prod.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1153,78 +1275,12 @@ var ResumeComponent = /** @class */ (function () {
     ResumeComponent.prototype.ngOnInit = function () { };
     ResumeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            template: __importDefault(__webpack_require__(/*! raw-loader!./resume.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/content/resume/resume.component.html")).default,
-            styles: [__importDefault(__webpack_require__(/*! ./resume.component.css */ "./src/app/content/resume/resume.component.css")).default]
+            template: __importDefault(__webpack_require__(/*! raw-loader!./resume.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/content/professional/resume/resume.component.html")).default,
+            styles: [__importDefault(__webpack_require__(/*! ./resume.component.css */ "./src/app/content/professional/resume/resume.component.css")).default]
         }),
         __metadata("design:paramtypes", [])
     ], ResumeComponent);
     return ResumeComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/content/resume/resume.module.ts":
-/*!*************************************************!*\
-  !*** ./src/app/content/resume/resume.module.ts ***!
-  \*************************************************/
-/*! exports provided: ResumeModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResumeModule", function() { return ResumeModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var src_app_shared_component_menu_menu_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/shared/component/menu/menu.module */ "./src/app/shared/component/menu/menu.module.ts");
-/* harmony import */ var src_app_shared_component_social_network_social_network_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/shared/component/social-network/social-network.module */ "./src/app/shared/component/social-network/social-network.module.ts");
-/* harmony import */ var src_app_shared_component_footer_footer_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/shared/component/footer/footer.module */ "./src/app/shared/component/footer/footer.module.ts");
-/* harmony import */ var src_app_shared_component_load_spinner_load_spinner_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/shared/component/load-spinner/load-spinner.module */ "./src/app/shared/component/load-spinner/load-spinner.module.ts");
-/* harmony import */ var src_app_shared_component_logo_presentation_logo_presentation_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/shared/component/logo-presentation/logo-presentation.module */ "./src/app/shared/component/logo-presentation/logo-presentation.module.ts");
-/* harmony import */ var _resume_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./resume.component */ "./src/app/content/resume/resume.component.ts");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __importDefault = (undefined && undefined.__importDefault) || function (mod) {
-  return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-
-
-
-
-
-
-
-
-
-var ResumeModule = /** @class */ (function () {
-    function ResumeModule() {
-    }
-    ResumeModule = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            imports: [
-                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
-                src_app_shared_component_menu_menu_module__WEBPACK_IMPORTED_MODULE_3__["MenuModule"],
-                src_app_shared_component_social_network_social_network_module__WEBPACK_IMPORTED_MODULE_4__["SocialNetworkModule"],
-                src_app_shared_component_footer_footer_module__WEBPACK_IMPORTED_MODULE_5__["FooterModule"],
-                src_app_shared_component_load_spinner_load_spinner_module__WEBPACK_IMPORTED_MODULE_6__["LoadSpinnerModule"],
-                src_app_shared_component_logo_presentation_logo_presentation_module__WEBPACK_IMPORTED_MODULE_7__["LogoPresentationModule"]
-            ],
-            declarations: [
-                _resume_component__WEBPACK_IMPORTED_MODULE_8__["ResumeComponent"]
-            ],
-            exports: [
-                _resume_component__WEBPACK_IMPORTED_MODULE_8__["ResumeComponent"]
-            ]
-        })
-    ], ResumeModule);
-    return ResumeModule;
 }());
 
 
