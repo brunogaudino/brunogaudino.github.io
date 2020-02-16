@@ -9,6 +9,8 @@ export class HomeComponent implements OnInit {
 
   jobPosition: string = environment.jobPosition;
   college: string = environment.college;
+  employer: string = environment.employer;
+  employerWebSite: string = environment.employerWebSite;
 
   constructor() { }
 

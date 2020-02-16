@@ -5,7 +5,9 @@
 export const environment = {
   production: false,
   jobPosition: 'System analist',
-  college: 'Technician\'s license'
+  college: 'Technician\'s license',
+  employer: 'BRQ digital solutions',
+  employerWebSite:'http://www.brq.com/'
 };
 
 /*

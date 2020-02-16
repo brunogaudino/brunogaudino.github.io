@@ -5,6 +5,7 @@ import { AboutModule } from './about/about.module';
 import { LabModule } from './lab/lab.module';
 import { PastimeModule } from './pastime/pastime.module';
 import { ProfessionalModule } from './professional/professional.module';
+import { MentionModule } from './mention/mention.module';
 
 @NgModule({
   imports: [
@@ -12,6 +13,7 @@ import { ProfessionalModule } from './professional/professional.module';
     AboutModule,
     LabModule,
     ProfessionalModule,
+    MentionModule,
     PastimeModule
   ],
   exports: [],

@@ -4,9 +4,9 @@ import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from './content/home/home.component';
 import { AboutComponent } from './content/about/about.component';
 import { LabComponent } from "./content/lab/lab.component";
-import { ResumeComponent } from "./content/professional/resume/resume.component";
+import { MentionComponent } from "./content/mention/mention.component";
+//import { ResumeComponent } from "./content/professional/resume/resume.component";
 //import { PastimeComponent } from "./content/pastime/pastime.component";
-//import { MentionComponent } from "./content/mention/mention.component";
 //import { ResumeComponent } from "./content/resume/resume.component";
 
 const appRoutes: Routes = [
@@ -29,14 +29,14 @@ const appRoutes: Routes = [
     {
         path: 'professional',
         loadChildren: './content/professional/professional.module#ProfessionalModule'
-    }/*,
-    {
-        path: 'pastime',
-        component: PastimeComponent
     },
     {
         path: 'mention',
         component: MentionComponent
+    }/*,
+    {
+        path: 'pastime',
+        component: PastimeComponent
     },
     {
         path: 'professional',
