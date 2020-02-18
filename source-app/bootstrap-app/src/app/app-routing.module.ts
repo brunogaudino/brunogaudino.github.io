@@ -5,7 +5,6 @@ import { HomeComponent } from './content/home/home.component';
 import { AboutComponent } from './content/about/about.component';
 import { LabComponent } from "./content/lab/lab.component";
 import { MentionComponent } from "./content/mention/mention.component";
-import { PastimeComponent } from "./content/pastime/pastime.component";
 //import { ResumeComponent } from "./content/professional/resume/resume.component";
 //import { ResumeComponent } from "./content/resume/resume.component";
 
@@ -33,10 +32,6 @@ const appRoutes: Routes = [
     {
         path: 'mention',
         component: MentionComponent
-    },
-    {
-        path: 'pastime',
-        component: PastimeComponent
     }/*,
     {
         path: 'professional',

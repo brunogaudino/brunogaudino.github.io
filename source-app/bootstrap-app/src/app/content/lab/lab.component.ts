@@ -13,8 +13,7 @@ export class LabComponent implements OnInit {
   
   constructor(
     private labService: LabService
-  ) {
-  }
+  ) {}
 
   ngOnInit() {
     this.courseProjects = this.labService.getLabCourseData();
