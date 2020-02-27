@@ -3,7 +3,8 @@ import { environment } from 'src/environments/environment.prod';
 
 @Component({
     selector: 'bg-logo-presentation',
-    templateUrl: './logo-presentation.component.html'
+    templateUrl: './logo-presentation.component.html',
+    styleUrls: ['./logo-presentation.component.css']
 })
 export class LogoPresentationComponent implements OnInit {
 

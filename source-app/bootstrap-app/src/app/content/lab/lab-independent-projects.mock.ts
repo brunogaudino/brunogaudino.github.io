@@ -13,15 +13,15 @@ export const LabIndependentProjectsMock = [
     'title':'Shot on the target',
     'description':'Development of a simple game with javascript in which the user needs to hit the target. This page is usually blocked by the browser for security, it is necessary to unlock to see the game by running the example page can be accessed on the link shot on the target.',
     'link':'https://brunogaudino.github.io/shot-on-the-target/'
-  },
-  {
-    'title':'Minimalist jekyll blog',
-    'description':'Minimalist blog development using jekyll, with posts lists, pagination, commentary with disqus, and contact form. A sample page can be accessed on the minimalist jekyll blog.',
-    'link':'https://brunogaudino.github.io/minimalist-jekyll-blog/'
-  },
-  {
-    'title':'Framework Grid CSS',
-    'description':'CSS framework adaptation based on grid concept, for facilitates the website interface development. A sample page can be accessed on the Framework Grid CSS.',
-    'link':'https://github.com/brunogaudino/framework-grid-css'
   }
+  // {
+  //   'title':'Minimalist jekyll blog',
+  //   'description':'Minimalist blog development using jekyll, with posts lists, pagination, commentary with disqus, and contact form. A sample page can be accessed on the minimalist jekyll blog.',
+  //   'link':'https://brunogaudino.github.io/minimalist-jekyll-blog/'
+  // },
+  // {
+  //   'title':'Framework Grid CSS',
+  //   'description':'CSS framework adaptation based on grid concept, for facilitates the website interface development. A sample page can be accessed on the Framework Grid CSS.',
+  //   'link':'https://github.com/brunogaudino/framework-grid-css'
+  // }
 ]
