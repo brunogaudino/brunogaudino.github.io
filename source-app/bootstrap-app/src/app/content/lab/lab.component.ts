@@ -16,6 +16,13 @@ export class LabComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    this.labService.getGithubAPI().subscribe(data => {
+      console.log('return data api ', data);
+    },
+    (err: any) => {
+      console.log('err ', err);
+    });
+
     this.courseProjects = this.labService.getLabCourseData();
     this.independentProjects = this.labService.getLabIndependentData();
     return this.courseProjects && this.independentProjects;
