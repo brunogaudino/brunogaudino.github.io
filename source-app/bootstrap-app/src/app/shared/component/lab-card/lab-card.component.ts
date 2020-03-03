@@ -11,6 +11,8 @@ export class LabCardComponent implements OnInit {
   @Input() title;
   @Input() description;
   @Input() link;
+  @Input() tag;
+  @Input() icon;
   
   constructor() { }
 

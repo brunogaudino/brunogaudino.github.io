@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { LabCourseProjectsMock } from './lab-course-projects.mock';
 import { LabIndependentProjectsMock } from './lab-independent-projects.mock';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { LabStackblitzProjectsMock } from './lab-stackblitz-projects.mock';
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +24,14 @@ export class LabService {
       return LabIndependentProjectsMock;
     } catch (error) {
       console.log('Error service LabIndependentProjectsMock ', error);      
+    }
+  }
+
+  getLabStackblitzData(){
+    try {
+      return LabStackblitzProjectsMock;
+    } catch (error) {
+      console.log('Error service LabStackblitzProjectMock ', error);
     }
   }
 
