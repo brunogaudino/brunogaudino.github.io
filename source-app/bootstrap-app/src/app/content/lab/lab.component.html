@@ -18,13 +18,15 @@
           <p>Developed independent projects.</p>
         </div>
         <div *ngFor="let independentProject of independentProjects" class="col-md-4 col-12 margin-bottom20">
-          <bg-lab-card
-          [title]="independentProject.title"
-          [description]="independentProject.description"
-          [link]="independentProject.link"
-          [tag]="independentProject.tag"
-          [icon]="independentProject.icon">
-          </bg-lab-card>
+          <div *ngIf="independentProject.flagShowProject">
+            <bg-lab-card
+              [title]="independentProject.title"
+              [description]="independentProject.description"
+              [link]="independentProject.link"
+              [tag]="independentProject.tag"
+              [icon]="independentProject.icon">
+            </bg-lab-card>
+          </div>
         </div>
     </div>
   </div>
@@ -49,14 +51,16 @@
           <p>Projects developed.</p>
         </div>
         <div *ngFor="let stackblitzProject of stackblitzProjects" class="col-md-4 col-12 margin-bottom20">
+          <div  *ngIf="stackblitzProject.flagShowProject">
             <bg-lab-card
-            [title]="stackblitzProject.title"
-            [description]="stackblitzProject.description"
-            [link]="stackblitzProject.link"
-            [tag]="stackblitzProject.tag"
-            [icon]="stackblitzProject.icon">
+              [title]="stackblitzProject.title"
+              [description]="stackblitzProject.description"
+              [link]="stackblitzProject.link"
+              [tag]="stackblitzProject.tag"
+              [icon]="stackblitzProject.icon">
             </bg-lab-card>
           </div>
+        </div>
     </div>
   </div>
 
@@ -82,14 +86,16 @@
           <p>Projects developed during courses.</p>
         </div>
         <div *ngFor="let courseProject of courseProjects" class="col-md-4 col-12 margin-bottom20">
+          <div *ngIf="  courseProject.flagShowProject">
             <bg-lab-card
-            [title]="courseProject.title"
-            [description]="courseProject.description"
-            [link]="courseProject.link"
-            [tag]="courseProject.tag"
-            [icon]="courseProject.icon">
+              [title]="courseProject.title"
+              [description]="courseProject.description"
+              [link]="courseProject.link"
+              [tag]="courseProject.tag"
+              [icon]="courseProject.icon">
             </bg-lab-card>
           </div>
+        </div>
     </div>
   </div>
 
