@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  jobPosition: 'System analist',
+  jobPosition: 'Systems analyst',
   college: 'Technician\'s license',
   employer: 'BRQ digital solutions',
   employerWebSite:'http://www.brq.com/'
