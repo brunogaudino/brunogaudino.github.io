@@ -38,13 +38,13 @@ export const LabCourseProjectsMock = [
     'tag':'javascript',
     'icon':'fa-github',
     'flagShowProject': true
+  },
+  {
+    'title': 'API Payment',
+    'description': 'NodeJs API development. The code is available on Github and is accessible through the link below.',
+    'link': 'https://github.com/brunogaudino/api.payment',
+    'tag': 'nodejs',
+    'icon':'fa-github',
+    'flagShowProject': false
   }
-  // {
-  //   'title': 'API Payment',
-  //   'description': 'NodeJs API development. The code is available on Github and is accessible through the link below.',
-  //   'link': 'https://github.com/brunogaudino/api.payment',
-  //   'tag': 'nodejs',
-  //   'icon':'fa-github',
-  //   'flagShowProject': false
-  // }
 ]
