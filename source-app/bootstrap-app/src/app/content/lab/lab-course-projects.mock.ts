@@ -18,7 +18,7 @@ export const LabCourseProjectsMock = [
   {
     'title': 'Workflow gulp',
     'description': 'Workflow development with automatization tool gulp. The code is available on Github and is accessible through the link below.',
-    'link': 'https://brunogaudino.github.io/website-workflow-gulp/',
+    'link': 'https://github.com/brunogaudino/website-workflow-gulp',
     'tag':'javascript',
     'icon':'fa-github',
     'flagShowProject': true
