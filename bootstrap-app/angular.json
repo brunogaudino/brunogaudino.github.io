@@ -24,7 +24,7 @@
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
@@ -130,5 +130,10 @@
   "defaultProject": "bootstrap-app",
   "cli": {
     "analytics": "6863eeab-091e-4fb1-9b2b-a8ab3ab2d804"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
   }
 }
