@@ -3,10 +3,9 @@ import * as $ from 'jquery';
 
 @Component({
   selector: 'bg-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: '<router-outlet></router-outlet>'
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'bootstrap-app';
 
   ngOnInit(): void {

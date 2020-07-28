@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "bootstrap-app"
+  "defaultProject": "bootstrap-app",
+  "cli": {
+    "analytics": "6863eeab-091e-4fb1-9b2b-a8ab3ab2d804"
+  }
 }
