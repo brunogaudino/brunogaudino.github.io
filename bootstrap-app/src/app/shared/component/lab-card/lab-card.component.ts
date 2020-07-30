@@ -4,7 +4,7 @@ import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'bg-lab-card',
   templateUrl: './lab-card.component.html',
-  styleUrls: ['./lab-card.component.css']
+  styleUrls: ['./lab-card.component.scss']
 })
 export class LabCardComponent implements OnInit {
 

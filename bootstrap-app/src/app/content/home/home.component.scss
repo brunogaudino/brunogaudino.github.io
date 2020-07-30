@@ -1,5 +1,7 @@
+@import '../../../assets/styles/global.scss';
+
 .wrap-logo{
-  border: 5px solid #81C0E6;
+  border: 5px solid $white;
   width: 210px;
   text-align: center;
   margin: 0px auto;

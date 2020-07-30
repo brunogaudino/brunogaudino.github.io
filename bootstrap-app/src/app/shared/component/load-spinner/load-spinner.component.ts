@@ -4,7 +4,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'bg-load-spinner',
   templateUrl: './load-spinner.component.html',
-  styleUrls: ['./load-spinner.component.css']
+  styleUrls: ['./load-spinner.component.scss']
 })
 export class LoadSpinnerComponent implements OnInit {
 
@@ -14,7 +14,7 @@ export class LoadSpinnerComponent implements OnInit {
     setTimeout(function(){
       $('.hide').fadeIn('slow');
       $(".wrap-spinner").fadeOut('fast');
-    }, 1000);
+    }, 1);
   }
 
 }

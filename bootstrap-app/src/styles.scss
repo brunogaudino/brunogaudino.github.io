@@ -1,17 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
-/*Paleta de cores*/
-/*
-(base) - #8fd6ff
-1-#6BA0BF
-2-#476B80
-3-#243540
-4-#81C0E6
-5-cinza claro bootstrap - #f8f9fa
-6-cinza tom mais escuro - #eee
-7-branco
-8-Preto
-*/
 
 //Colors: baseline
 $base-color: #0070BB;
@@ -33,13 +21,7 @@ LightGrey	#D3D3D3
 Silver	#C0C0C0
 DarkGray	#A9A9A9
 */
-body{
-  //font-family: $font-family-default;
-  //font-weight: $font-weight-regular;
-  color: $base-dark-1;
-  font-size: 16px;
-  background: $grey-2;
-}
+
 //Variables
 $font-size-smallest: rem(12);
 $font-size-small: rem(14);
@@ -59,38 +41,25 @@ $font-weight-bold: 700;
 $font-weight-xbold: 900;
 
 //Links
-$link: $base-light-1;
-$link-hover: $base-light-2;
+$link: $white;
+$link-hover: $base-light-1;
 
 
-
-
-//Defaults scss
-/* body{display: none;} */
-a{color: $link;}
-a:hover,a:focus{color: $link-hover;}
-
-.text-align-center{text-align: center;}
-.text-align-left{text-align: left;}
-.font-weight-bold{font-weight: bold;}
-.wrap-spinner{display: block;}
-.hide{ display: none;}
-
-.margin-top20{margin-top: 20px;}
-.margin-bottom20{margin-bottom: 20px;}
-.padding-top15{padding-top: 15px;}
-.padding-bottom15{padding-bottom: 15px;}
-
-@media (max-width: 410px) {
-  #resume .accordion .card{
-    text-align: center;
-  }
+//Backgrounds
+@mixin background-color($color){
+  background-color: $color;
 }
+
+//Font color
+@mixin font-color($color){
+  color: $color;
+}
+
+
 
 // .background-base-color{background: $baseColor;}
 // .background-blue-color-dark1{background: #6BA0BF;}
 // .background-blue-color-dark2{background: #476B80;}
-// .background-blue-color-dark3{background: #243540;}
 // .background-blue-color-light1{background: #81C0E6;}
 // .background-gray-light{background: #f8f9fa;}
 // .background-gray-light-dark{background: #eee;}
@@ -104,5 +73,16 @@ a:hover,a:focus{color: $link-hover;}
 // .font-color-blue-color-light1{color: #81C0E6;}
 // .font-color-gray-light{color: #f8f9fa;}
 // .font-color-gray-light-dark{color: #eee;}
-// .font-color-white{color: white;}
 // .font-color-black{color: black;}
+
+
+/*Paleta de cores - antiga*/
+/*
+(base) - #8fd6ff
+1-#6BA0BF
+2-#476B80
+3-#243540
+4-#81C0E6
+5-cinza claro bootstrap - #f8f9fa
+6-cinza tom mais escuro - #eee
+*/

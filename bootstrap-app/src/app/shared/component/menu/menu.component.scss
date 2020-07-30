@@ -1,0 +1,35 @@
+@import '../../../../assets/styles/global.scss';
+nav#nav{
+
+    border-bottom: 3px solid $white;
+    
+    #navbarNav{
+        ul.navbar-nav{
+            li.nav-item{
+                a.nav-link{
+                    border: 0px;
+                }
+                .dropdown-menu{
+                    @include background-color($base-dark-1);
+                    border-color: $white;
+                    a.dropdown-item{
+                        font-weight: $font-weight-bold;
+                        @include font-color($white);
+                    }
+                    a.dropdown-item:hover{
+                        @include font-color($base-light-1);
+                        @include background-color($base-dark-1);
+                    }
+                }
+
+            }
+        }
+    }
+
+    div.dropdown-menu{
+        a.dropdown-item{
+            border: 0px;
+        }
+    }
+
+}
