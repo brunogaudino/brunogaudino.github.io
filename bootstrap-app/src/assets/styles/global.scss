@@ -15,7 +15,7 @@ body{
 //Defaults scss
 a{
     @include font-color($link);
-    transition: 1.2s ease-in;
+    transition: 0.9s ease-in;
     border-bottom: 2px solid $link;
     font-weight: $font-weight-bold;
 }
@@ -23,13 +23,10 @@ a{
 a:hover,a:focus{
     @include font-color($link-hover);
     border-bottom: 2px solid $link-hover;
-    transition: 1s ease-in;
+    transition: 0.5s ease-in;
     text-decoration: none;
 }
 
-.text-align-center{text-align: center;}
-.text-align-left{text-align: left;}
-.font-weight-bold{font-weight: $font-weight-bold;}
 .wrap-spinner{display: block;}
 .hide{ display: none;}
 

@@ -1,0 +1,9 @@
+@import '../../../assets/styles/global.scss';
+
+.container{
+    div.row{
+        border: 0px solid $white;
+        border-radius: 3%;
+        padding: 10px 0px;
+    }
+}
