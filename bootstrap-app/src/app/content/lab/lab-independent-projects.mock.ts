@@ -3,7 +3,9 @@ export const LabIndependentProjectsMock = [
     'title':'API service',
     'description':'An API who provides CRUD(create, read, update, delete) operations services. The code is available in github and is accessible through the link bellow.',
     'link':'https://github.com/brunogaudino/api-service/',
-    'tag':'nodejs',
+    'tag': [{
+      'success': 'nodejs'
+    }],
     'icon':'fa-github',
     'flagShowProject': true
   },
@@ -11,7 +13,9 @@ export const LabIndependentProjectsMock = [
     'title':'Developer nodejs project',
     'description':'A project built with HTML5, CSS3, javascipt, node.js and mongodb, as a complement to the training. The code is available in github and is accessible through the link developer nodejs project.',
     'link':'https://github.com/brunogaudino/developer-nodejs-project/',
-    'tag':'nodejs',
+    'tag':[{
+      'success': 'nodejs'
+    }],
     'icon':'fa-github',
     'flagShowProject': true
   },
@@ -19,7 +23,9 @@ export const LabIndependentProjectsMock = [
     'title':'Shot on the target',
     'description':'Development of a simple game with javascript in which the user needs to hit the target. This page is usually blocked by the browser for security, it is necessary to unlock to see the game by running the example page can be accessed on the link shot on the target.',
     'link':'https://github.com/brunogaudino/shot-on-the-target/',
-    'tag':'javascript',
+    'tag':[{
+      'warning': 'javascript'
+    }],
     'icon':'fa-github',
     'flagShowProject': true
   },
@@ -27,7 +33,9 @@ export const LabIndependentProjectsMock = [
     'title':'App news',
     'description':'A simple web app who list news about many subjects country selected like sports, business, entertainment.',
     'link':'https://github.com/brunogaudino/appnews/',
-    'tag':'angular',
+    'tag':[{
+      'danger': 'angular'
+    }],
     'icon':'fa-github',
     'flagShowProject': true
   },

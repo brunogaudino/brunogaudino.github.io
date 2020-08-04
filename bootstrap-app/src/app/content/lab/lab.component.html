@@ -3,21 +3,21 @@
   <bg-menu></bg-menu>
   
   <div class="container">
-    <div class="row text-align-center margin-top20">
+    <div class="row text-center mt-5">
       <div class="col-12">        
-        <h1 class="margin-bottom20">Lab</h1>
-        <p class="text-align-center">In the section Lab contains some projects than I developed.</p>
+        <h1 class="mb-5">Lab</h1>
+        <p class="text-center">In the section Lab contains some projects than I developed.</p>
       </div>
     </div>
   </div>
 
   <div *ngIf="independentProjects.length > 0; else independentProjectError" class="container">
-    <div class="row text-align-center margin-top20">
-        <div class="col-md-12 col-12 margin-bottom20">
+    <div class="row mt-5">
+        <div class="col-md-12 col-12 mb-5 text-left">
           <h2>Independent projects</h2>
           <p>Developed independent projects.</p>
         </div>
-        <div *ngFor="let independentProject of independentProjects" class="col-md-4 col-12 margin-bottom20">
+        <div *ngFor="let independentProject of independentProjects" class="col-md-4 col-12 mb-5">
           <div *ngIf="independentProject.flagShowProject">
             <bg-lab-card
               [title]="independentProject.title"
@@ -32,8 +32,8 @@
   </div>
   <ng-template #independentProjectError>
     <div class="container">
-      <div class="row text-align-center margin-top20">
-          <div class="col-md-12 col-12 margin-bottom20">
+      <div class="row mt-5">
+          <div class="col-md-12 col-12 mb-5 text-left">
             <div class="alert alert-secondary" role="alert">
               <h4 class="alert-heading">Independent projects</h4>
               <hr>
@@ -45,12 +45,12 @@
   </ng-template>
 
   <div *ngIf="stackblitzProjects.length > 0; else stackblitzProjectError" class="container">
-    <div class="row text-align-center margin-top20">
-        <div class="col-md-12 col-12 margin-bottom20">
+    <div class="row mt-5">
+        <div class="col-md-12 col-12 mb-5 text-left">
           <h2>Stackblitz projects</h2>
           <p>Projects developed.</p>
         </div>
-        <div *ngFor="let stackblitzProject of stackblitzProjects" class="col-md-4 col-12 margin-bottom20">
+        <div *ngFor="let stackblitzProject of stackblitzProjects" class="col-md-4 col-12 mb-5">
           <div  *ngIf="stackblitzProject.flagShowProject">
             <bg-lab-card
               [title]="stackblitzProject.title"
@@ -66,8 +66,8 @@
 
   <ng-template #stackblitzProjectError>
     <div class="container">
-      <div class="row text-align-center margin-top20">
-          <div class="col-md-12 col-12 margin-bottom20">
+      <div class="row mt-5">
+          <div class="col-md-12 col-12 mb-5 text-left">
             <div class="alert alert-secondary" role="alert">
               <h4 class="alert-heading">Stackblitz projects</h4>
               <hr>
@@ -80,12 +80,12 @@
   </ng-template>
 
   <div *ngIf="courseProjects.length > 0; else courseProjectError" class="container">
-    <div class="row text-align-center margin-top20">
-        <div class="col-md-12 col-12 margin-bottom20">
+    <div class="row mt-5">
+        <div class="col-md-12 col-12 mb-5 text-left">
           <h2>Course projects</h2>
           <p>Projects developed during courses.</p>
         </div>
-        <div *ngFor="let courseProject of courseProjects" class="col-md-4 col-12 margin-bottom20">
+        <div *ngFor="let courseProject of courseProjects" class="col-md-4 col-12 mb-5">
           <div *ngIf="  courseProject.flagShowProject">
             <bg-lab-card
               [title]="courseProject.title"
@@ -101,8 +101,8 @@
 
   <ng-template #courseProjectError>
     <div class="container">
-      <div class="row text-align-center margin-top20">
-          <div class="col-md-12 col-12 margin-bottom20">
+      <div class="row mt-5">
+          <div class="col-md-12 col-12 mb-5 text-left">
             <div class="alert alert-secondary" role="alert">
               <h4 class="alert-heading">Course projects</h4>
               <hr>

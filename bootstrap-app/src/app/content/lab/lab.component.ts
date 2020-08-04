@@ -4,7 +4,7 @@ import { LabService } from './lab.service';
 
 @Component({
   templateUrl: './lab.component.html',
-  styleUrls: ['./lab.component.css']
+  styleUrls: ['./lab.component.scss']
 })
 export class LabComponent implements OnInit {
 
