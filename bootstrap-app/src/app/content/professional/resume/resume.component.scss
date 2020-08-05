@@ -1,0 +1,53 @@
+@import '../../../../assets/styles/global.scss';
+
+#resume{ 
+
+  .card{
+
+    //border: 1px solid $white;
+
+    .card-header{
+
+      border-bottom: 1px solid $white;
+      margin-bottom: 0px;
+      
+      .btn{
+
+        @include font-color($link);
+        transition: 0.9s ease-in;
+        text-decoration: underline;
+        font-weight: $font-weight-bold;
+
+      }
+
+      .btn:hover,.btn:focus{
+
+        @include font-color($link);
+  
+      }
+
+      i{
+        margin-right: 10px;
+      }
+
+    }
+
+    .card-body{
+      
+      border-bottom: 1px solid $white;
+
+      img{
+        padding: 5px;
+        @include background-color($white);
+        border: 1px solid $white;
+      }
+
+    }
+
+  }
+
+}
+
+.border-color{
+  border-color: $white;
+}
