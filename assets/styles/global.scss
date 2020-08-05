@@ -1,0 +1,61 @@
+@import '../../styles.scss';
+
+body{
+    @include font-color($white);
+    @include background-color($base-dark-1);
+    font-family: $font-family-default;
+    font-weight: $font-weight-regular;
+    font-size: 16px;
+}
+
+//Defaults scss
+a{
+    @include font-color($link);
+    transition: 0.9s ease-in;
+    border-bottom: 2px solid $link;
+    font-weight: $font-weight-bold;
+}
+
+a:hover,a:focus{
+    @include font-color($link-hover);
+    border-bottom: 2px solid $link-hover;
+    transition: 0.5s ease-in;
+    text-decoration: none;
+}
+
+.wrap-spinner{display: block;}
+.hide{ display: none;}
+
+@media (max-width: 410px) {
+  #resume .accordion .card{
+    text-align: center;
+  }
+}
+
+//Backgrounds 
+.background-base-color{
+    @include background-color($base-color);
+}
+
+.background-base-dark-1{
+    @include background-color($base-dark-1);
+}
+
+.background-base-dark-2{
+    @include background-color($base-dark-2);
+}
+
+.background-base-light-1{
+    @include background-color($base-light-1);
+}
+
+.background-base-light-2{
+    @include background-color($base-light-2);
+}
+
+.font-color-white{
+    @include font-color($white);
+}
+// .background-blue-color-dark3{background: #243540;}   using $black-2
+
+// .font-color-white{color: white;}                     using
