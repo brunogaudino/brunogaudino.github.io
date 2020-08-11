@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialNetworkService } from './social-network.service';
 
 @Component({
   selector: 'bg-social-network',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SocialNetworkComponent implements OnInit {
 
-  constructor() { }
+  socialNetwork: Array<object>;
+
+  constructor(
+    private socialNetworkService: SocialNetworkService
+  ) { }
 
   ngOnInit() {
+    this.socialNetwork = this.socialNetworkService.getSocialNetwork();
   }
 
 }

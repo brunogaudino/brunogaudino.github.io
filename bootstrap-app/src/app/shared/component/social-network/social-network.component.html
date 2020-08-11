@@ -2,13 +2,50 @@
   <div class="row text-center mt-3">
     <div class="col-1"></div>
     <div class="col-10">
-      <ul class="list-inline">
+      <!-- <ul class="list-inline">
         <li class="d-inline p-2"><a title="LinkedIn" alt="LinkedIn" href="https://linkedin.com/in/brunocesarweb/?locale=en_US" target="blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
         <li class="d-inline p-2"><a title="GitHub" alt="GitHub" href="https://github.com/brunogaudino" target="blank"><i class="fa fa-github fa-2x" ></i></a></li>
         <li class="d-inline p-2"><a title="Stackblitz" alt="Stackblitz" href="https://stackblitz.com/@brunogaudino" target="blank"><i class="fa fa-code fa-2x"></i></a></li>
         <li class="d-inline p-2"><a title="Behance" alt="Behance" href="https://www.behance.net/brunocesarweb" target="blank"><i class="fa fa-behance fa-2x"></i></a></li>
-        <li class="d-inline p-2"><a title="CodePen" alt="CodePen" href="http://codepen.io/brunocesaragweb/" target="blank"><i class="fa fa-codepen fa-2x"></i></a></li>
-      </ul>
+        <li class="d-inline p-2">
+          <a 
+          title="CodePen" 
+          alt="CodePen" 
+          href="http://codepen.io/brunocesaragweb/" 
+          target="blank">
+            <i class="fa fa-codepen fa-2x"></i>
+          </a>
+        </li>
+      </ul> -->
+      <div *ngIf="socialNetwork.length > 0; else socialNetworkError" class="container">
+        <ul class="list-inline">
+          <li class="d-inline p-2" *ngFor="let itemSocialNetwork of socialNetwork" class="col-md-4 col-12 mb-5">
+            <a title="{{itemSocialNetwork.title}}"
+            alt="{{itemSocialNetwork.title}}"
+            href="{{itemSocialNetwork.link}}"
+            target="_blank">
+              <i class="fa {{itemSocialNetwork.icon}} fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    
+      <ng-template #socialNetworkError>
+        <div class="container">
+          <div class="row mt-5">
+              <div class="col-md-12 col-12 mb-5 text-left">
+                <div class="alert alert-secondary" role="alert">
+                  <p class="mb-0">The social network links are crash, we work to solve this problem.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </ng-template>
+
+
+
+
+
     </div>
     <div class="col-1"></div>
   </div>
