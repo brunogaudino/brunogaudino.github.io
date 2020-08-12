@@ -19,7 +19,7 @@
       </ul> -->
       <div *ngIf="socialNetwork.length > 0; else socialNetworkError" class="container">
         <ul class="list-inline">
-          <li class="d-inline p-2" *ngFor="let itemSocialNetwork of socialNetwork" class="col-md-4 col-12 mb-5">
+          <li class="d-inline p-2" *ngFor="let itemSocialNetwork of socialNetwork">
             <a title="{{itemSocialNetwork.title}}"
             alt="{{itemSocialNetwork.title}}"
             href="{{itemSocialNetwork.link}}"
@@ -29,23 +29,13 @@
           </li>
         </ul>
       </div>
-    
       <ng-template #socialNetworkError>
-        <div class="container">
-          <div class="row mt-5">
-              <div class="col-md-12 col-12 mb-5 text-left">
-                <div class="alert alert-secondary" role="alert">
-                  <p class="mb-0">The social network links are crash, we work to solve this problem.</p>
-                </div>
-              </div>
+        <div class="col-md-12 col-12 mb-2 text-left">
+          <div class="alert alert-secondary" role="alert">
+            <p class="mb-0">The social network links are crash, we work to solve this problem.</p>
           </div>
         </div>
       </ng-template>
-
-
-
-
-
     </div>
     <div class="col-1"></div>
   </div>
