@@ -7,7 +7,7 @@ export const LabStackblitzProjectsMock = [
       'danger': 'angular'
     }],
     'icon': 'fa-code',
-    'flagShowProject': true
+    'flagShowHide': true
   },
   {
     'title': 'Crud storage data',
@@ -17,7 +17,7 @@ export const LabStackblitzProjectsMock = [
       'danger': 'angular'
     }],
     'icon': 'fa-code',
-    'flagShowProject': true
+    'flagShowHide': true
   },
   {
     'title': 'Nav content behavior subject',
@@ -27,7 +27,7 @@ export const LabStackblitzProjectsMock = [
       'danger': 'angular'
     }],
     'icon': 'fa-code',
-    'flagShowProject': false
+    'flagShowHide': false
   },
   {
     'title': 'Array form',
@@ -37,6 +37,6 @@ export const LabStackblitzProjectsMock = [
       'danger': 'angular'
     }],
     'icon': 'fa-code',
-    'flagShowProject': false
+    'flagShowHide': false
   }
 ];

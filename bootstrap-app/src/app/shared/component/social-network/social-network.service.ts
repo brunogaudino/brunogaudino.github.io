@@ -11,7 +11,7 @@ export class SocialNetworkService {
 
     getSocialNetwork() {
         try {
-            return SocialNetworkMock.filter((mock) => mock.flagShowSocialNetwork === true);
+            return SocialNetworkMock.filter((mock) => mock.flagShowHide === true);
         } catch (error) {
             console.log('Error service SocialNetworkMock ', error); 
         }

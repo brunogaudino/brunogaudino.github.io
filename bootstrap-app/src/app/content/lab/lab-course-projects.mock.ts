@@ -7,7 +7,7 @@ export const LabCourseProjectsMock = [
       'success': 'nodejs'
     }],
     'icon':'fa-github',
-    'flagShowProject': true
+    'flagShowHide': true
   },
   {
     'title': 'Webapp Angular',
@@ -17,7 +17,7 @@ export const LabCourseProjectsMock = [
       'danger': 'angular'
     }],
     'icon':'fa-github',
-    'flagShowProject': true
+    'flagShowHide': true
   },
   {
     'title': 'Workflow gulp',
@@ -27,7 +27,7 @@ export const LabCourseProjectsMock = [
       'warning': 'javascript'
     }],
     'icon':'fa-github',
-    'flagShowProject': true
+    'flagShowHide': true
   },
   {
     'title': 'Portal news RWD',
@@ -37,7 +37,7 @@ export const LabCourseProjectsMock = [
       'warning': 'javascript'
     }],
     'icon':'fa-github',
-    'flagShowProject': true
+    'flagShowHide': true
   },
   {
     'title': 'My patients',
@@ -47,7 +47,7 @@ export const LabCourseProjectsMock = [
       'warning': 'javascript'
     }],
     'icon':'fa-github',
-    'flagShowProject': true
+    'flagShowHide': true
   },
   {
     'title': 'API Payment',
@@ -57,6 +57,6 @@ export const LabCourseProjectsMock = [
       'success': 'nodejs'
     }],
     'icon':'fa-github',
-    'flagShowProject': false
+    'flagShowHide': false
   }
 ]

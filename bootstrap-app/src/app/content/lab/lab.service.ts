@@ -13,7 +13,7 @@ export class LabService {
 
   getLabCourseData() {
     try {
-      return LabCourseProjectsMock.filter((mock) => mock.flagShowProject === true);
+      return LabCourseProjectsMock.filter((mock) => mock.flagShowHide === true);
     } catch (error) {
       console.log('Error service LabCourseProjectsMock ', error);
     }
@@ -21,7 +21,7 @@ export class LabService {
 
   getLabIndependentData(){
     try {
-      return LabIndependentProjectsMock.filter((mock) => mock.flagShowProject === true);
+      return LabIndependentProjectsMock.filter((mock) => mock.flagShowHide === true);
     } catch (error) {
       console.log('Error service LabIndependentProjectsMock ', error);
     }
@@ -29,7 +29,7 @@ export class LabService {
 
   getLabStackblitzData(){
     try {
-      return LabStackblitzProjectsMock.filter((mock) => mock.flagShowProject === true);
+      return LabStackblitzProjectsMock.filter((mock) => mock.flagShowHide === true);
     } catch (error) {
       console.log('Error service LabStackblitzProjectMock ', error);
     }
