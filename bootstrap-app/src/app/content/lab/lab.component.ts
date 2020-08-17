@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { LabService } from './lab.service';
+import { MockService } from 'src/app/shared/services/mock.service';
 
 @Component({
   templateUrl: './lab.component.html',
@@ -13,14 +13,14 @@ export class LabComponent implements OnInit {
   stackblitzProjects: Array<object>;
 
   constructor(
-    private labService: LabService
+    private mockService: MockService
   ) { }
 
   ngOnInit() {
 
-    this.courseProjects = this.labService.getLabCourseData();
-    this.independentProjects = this.labService.getLabIndependentData();
-    this.stackblitzProjects = this.labService.getLabStackblitzData();
+    this.courseProjects = this.mockService.getLabCourseProjectsMock();
+    this.independentProjects = this.mockService.getLabIndependentProjectsMock();
+    this.stackblitzProjects = this.mockService.getLabStackblitzProjectsMock();
   }
 
 }

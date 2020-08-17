@@ -1,17 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { environment } from 'src/environments/environment.prod';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'bg-logo-presentation',
     templateUrl: './logo-presentation.component.html',
     styleUrls: ['./logo-presentation.component.scss']
 })
-export class LogoPresentationComponent implements OnInit {
-
-    jobPosition: string = environment.jobPosition;
+export class LogoPresentationComponent {
 
     constructor() { }
-
-    ngOnInit() { }
 
 }
