@@ -17,7 +17,7 @@ export const LabCourseProjectsMock = [
       'danger': 'angular'
     }],
     'icon':'fa-github',
-    'flagShowHide': true
+    'flagShowHide': false
   },
   {
     'title': 'Workflow gulp',

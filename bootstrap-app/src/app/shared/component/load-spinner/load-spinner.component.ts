@@ -13,7 +13,7 @@ export class LoadSpinnerComponent implements OnInit {
   ngOnInit() {
     setTimeout(function(){
       $('.hide').fadeIn('slow');
-      $(".wrap-spinner").fadeOut('fast');
+      $('.wrap-spinner').fadeOut('fast');
     }, 2000);
   }
 

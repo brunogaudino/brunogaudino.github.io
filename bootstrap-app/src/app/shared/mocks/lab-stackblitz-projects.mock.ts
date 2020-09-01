@@ -27,7 +27,7 @@ export const LabStackblitzProjectsMock = [
       'danger': 'angular'
     }],
     'icon': 'fa-code',
-    'flagShowHide': false
+    'flagShowHide': true
   },
   {
     'title': 'Array form',

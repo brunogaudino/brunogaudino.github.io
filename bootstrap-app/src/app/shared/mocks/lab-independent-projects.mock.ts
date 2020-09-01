@@ -7,7 +7,7 @@ export const LabIndependentProjectsMock = [
       'success': 'nodejs'
     }],
     'icon':'fa-github',
-    'flagShowHide': true
+    'flagShowHide': false
   },
   {
     'title':'Developer nodejs project',
@@ -43,6 +43,9 @@ export const LabIndependentProjectsMock = [
     'title':'Minimalist jekyll blog',
     'description':'Minimalist blog development using jekyll, with posts lists, pagination, commentary with disqus, and contact form. A sample page can be accessed on the minimalist jekyll blog.',
     'link':'https://brunogaudino.github.io/minimalist-jekyll-blog/',
+    'tag':[{
+      'warning': 'javascript'
+    }],
     'icon':'fa-github',
     'flagShowHide': false
   },
@@ -50,6 +53,9 @@ export const LabIndependentProjectsMock = [
     'title':'Framework Grid CSS',
     'description':'CSS framework adaptation based on grid concept, for facilitates the website interface development. A sample page can be accessed on the Framework Grid CSS.',
     'link':'https://github.com/brunogaudino/framework-grid-css',
+    'tag':[{
+      'primary': 'css'
+    }],
     'icon':'fa-github',
     'flagShowHide': false
   }
