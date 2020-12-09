@@ -8,6 +8,7 @@ import { SocialNetworkModule } from 'src/app/shared/component/social-network/soc
 import { FooterModule } from 'src/app/shared/component/footer/footer.module';
 import { LoadSpinnerModule } from 'src/app/shared/component/load-spinner/load-spinner.module';
 import { LogoPresentationModule } from 'src/app/shared/component/logo-presentation/logo-presentation.module';
+import { EuropassCvComponent } from './europass-cv/europass-cv.component';
 
 @NgModule({
   imports:[
@@ -20,7 +21,8 @@ import { LogoPresentationModule } from 'src/app/shared/component/logo-presentati
     ProfessionalRoutingModule
   ],
   declarations: [
-    ResumeComponent
+    ResumeComponent,
+    EuropassCvComponent
   ],
   exports: [],
   providers: []

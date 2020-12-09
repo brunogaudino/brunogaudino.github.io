@@ -1,0 +1,27 @@
+@import '../../../../assets/styles/global.scss';
+
+#europass{
+
+  @include font-color($white);
+
+  h2{
+    border-bottom: 5px solid $white;
+  }
+
+  table.table{
+    color: $white;
+    text-align: left;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  #europass{
+    table{
+      .text-right{
+        text-align: center !important;
+        color: aqua;
+      }
+    }
+  }
+}

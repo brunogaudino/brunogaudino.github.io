@@ -58,5 +58,15 @@ export const LabIndependentProjectsMock = [
     }],
     'icon':'fa-github',
     'flagShowHide': false
+  },
+  {
+    'title':'Contact Simple list',
+    'description':'Simple list build with java.',
+    'link':'https://github.com/brunogaudino/contact-simple-list',
+    'tag':[{
+      'secondary': 'java'
+    }],
+    'icon':'fa-github',
+    'flagShowHide': true
   }
 ]
