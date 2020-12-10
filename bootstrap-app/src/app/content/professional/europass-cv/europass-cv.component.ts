@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MockService } from 'src/app/shared/services/mock.service';
 
 @Component({
   selector: 'app-europass-cv',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EuropassCvComponent implements OnInit {
 
-  constructor() { }
+  resumeMock: Array<object>;
+
+  constructor(
+    private resumeMockService: MockService
+  ) { }
 
   ngOnInit(): void {
+
+    this.resumeMock = this.resumeMockService.getResumeMock();
+    
   }
 
 }

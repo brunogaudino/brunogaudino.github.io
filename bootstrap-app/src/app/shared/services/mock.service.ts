@@ -5,6 +5,7 @@ import { LabCourseProjectsMock } from '../mocks/lab-course-projects.mock';
 import { LabIndependentProjectsMock } from '../mocks/lab-independent-projects.mock';
 import { LabStackblitzProjectsMock } from '../mocks/lab-stackblitz-projects.mock';
 import { MentionMock } from '../mocks/mention.mock';
+import { ResumeMock } from '../mocks/resume.mock';
 
 @Injectable({
   providedIn: 'root'
@@ -48,6 +49,14 @@ export class MockService {
   getMentionMock() {
     try {
       return MentionMock.filter((mock) => mock.flagShowHide === true);
+    } catch (error) {
+      console.log('Error service ', error);
+    }
+  }
+
+  getResumeMock() {
+    try {
+      return ResumeMock.filter((mock) => mock.flagShowHide === true);
     } catch (error) {
       console.log('Error service ', error);
     }

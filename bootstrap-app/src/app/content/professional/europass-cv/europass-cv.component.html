@@ -12,70 +12,20 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="row text-center mt-2">
-      <div class="col-12 pt-2 pb-2 background-base-dark-1 border-0 text-left">
-        <h2 class="mb-2 text-left text-uppercase">work experience</h2>
+  <div class="container" *ngIf="resumeMock.length > 0">
+    <div class="row text-center mt-2" *ngFor="let itemResume of resumeMock">
+      <div *ngIf="itemResume.flagShowHide" class="col-12 pt-2 pb-2 background-base-dark-1 border-0 text-left">
+        <h2 class="mb-2 text-left text-uppercase">{{itemResume.category}}</h2>
         <table class="table table-borderless">
           <tbody>
-            <tr class="row">
+            <tr class="row" *ngFor="let itemField of itemResume.fields">
               <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">May 2017 - present</h5>
+                <h5 class="mb-2">{{itemField.period}}</h5>
               </td>
               <td class="col-md-8 col-12 text-left">
-                <h5 class="mb-2">Systems Analyst/Programmer</h5>
-                <h6 class="display-6">BRQ Digital Solutions</h6>
-                <p>Systems Analyst/Programmer web front-end, development with HTML, CSS, JavaScript, Java, Angular.</p>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">November 2014 - April 2017</h5>
-              </td>
-              <td class="col-md-8 col-12 text-left">
-                <h5 class="mb-2">Front-end Developer</h5>
-                <h6 class="display-6">Viewit Mobile</h6>
-                <p>Development of mobile-oriented websites in a Mac OS development environment using HTML, CSS, JavaScript, Jquery, Sass, Git technologies.</p>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">July 2010 - October 2014</h5>
-              </td>
-              <td class="col-md-8 col-12 text-left">
-                <h5 class="mb-2">Web Designer/Front-end Developer</h5>
-                <h6 class="display-6">Ongame Entertainment</h6>
-                <p>Development of websites: Metin2, Ongame Portal, WYD, Point Blank, Aika, Hero, Zone4 and others. Landing pages, internal systems, using: HTML, CSS, JavaScript, Jquery.</p>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">March 2011 - December 2012</h5>
-              </td>
-              <td class="col-md-8 col-12 text-left">
-                <h5 class="mb-2">Teacher/Coordinator</h5>
-                <h6 class="display-6">Technical School Camargo Aranha - ETEC</h6>
-                <p>I taught the courses of Applications for Projects, for the courses of Computer science and Computer science for the Internet. Computerized Accounting Applications for Accounting Course. I also acted as coordinator of the Informatics course.</p>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">June 2009 - June 2010</h5>
-              </td>
-              <td class="col-md-8 col-12 text-left">
-                <h5 class="mb-2">Administrative Assistant for Quality Management</h5>
-                <h6 class="display-6">Rigiline Ind. e Com. de Plásticos</h6>
-                <p>Development routines for quality assurance using quality tools, developed indicative graphics for quality control, documentation control.</p>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">February 2009 - May 2009</h5>
-              </td>
-              <td class="col-md-8 col-12 text-left">
-                <h5 class="mb-2">Computing Instructor</h5>
-                <h6 class="display-6">Escotec School</h6>
-                <p>I taught computer science at basic level, Windows, Office 2007, Internet.</p>
+                <h5 class="mb-2">{{itemField.position}}</h5>
+                <h6 class="display-6">{{itemField.company}}</h6>
+                <p>{{itemField.description}}</p>
               </td>
             </tr>
           </tbody>
@@ -83,91 +33,6 @@
       </div>
     </div>
   </div>
-
-  <div class="container">
-    <div class="row text-center mt-2">
-      <div class="col-12 pt-2 pb-2 background-base-dark-1 border-0 text-left">
-        <h2 class="mb-2 text-left text-uppercase">education and training</h2>
-        <table class="table table-borderless">
-          <tbody>
-            <tr class="row">
-              <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">January 2007 - December 2010</h5>
-              </td>
-              <td class="col-md-8 col-12 text-left">
-                <h5 class="mb-2">Technician's license</h5>
-                <h6 class="display-6">Technology college of Sao Paulo - FATEC</h6>
-                <p>Knowledge in developing systems for business management applying technological knowledge to assist in the decision making process of companies.</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row text-center mt-2">
-      <div class="col-12 pt-2 pb-2 background-base-dark-1 border-0 text-left">
-        <h2 class="mb-2 text-left text-uppercase">personal skills</h2>
-        <table class="table table-borderless">
-          <tbody>
-            <tr class="row">
-              <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">December 2020</h5>
-              </td>
-              <td class="col-md-8 col-12 text-left">
-                <h5 class="mb-2">Java Basics</h5>
-                <h6 class="display-6">Loiane Trainning</h6>
-                <p>Principes of Java, object oriented, arrays and projects examples.</p>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">August 2019</h5>
-              </td>
-              <td class="col-md-8 col-12 text-left">
-                <h5 class="mb-2">Angular</h5>
-                <h6 class="display-6">Alura Online Courses</h6>
-                <p>Web development using Angular framework, TypeScript.</p>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">March 2019</h5>
-              </td>
-              <td class="col-md-8 col-12 text-left">
-                <h5 class="mb-2">Web Accessibility Specialist</h5>
-                <h6 class="display-6">Alura Online Courses</h6>
-                <p>Accessible web development for people with disabilities to provide a better experience for those who browse the site.</p>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">June 2017</h5>
-              </td>
-              <td class="col-md-8 col-12 text-left">
-                <h5 class="mb-2">NodeJS Developer</h5>
-                <h6 class="display-6">Alura Online Courses</h6>
-                <p>Application development in NodeJS using ExpressJs, creation of Rest API.</p>
-              </td>
-            </tr>
-            <tr class="row">
-              <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">June 2017</h5>
-              </td>
-              <td class="col-md-8 col-12 text-left">
-                <h5 class="mb-2">Git: control and share your code</h5>
-                <h6 class="display-6">Alura Online Courses</h6>
-                <p>Basic git cycle, understanding version control system, working with branches.</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
 
   <bg-logo-presentation></bg-logo-presentation>
   
