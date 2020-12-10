@@ -14,81 +14,23 @@
   <div class="container">
     <div class="row text-center mt-2">
       <div class="col-12 card pt-2 pb-2 background-base-dark-1 border-0">
-        <!-- <h2 class="mb-2">I.T. Companies</h2>        -->
-        <div class="text-left">
-          
-          <div class="card mb-3">
-            <h5 class="card-header background-base-light-2 font-color-white">
-              <i class="fa fa-xs fa-laptop font-color-white"></i>
-              BRQ digital solutions
-            </h5>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 font-color-white">"We work in some challenging projects and Bruno always behaved for a professional way, with the teammates and the clients, focused and with a good professional attitude certainly is a recommended professional."</h6>
-              <p class="card-text text-right font-weight-bold">Rodrigo Lopes - <span>Programmer analyst.</span></p>
+        <div class="text-left" *ngIf="mentionMock.length > 0">
+          <div *ngFor="let mentionData of mentionMock" class="card mb-3">
+            <div *ngIf="mentionData.flagShowHide">
+              <h5 class="card-header background-base-light-2 font-color-white">
+                <i class="fa fa-xs {{mentionData.icon}} font-color-white"></i>
+                {{mentionData.company}}
+              </h5>
+              <div *ngFor="let mentionItem of mentionData.mentions" class="card-body">
+                <div *ngIf="mentionItem.flagShowHide">
+                  <h6 class="card-subtitle mb-2 font-color-white">{{mentionItem.description}}</h6>
+                  <p class="card-text text-right font-weight-bold">{{mentionItem.author}}</p>
+                </div>                
+              </div>
             </div>
           </div>
-
-          <div class="card mb-3">
-            <h5 class="card-header background-base-light-2 font-color-white">
-              <i class="fa fa-xs fa-mobile font-color-white"></i>
-              Viewit Mobile
-            </h5>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 font-color-white">"Bruno is a professional committed to the quality of his work, is committed to the company, punctual, organized and with excellent knowledge."</h6>
-              <p class="card-text text-right font-weight-bold">Wilson Cunha - <span>Business director.</span></p>
-            </div>
-          </div>
-
-          <div class="card mb-3">
-            <h5 class="card-header background-base-light-2 font-color-white">
-              <i class="fa fa-xs fa-gamepad font-color-white"></i>
-              Ongame Entertainment
-            </h5>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 font-color-white">"Bruno is a great front-end professional. We worked at Ongame where I followed his great evolution in Front-end and also as junior PHP developer. Has good knowledge of the tools for a front end. He has patience and works very well as team."</h6>
-              <p class="card-text text-right font-weight-bold">Fabio Guaraldo - <span>PHP developer.</span></p>
-            </div>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 font-color-white">"Bruno is a serious professional, hardworking, interested in learning and helping a lot in the projects of the company."</h6>
-              <p class="card-text text-right font-weight-bold">Mardel Cardoso - <span>Project manager.</span></p>
-            </div>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 font-color-white">"Bruno is a great webdesigner, the layouts were always scheduled and delivered on the correct deadlines!"</h6>
-              <p class="card-text text-right font-weight-bold">Rafael Naletto - <span>Digital design.</span></p>
-            </div>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 font-color-white">"Always helpful and effective!"</h6>
-              <p class="card-text text-right font-weight-bold">Diogo Nishimoto - <span>Content analyst.</span></p>
-            </div>
-          </div>
-
-          <div class="card mb-3">
-            <h5 class="card-header background-base-light-2 font-color-white">
-              <i class="fa fa-xs fa-graduation-cap font-color-white"></i>
-              Technology College of State of São Paulo(Fatec)
-            </h5>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 font-color-white">"Bruno Cesar is a remarkable professional with great concern for the quality of his deliverables and in the user experience. He is remarkable for his ability to work in teams and to organize his workflow."</h6>
-              <p class="card-text text-right font-weight-bold">Marcos Vinicius Guimarães - <span>Web Developer.</span></p>
-            </div>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 font-color-white">"Bruno has always been a dedicated and responsible student in his academic activities. It is in constant search of novelties that can add in their professional actions."</h6>
-              <p class="card-text text-right font-weight-bold">Luiz Pena - <span>Computing course coordinator on ETEC Osasco.</span></p>
-            </div>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 font-color-white">"I had the privilege to meet Bruno during the course at FATEC and to develop various group activities. He has always been a reference in our class, very dedicated, proactive and with an entrepreneurial spirit. Always well updated and with a good relationship with all, it captivates all the friendships and creates a pleasant and productive environment. Bruno is an excellent person, very sensible, a super professional and, in particular, a great friend."</h6>
-              <p class="card-text text-right font-weight-bold">João Gambôa - <span>CSV Expert(Computerized Systems Validation Analyst).</span></p>
-            </div>
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 font-color-white">"Besides being an extraordinary person as a friend, he is also a great professional."</h6>
-              <p class="card-text text-right font-weight-bold">Mônica Oliveira - <span>Teacher at the Centro Paula Souza.</span></p>
-            </div>
-          </div>
-
         </div>
-
-      </div>
-      
+      </div>      
     </div>
   </div>
 
