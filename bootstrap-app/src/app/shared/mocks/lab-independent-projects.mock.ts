@@ -60,9 +60,29 @@ export const LabIndependentProjectsMock = [
     'flagShowHide': false
   },
   {
-    'title':'Contact Simple list',
+    'title':'Contact simple list',
     'description':'Simple list build with java.',
     'link':'https://github.com/brunogaudino/contact-simple-list',
+    'tag':[{
+      'secondary': 'java'
+    }],
+    'icon':'fa-github',
+    'flagShowHide': true
+  },
+  {
+    'title':'Contact book',
+    'description':'A simple contact book build with java.',
+    'link':'https://github.com/brunogaudino/contact-book',
+    'tag':[{
+      'secondary': 'java'
+    }],
+    'icon':'fa-github',
+    'flagShowHide': true
+  },
+  {
+    'title':'Class diary',
+    'description':'A simple class diary build with java.',
+    'link':'https://github.com/brunogaudino/class-diary',
     'tag':[{
       'secondary': 'java'
     }],
