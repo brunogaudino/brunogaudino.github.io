@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EuropassCvComponent } from './europass-cv/europass-cv.component';
-
-import { ResumeComponent } from "./resume/resume.component";
+import { ResumeComponent } from './resume/resume.component';
 
 const routes: Routes = [
   {
@@ -12,10 +10,6 @@ const routes: Routes = [
   {
     path: 'resume',
     component: ResumeComponent
-  },
-  {
-    path: 'europass-cv',
-    component: EuropassCvComponent
   }
 ];
 

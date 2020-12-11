@@ -1,6 +1,35 @@
 @import '../../../../assets/styles/global.scss';
 
-#resume{ 
+#resume{
+
+  @include font-color($white);
+
+  h2{
+    border-bottom: 5px solid $white;
+  }
+
+  table.table{
+    color: $white;
+    text-align: left;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  #resume{
+    table{
+      .text-right{
+        text-align: center !important;
+      }
+    }
+  }
+}
+
+#old-resume{ 
+
+  .border-color{
+    border-color: $white;
+  }
 
   .card{
 
@@ -44,8 +73,4 @@
 
   }
 
-}
-
-.border-color{
-  border-color: $white;
 }

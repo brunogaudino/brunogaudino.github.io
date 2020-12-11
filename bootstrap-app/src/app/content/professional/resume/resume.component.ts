@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../../../environments/environment.prod';
+import { MockService } from 'src/app/shared/services/mock.service';
 import * as $ from 'jquery';
 
 @Component({
@@ -8,11 +9,17 @@ import * as $ from 'jquery';
 })
 export class ResumeComponent implements OnInit {
 
+  resumeMock: Array<object>;
+  isResumeActive = true;
   jobPosition: string = environment.jobPosition;
   college: string = environment.college;
 
-  constructor() { }
+  constructor(
+    private resumeMockService: MockService
+  ) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.resumeMock = this.resumeMockService.getResumeMock();
+  }
 
 }
