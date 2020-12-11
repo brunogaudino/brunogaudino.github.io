@@ -17,7 +17,7 @@
           <h2>Independent projects</h2>
           <p>Developed independent projects.</p>
         </div>
-        <div *ngFor="let independentProject of independentProjects" class="col-md-4 col-12 mb-5">
+        <div *ngFor="let independentProject of independentProjects" class="col-lg-4 col-md-6 col-12 mb-5">
           <div *ngIf="independentProject.flagShowHide">
             <bg-lab-card
               [title]="independentProject.title"
@@ -50,7 +50,7 @@
           <h2>Stackblitz projects</h2>
           <p>Projects developed.</p>
         </div>
-        <div *ngFor="let stackblitzProject of stackblitzProjects" class="col-md-4 col-12 mb-5">
+        <div *ngFor="let stackblitzProject of stackblitzProjects" class="col-lg-4 col-md-6 col-12 mb-5">
           <div  *ngIf="stackblitzProject.flagShowHide">
             <bg-lab-card
               [title]="stackblitzProject.title"
@@ -85,7 +85,7 @@
           <h2>Course projects</h2>
           <p>Projects developed during courses.</p>
         </div>
-        <div *ngFor="let courseProject of courseProjects" class="col-md-4 col-12 mb-5">
+        <div *ngFor="let courseProject of courseProjects" class="col-lg-4 col-md-6 col-12 mb-5">
           <div *ngIf="  courseProject.flagShowHide">
             <bg-lab-card
               [title]="courseProject.title"
