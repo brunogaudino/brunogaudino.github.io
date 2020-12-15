@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../../../environments/environment.prod';
 import { MockService } from 'src/app/shared/services/mock.service';
+import { ResumeMock } from "../../../shared/mocks/resume.mock";
 import * as $ from 'jquery';
 
 @Component({
@@ -19,7 +20,7 @@ export class ResumeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.resumeMock = this.resumeMockService.getResumeMock();
+    this.resumeMock = this.resumeMockService.getMocks(ResumeMock);
   }
 
 }

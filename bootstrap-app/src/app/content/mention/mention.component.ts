@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MockService } from 'src/app/shared/services/mock.service';
+import { MentionMock } from "../../shared/mocks/mention.mock";
 
 @Component({
   templateUrl: './mention.component.html',
@@ -15,7 +16,7 @@ export class MentionComponent implements OnInit {
 
   ngOnInit() {
 
-    this.mentionMock = this.serviceMentionMock.getMentionMock();
+    this.mentionMock = this.serviceMentionMock.getMocks(MentionMock);
 
   }
 

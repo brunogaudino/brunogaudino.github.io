@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MockService } from '../../services/mock.service';
+import { SocialNetworkMock } from '../../mocks/social-network.mock';
 
 @Component({
   selector: 'bg-social-network',
@@ -15,7 +16,7 @@ export class SocialNetworkComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.socialNetwork = this.mockService.getSocialNetworkMock();
+    this.socialNetwork = this.mockService.getMocks(SocialNetworkMock);
   }
 
 }
