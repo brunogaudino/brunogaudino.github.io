@@ -18,12 +18,4 @@ export class MockService {
     }
   }
 
-  getResumeMock() {
-    try {
-      return ResumeMock.filter((mock) => mock.flagShowHide === true);
-    } catch (error) {
-      console.log('Error service ', error);
-    }
-  }
-
 }
