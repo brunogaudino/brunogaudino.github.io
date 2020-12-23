@@ -7,7 +7,17 @@ export const LabIndependentProjectsMock = [
       'success': 'nodejs'
     }],
     'icon':'fa-github',
-    'flagShowHide': false
+    'flagShowHide': true
+  },
+  {
+    'title':'API gateway',
+    'description':'An API gateway with other two API\'s fake.',
+    'link':'https://github.com/brunogaudino/api.gateway',
+    'tag': [{
+      'success': 'nodejs'
+    }],
+    'icon':'fa-github',
+    'flagShowHide': true
   },
   {
     'title':'Developer nodejs project',
@@ -30,24 +40,34 @@ export const LabIndependentProjectsMock = [
     'flagShowHide': true
   },
   {
-    'title':'App news',
-    'description':'A simple web app who list news about many subjects country selected like sports, business, entertainment.',
-    'link':'https://github.com/brunogaudino/appnews/',
+    'title':'Contact simple list',
+    'description':'A contact list build with java.',
+    'link':'https://github.com/brunogaudino/contact-simple-list',
     'tag':[{
-      'danger': 'angular'
+      'secondary': 'java'
     }],
     'icon':'fa-github',
     'flagShowHide': true
   },
   {
-    'title':'Minimalist jekyll blog',
-    'description':'Minimalist blog development using jekyll, with posts lists, pagination, commentary with disqus, and contact form. A sample page can be accessed on the minimalist jekyll blog.',
-    'link':'https://brunogaudino.github.io/minimalist-jekyll-blog/',
+    'title':'Contact book',
+    'description':'A contact book build with java.',
+    'link':'https://github.com/brunogaudino/contact-book',
     'tag':[{
-      'warning': 'javascript'
+      'secondary': 'java'
     }],
     'icon':'fa-github',
-    'flagShowHide': false
+    'flagShowHide': true
+  },
+  {
+    'title':'Class diary',
+    'description':'A class diary build with java.',
+    'link':'https://github.com/brunogaudino/class-diary',
+    'tag':[{
+      'secondary': 'java'
+    }],
+    'icon':'fa-github',
+    'flagShowHide': true
   },
   {
     'title':'Framework Grid CSS',
@@ -60,33 +80,34 @@ export const LabIndependentProjectsMock = [
     'flagShowHide': false
   },
   {
-    'title':'Contact simple list',
-    'description':'Simple list build with java.',
-    'link':'https://github.com/brunogaudino/contact-simple-list',
+    'title':'Minimalist jekyll blog',
+    'description':'Minimalist blog development using jekyll, with posts lists, pagination, commentary with disqus, and contact form. A sample page can be accessed on the minimalist jekyll blog.',
+    'link':'https://brunogaudino.github.io/minimalist-jekyll-blog/',
     'tag':[{
-      'secondary': 'java'
+      'warning': 'javascript'
     }],
     'icon':'fa-github',
-    'flagShowHide': true
+    'flagShowHide': false
   },
   {
-    'title':'Contact book',
-    'description':'A simple contact book build with java.',
-    'link':'https://github.com/brunogaudino/contact-book',
+    'title':'CRUD service',
+    'description':'A CRUD service for Angular webapp.',
+    'link':'https://github.com/brunogaudino/crud-service/',
     'tag':[{
-      'secondary': 'java'
+      'danger': 'angular',
+      'success': 'nodejs'
     }],
     'icon':'fa-github',
-    'flagShowHide': true
+    'flagShowHide': false
   },
   {
-    'title':'Class diary',
-    'description':'A simple class diary build with java.',
-    'link':'https://github.com/brunogaudino/class-diary',
+    'title':'App news',
+    'description':'A web app who list news about many subjects country selected like sports, business, entertainment.',
+    'link':'https://github.com/brunogaudino/appnews/',
     'tag':[{
-      'secondary': 'java'
+      'danger': 'angular'
     }],
     'icon':'fa-github',
-    'flagShowHide': true
+    'flagShowHide': false
   }
 ]

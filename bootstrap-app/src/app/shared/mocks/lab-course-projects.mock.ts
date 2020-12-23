@@ -10,16 +10,6 @@ export const LabCourseProjectsMock = [
     'flagShowHide': true
   },
   {
-    'title': 'Webapp Angular',
-    'description': 'Web application development with angular. The code is available on Github and is accessible through the link below.',
-    'link': 'https://github.com/brunogaudino/angular-alurapic/',
-    'tag':[{
-      'danger': 'angular'
-    }],
-    'icon':'fa-github',
-    'flagShowHide': false
-  },
-  {
     'title': 'Workflow gulp',
     'description': 'Workflow development with automatization tool gulp. The code is available on Github and is accessible through the link below.',
     'link': 'https://github.com/brunogaudino/website-workflow-gulp',
@@ -55,6 +45,16 @@ export const LabCourseProjectsMock = [
     'link': 'https://github.com/brunogaudino/api.payment',
     'tag': [{
       'success': 'nodejs'
+    }],
+    'icon':'fa-github',
+    'flagShowHide': false
+  },
+  {
+    'title': 'Webapp Angular',
+    'description': 'Web application development with angular. The code is available on Github and is accessible through the link below.',
+    'link': 'https://github.com/brunogaudino/angular-alurapic/',
+    'tag':[{
+      'danger': 'angular'
     }],
     'icon':'fa-github',
     'flagShowHide': false
