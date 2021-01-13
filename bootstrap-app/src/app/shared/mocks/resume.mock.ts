@@ -8,28 +8,64 @@ export const ResumeMock = [
         'period': 'May 2017 - present',
         'position': 'Systems Analyst/Programmer',
         'company': 'BRQ Digital Solutions',
-        'description': 'Systems Analyst/Programmer web front-end, development with HTML, CSS, JavaScript, Java, Angular.'
+        'description': 'Systems Analyst/Programmer web front-end, development with HTML, CSS, JavaScript, Java, Angular.',
+        'image':[
+          {
+            'flagShowHide': false,
+            'srcImage': 'assets/img/portfolio/brq/brq-digital-solutions.png',
+            'alt': 'BRQ Digital Solutions logo',
+            'width': '200',
+            'height': '100'
+          }
+        ]
       },
       {
         'flagShowHide': true,
         'period': 'November 2014 - April 2017',
         'position': 'Front-end Developer',
         'company': 'Viewit Mobile',
-        'description': 'Development of mobile-oriented websites in a Mac OS development environment using HTML, CSS, JavaScript, Jquery, Sass, Git technologies.'
+        'description': 'Development of mobile-oriented websites in a Mac OS development environment using HTML, CSS, JavaScript, Jquery, Sass, Git technologies.',
+        'image':[
+          {
+            'flagShowHide': false,
+            'srcImage': 'assets/img/portfolio/viewit/logo-viewit.png',
+            'alt': 'Viewit Mobile logo',
+            'width': '200',
+            'height': '100'
+          }
+        ]
       },
       {
         'flagShowHide': true,
         'period': 'July 2010 - October 2014',
         'position': 'Web Designer/Front-end Developer',
         'company': 'Ongame Entertainment',
-        'description': 'Development of websites: Metin2, Ongame Portal, WYD, Point Blank, Aika, Hero, Zone4 and others. Landing pages, internal systems, using: HTML, CSS, JavaScript, Jquery.'
+        'description': 'Development of websites: Metin2, Ongame Portal, WYD, Point Blank, Aika, Hero, Zone4 and others. Landing pages, internal systems, using: HTML, CSS, JavaScript, Jquery.',
+        'image':[
+          {
+            'flagShowHide': false,
+            'srcImage': 'assets/img/portfolio/ongame/logo-ongame.png',
+            'alt': 'Ongame Entertainment logo',
+            'width': '150',
+            'height': '26'
+          }
+        ]
       },
       {
         'flagShowHide': true,
         'period': 'March 2011 - December 2012',
         'position': 'Teacher/Coordinator',
         'company': 'Technical School Camargo Aranha - ETEC',
-        'description': 'I taught the courses of Applications for Projects, for the courses of Computer science and Computer science for the Internet. Computerized Accounting Applications for Accounting Course. I also acted as coordinator of the Informatics course.'
+        'description': 'I taught the courses of Applications for Projects, for the courses of Computer science and Computer science for the Internet. Computerized Accounting Applications for Accounting Course. I also acted as coordinator of the Informatics course.',
+        'image':[
+          {
+            'flagShowHide': false,
+            'srcImage': 'assets/img/portfolio/centropaulasouza/camargologo.png',
+            'alt': 'Technical School Camargo Aranha logo',
+            'width': '250',
+            'height': '50'
+          }
+        ]
       },
       {
         'flagShowHide': true,
@@ -56,7 +92,16 @@ export const ResumeMock = [
         'period': 'January 2007 - December 2010',
         'position': 'Technician\'s license',
         'company': 'Technology college of Sao Paulo - FATEC',
-        'description': 'Knowledge in developing systems for business management applying technological knowledge to assist in the decision making process of companies.'
+        'description': 'Knowledge in developing systems for business management applying technological knowledge to assist in the decision making process of companies.',
+        'image':[
+          {
+            'flagShowHide': false,
+            'srcImage': 'assets/img/portfolio/centropaulasouza/fatec-logo.jpg',
+            'alt': 'Technology college of Sao Paulo',
+            'width': '250',
+            'height': '50'
+          }
+        ]
       }
     ]
   },
@@ -66,17 +111,35 @@ export const ResumeMock = [
     'fields': [
       {
         'flagShowHide': true,
-        'period': 'December 2020',
+        'period': 'January 2021',
         'position': 'Java Basics',
         'company': 'Loiane Trainning',
-        'description': 'Principes of Java, object oriented, arrays and projects examples.'
+        'description': 'Principes of Java, object oriented, arrays and projects examples.',
+        'image':[
+          {
+            'flagShowHide': false,
+            'srcImage': 'assets/img/skills/java-logo.jpg',
+            'alt': 'Java logo',
+            'width': '250',
+            'height': '100'
+          }
+        ]
       },
       {
         'flagShowHide': true,
         'period': 'August 2019',
         'position': 'Angular',
         'company': 'Alura Online Courses',
-        'description': 'Web development using Angular framework, TypeScript.'
+        'description': 'Web development using Angular framework, TypeScript.',
+        'image':[
+          {
+            'flagShowHide': false,
+            'srcImage': 'assets/img/skills/angular-logo.png',
+            'alt': 'Angular logo',
+            'width': '250',
+            'height': '100'
+          }
+        ]
       },
       {
         'flagShowHide': true,
