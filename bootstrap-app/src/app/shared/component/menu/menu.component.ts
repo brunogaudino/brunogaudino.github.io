@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuMock } from '../../mocks/menu.mock';
+import { MockService } from '../../services/mock.service';
 
 @Component({
   selector: 'bg-menu',
@@ -8,7 +10,13 @@ import { Component, OnInit } from '@angular/core';
 
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  menuMock: Array<object>;
 
-  ngOnInit() { }
+  constructor(
+    private menuMockService: MockService
+  ) { }
+
+  ngOnInit() {
+    this.menuMock = this.menuMockService.getMocks(MenuMock);
+   }
 }
