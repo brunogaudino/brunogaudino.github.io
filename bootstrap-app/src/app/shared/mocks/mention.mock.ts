@@ -6,6 +6,11 @@ export const MentionMock = [
     'mentions': [
       {
         'flagShowHide': true,
+        'description': 'It was a honor to have Gaudino in my squad. He is a super dedicated professional, partner, concerned with delivering his best and contributing to deliveries on time.',
+        'author': 'Caelha Rodrigues - Product Owner Specialist.'
+      },
+      {
+        'flagShowHide': true,
         'description': 'We work in some challenging projects and Bruno always behaved for a professional way, with the teammates and the clients, focused and with a good professional attitude certainly is a recommended professional.',
         'author': 'Rodrigo Lopes - Programmer analyst.'
       }
