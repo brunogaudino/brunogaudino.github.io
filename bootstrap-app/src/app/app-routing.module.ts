@@ -25,10 +25,10 @@ const appRoutes: Routes = [
         path: 'lab',
         component: LabComponent
     },
-    {
-        path: 'professional',
-        loadChildren: './content/professional/professional.module#ProfessionalModule'
-    },
+    // {
+    //     path: 'professional',
+    //     loadChildren: './content/professional/professional.module#ProfessionalModule'
+    // },
     {
         path: 'mention',
         component: MentionComponent
