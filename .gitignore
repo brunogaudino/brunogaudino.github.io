@@ -2,6 +2,7 @@
 
 # Projects
 /bootstrap-app/node_modules
+/bootstrap-app-old-version/node_modules
 
 # compiled output
 /dist
