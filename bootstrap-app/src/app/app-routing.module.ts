@@ -7,11 +7,21 @@ const appRoutes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'home',
+    component: HomeComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes)],
+  imports: [RouterModule.forRoot(
+    appRoutes, 
+    {
+      //useHash: true
+      enableTracing: false
+    }
+  )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

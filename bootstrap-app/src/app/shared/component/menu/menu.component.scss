@@ -1,0 +1,45 @@
+@import '../../../../assets/styles/global.scss';
+nav#nav{
+
+    border-bottom: 3px solid $white;
+
+    button.navbar-toggler{
+        @include background-color($base-dark-1);
+        border-color: $white;
+
+        span.navbar-toggler-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    }
+    
+    #navbarNav{
+        ul.navbar-nav{
+            li.nav-item{
+                a.nav-link{
+                    border: 0px;
+                    @include font-color($white);
+                }
+                .dropdown-menu{
+                    @include background-color($base-dark-1);
+                    border-color: $white;
+                    a.dropdown-item{
+                        font-weight: $font-weight-bold;
+                        @include font-color($white);
+                    }
+                    a.dropdown-item:hover{
+                        @include font-color($base-light-1);
+                        @include background-color($base-dark-1);
+                    }
+                }
+
+            }
+        }
+    }
+
+    div.dropdown-menu{
+        a.dropdown-item{
+            border: 0px;
+        }
+    }
+
+}
