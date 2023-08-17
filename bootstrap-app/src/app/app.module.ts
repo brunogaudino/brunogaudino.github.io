@@ -1,14 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ContentModule } from './content/content.module';
 import { AppComponent } from './app.component';
-import { SocialNetworkComponent } from './shared/component/social-network/social-network.component';
-import { LogoPresentationComponent } from './shared/component/logo-presentation/logo-presentation.component';
-import { LabCardComponent } from './shared/component/lab-card/lab-card.component';
-import { LoadSpinnerComponent } from './shared/component/load-spinner/load-spinner.component';
-
 
 @NgModule({
   imports: [
@@ -17,13 +13,13 @@ import { LoadSpinnerComponent } from './shared/component/load-spinner/load-spinn
     ContentModule
   ],
   declarations: [
-    AppComponent,
-    SocialNetworkComponent,
-    LogoPresentationComponent,
-    LabCardComponent,
-    LoadSpinnerComponent
+    AppComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+//  constructor(router: Router){ }
+
+}

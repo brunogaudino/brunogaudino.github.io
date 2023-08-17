@@ -1,1 +1,39 @@
-<p>lab-card works!</p>
+<!-- <div class="col-md-4 col-12 margin-bottom20"> -->
+  <div class="card">
+    <div class="card-header background-base-light-2 text-center">
+      <i class="fa fa-2x {{icon}} font-color-white"></i>
+      <h3 class="font-color-white">{{title}}</h3>
+    </div>
+    <div class="card-body text-left background-base-dark-1">
+      <blockquote class="blockquote mb-0">
+        <p>{{description}}</p>
+        <footer>
+          <div class="row">
+            <div class="container">
+              <cite title="Link {{title}}">
+                <a href= "{{link}}"target =" _ blank ">Link to code</a>
+              </cite>
+              <div *ngFor="let tagItem of tag" class="mt-2">
+                <span *ngIf="tagItem.success" class="badge badge-success mr-2">
+                  {{tagItem.success}}
+                </span>
+                <span *ngIf="tagItem.warning" class="badge badge-warning mr-2 font-color-white">
+                  {{tagItem.warning}}
+                </span>
+                <span *ngIf="tagItem.danger" class="badge badge-danger mr-2">
+                  {{tagItem.danger}}
+                </span>
+                <span *ngIf="tagItem.primary" class="badge badge-primary mr-2">
+                  {{tagItem.primary}}
+                </span>
+                <span *ngIf="tagItem.secondary" class="badge badge-secondary mr-2">
+                  {{tagItem.secondary}}
+                </span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+<!-- </div> -->
