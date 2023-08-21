@@ -17,7 +17,7 @@ export const LabIndependentProjectsMock = [
       'success': 'nodejs'
     }],
     'icon':'fa-github',
-    'flagShowHide': true
+    'flagShowHide': false
   },
   {
     'title':'Developer nodejs project',
@@ -57,7 +57,7 @@ export const LabIndependentProjectsMock = [
       'secondary': 'java'
     }],
     'icon':'fa-github',
-    'flagShowHide': true
+    'flagShowHide': false
   },
   {
     'title':'Class diary',
@@ -67,7 +67,7 @@ export const LabIndependentProjectsMock = [
       'secondary': 'java'
     }],
     'icon':'fa-github',
-    'flagShowHide': true
+    'flagShowHide': false
   },
   {
     'title':'Framework Grid CSS',

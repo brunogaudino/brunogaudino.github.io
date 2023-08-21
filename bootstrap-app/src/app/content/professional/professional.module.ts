@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { ResumeComponent } from './resume/resume.component';
 import { MenuModule } from 'src/app/shared/component/menu/menu.module';
 import { SocialNetworkModule } from 'src/app/shared/component/social-network/social-network.module';
 import { FooterModule } from 'src/app/shared/component/footer/footer.module';
-import { MentionComponent } from './mention.component';
 import { LogoPresentationModule } from 'src/app/shared/component/logo-presentation/logo-presentation.module';
-
-
+import { ProfessionalRoutingModule } from './professional-routing.module';
 
 @NgModule({
   imports: [
@@ -15,13 +14,13 @@ import { LogoPresentationModule } from 'src/app/shared/component/logo-presentati
     MenuModule,
     SocialNetworkModule,
     FooterModule,
-    LogoPresentationModule
+    LogoPresentationModule,
+    ProfessionalRoutingModule
   ],
   declarations: [
-    MentionComponent
+    ResumeComponent
   ],
-  exports: [
-    MentionComponent
-  ]
+  exports:[ ],
+  providers:[]
 })
-export class MentionModule { }
+export class ProfessionalModule { }

@@ -5,6 +5,7 @@ import { HomeComponent } from './content/home/home.component';
 import { AboutComponent } from './content/about/about.component';
 import { LabComponent } from './content/lab/lab.component';
 import { MentionComponent } from './content/mention/mention.component';
+import { ProfessionalModule } from './content/professional/professional.module';
 
 const appRoutes: Routes = [
   {
@@ -27,19 +28,10 @@ const appRoutes: Routes = [
     path: 'mention',
     component: MentionComponent
   },
-    // {
-    //     path: 'professional',
-    //     loadChildren: './content/professional/professional.module#ProfessionalModule'
-    // },
-  /*
   {
       path: 'professional',
-      component: ProfessionalComponent
-  },
-  {
-      path: '**',
-      component: HomeComponent
-  }*/
+      loadChildren: () => import ('./content/professional/professional.module').then(m => ProfessionalModule)
+  }
 ];
 
 @NgModule({

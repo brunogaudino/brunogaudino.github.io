@@ -17,7 +17,7 @@ export const LabCourseProjectsMock = [
       'warning': 'javascript'
     }],
     'icon':'fa-github',
-    'flagShowHide': true
+    'flagShowHide': false
   },
   {
     'title': 'Portal news RWD',
