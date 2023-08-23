@@ -15,8 +15,9 @@
     <div class="row text-center mt-2" *ngFor="let itemResume of resumeMock">
       <div *ngIf="itemResume.flagShowHide" class="col-12 pt-2 pb-2 background-base-dark-1 border-0 text-left">
         <h2 class="mb-2 text-left text-uppercase">{{itemResume.category}}</h2>
-        <table class="table table-borderless">
-          <tbody *ngFor="let itemField of itemResume.fields">
+        <table class="table table-borderless" *ngFor="let itemField of itemResume.fields">
+<!-- Tbody Work-->
+          <tbody *ngIf="itemResume.tagCategory == 'work'" class="tbody-work">
             <tr *ngFor="let imgField of itemField.image" class="row">
               <div *ngIf="imgField.flagShowHide" class="mx-auto mt-2 mb-2 text-center">
                 <img 
@@ -28,16 +29,65 @@
               </div>
             </tr>
             <tr class="row">
-              <td class="col-md-4 col-12 text-right">
-                <h5 class="mb-2">{{itemField.period}}</h5>
-              </td>
-              <td class="col-md-8 col-12 text-left">
+              <td class="col-md-1 col-1"></td>
+              <td class="col-md-10 col-12 text-left">
                 <h5 class="mb-2">{{itemField.position}}</h5>
                 <h6 class="display-6">{{itemField.company}}</h6>
                 <p>{{itemField.description}}</p>
               </td>
+              <td class="col-md-1 col-1"></td>
             </tr>
           </tbody>
+<!-- Tbody Work-->
+
+<!-- Tbody education-->
+          <tbody *ngIf="itemResume.tagCategory == 'education'" class="tbody-education">
+            <tr *ngFor="let imgField of itemField.image" class="row">
+              <div *ngIf="imgField.flagShowHide" class="mx-auto mt-2 mb-2 text-center">
+                <img 
+                  src="{{imgField.srcImage}}" 
+                  class="img-thumbnail" 
+                  alt="{{imgField.alt}}"
+                  width="{{imgField.width}}"
+                  height="{{imgField.height}}">
+              </div>
+            </tr>
+            <tr class="row">
+              <td class="col-md-1 col-1"></td>
+              <td class="col-md-10 col-12 text-left">
+                <h5 class="mb-2">{{itemField.position}}</h5>
+                <h6 class="display-6">{{itemField.company}}</h6>
+                <p>{{itemField.description}}</p>
+              </td>
+              <td class="col-md-1 col-1"></td>
+            </tr>
+          </tbody>
+<!--Tbody education-->
+
+<!-- Tbody skills-->
+          <tbody *ngIf="itemResume.tagCategory == 'skills'" class="tbody-skills">
+            <tr *ngFor="let imgField of itemField.image" class="row">
+              <div *ngIf="imgField.flagShowHide" class="mx-auto mt-2 mb-2 text-center">
+                <img 
+                  src="{{imgField.srcImage}}" 
+                  class="img-thumbnail" 
+                  alt="{{imgField.alt}}"
+                  width="{{imgField.width}}"
+                  height="{{imgField.height}}">
+              </div>
+            </tr>
+            <tr class="row" *ngIf="itemField.flagShowHide">
+              <td class="col-md-1 col-1"></td>
+              <td class="col-md-10 col-12 text-left">
+                <h5 class="mb-2">{{itemField.position}}</h5>
+                <h6 class="display-6">{{itemField.company}}</h6>
+                <p>{{itemField.description}}</p>
+              </td>
+              <td class="col-md-1 col-1"></td>
+            </tr>
+          </tbody>
+<!--Tbody skills-->
+
         </table>
       </div>
     </div>

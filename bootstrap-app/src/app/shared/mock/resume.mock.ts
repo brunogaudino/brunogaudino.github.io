@@ -2,16 +2,17 @@ export const ResumeMock = [
   {
     'flagShowHide': true,
     'category': 'work experience',
+    'tagCategory':'work',
     'fields': [
       {
         'flagShowHide': true,
         'period': 'May 2017 - present',
         'position': 'Systems Analyst/Programmer',
-        'company': 'BRQ Digital Solutions',
+        'company': 'BRQ Digital Solutions - current job',
         'description': 'Systems Analyst/Programmer web front-end, development with HTML, CSS, JavaScript, Java, Angular.',
         'image':[
           {
-            'flagShowHide': true,
+            'flagShowHide': false,
             'srcImage': 'assets/img/portfolio/brq/brq-digital-solutions.png',
             'alt': 'BRQ Digital Solutions logo',
             'width': '200',
@@ -27,7 +28,7 @@ export const ResumeMock = [
         'description': 'Development of mobile-oriented websites in a Mac OS development environment using HTML, CSS, JavaScript, Jquery, Sass, Git technologies.',
         'image':[
           {
-            'flagShowHide': true,
+            'flagShowHide': false,
             'srcImage': 'assets/img/portfolio/viewit/logo-viewit.png',
             'alt': 'Viewit Mobile logo',
             'width': '200',
@@ -43,7 +44,7 @@ export const ResumeMock = [
         'description': 'Development of websites: Metin2, Ongame Portal, WYD, Point Blank, Aika, Hero, Zone4 and others. Landing pages, internal systems, using: HTML, CSS, JavaScript, Jquery.',
         'image':[
           {
-            'flagShowHide': true,
+            'flagShowHide': false,
             'srcImage': 'assets/img/portfolio/ongame/logo-ongame.png',
             'alt': 'Ongame Entertainment logo',
             'width': '150',
@@ -59,7 +60,7 @@ export const ResumeMock = [
         'description': 'I taught the courses of Applications for Projects, for the courses of Computer science and Computer science for the Internet. Computerized Accounting Applications for Accounting Course. I also acted as coordinator of the Informatics course.',
         'image':[
           {
-            'flagShowHide': true,
+            'flagShowHide': false,
             'srcImage': 'assets/img/portfolio/centropaulasouza/camargologo.png',
             'alt': 'Technical School Camargo Aranha logo',
             'width': '250',
@@ -86,6 +87,7 @@ export const ResumeMock = [
   {
     'flagShowHide': true,
     'category': 'education and training',
+    'tagCategory':'education',
     'fields': [
       {
         'flagShowHide': true,
@@ -95,7 +97,7 @@ export const ResumeMock = [
         'description': 'Knowledge in developing systems for business management applying technological knowledge to assist in the decision making process of companies.',
         'image':[
           {
-            'flagShowHide': true,
+            'flagShowHide': false,
             'srcImage': 'assets/img/portfolio/centropaulasouza/fatec-logo.jpg',
             'alt': 'Technology college of Sao Paulo',
             'width': '250',
@@ -106,18 +108,19 @@ export const ResumeMock = [
     ]
   },
   {
-    'flagShowHide': true,
+    'flagShowHide': false,
     'category': 'personal skills',
+    'tagCategory':'skills',
     'fields': [
       {
-        'flagShowHide': true,
+        'flagShowHide': false,
         'period': 'January 2021',
         'position': 'Java Basics',
         'company': 'Loiane Trainning',
         'description': 'Principes of Java, object oriented, arrays and projects examples.',
         'image':[
           {
-            'flagShowHide': true,
+            'flagShowHide': false,
             'srcImage': 'assets/img/skills/java-logo.jpg',
             'alt': 'Java logo',
             'width': '250',
@@ -133,7 +136,7 @@ export const ResumeMock = [
         'description': 'Web development using Angular framework, TypeScript.',
         'image':[
           {
-            'flagShowHide': true,
+            'flagShowHide': false,
             'srcImage': 'assets/img/skills/angular-logo.png',
             'alt': 'Angular logo',
             'width': '250',
@@ -149,7 +152,7 @@ export const ResumeMock = [
         'description': 'Accessible web development for people with disabilities to provide a better experience for those who browse the site.'
       },
       {
-        'flagShowHide': true,
+        'flagShowHide': false,
         'period': 'June 2017',
         'position': 'NodeJS Developer',
         'company': 'Alura Online Courses',

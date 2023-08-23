@@ -4,14 +4,25 @@
 
   @include font-color($white);
 
-  //h2{border-bottom: 5px solid $white;}
+  h2{border-bottom: 5px solid $white;}
 
   table.table{
     color: $white;
     text-align: left;
 
-    tbody + tbody {
-      border: 0px;
+    //tbody + tbody {border: 0px;}
+
+    tbody{
+      border-bottom: 1px solid $white;
+
+      tr {
+
+        td {
+          border: 0px;
+        }
+      
+      }
+
     }
 
   }
