@@ -2,7 +2,7 @@
 
 # Projects
 /bootstrap-app/node_modules
-
+/develop
 # compiled output
 /dist
 /tmp
