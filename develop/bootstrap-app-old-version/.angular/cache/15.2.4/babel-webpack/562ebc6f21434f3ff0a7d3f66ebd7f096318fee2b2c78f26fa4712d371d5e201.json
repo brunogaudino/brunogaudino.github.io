@@ -1,1 +1,0 @@
-{"ast":null,"code":"export const environment = {\n  production: true,\n  jobPosition: 'Systems analyst',\n  college: 'Technician\\'s license',\n  employer: 'BRQ digital solutions',\n  employerWebSite: 'http://www.brq.com/'\n};","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

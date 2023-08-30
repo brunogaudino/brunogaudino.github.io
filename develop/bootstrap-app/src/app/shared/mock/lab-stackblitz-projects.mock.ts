@@ -6,7 +6,7 @@ export const LabStackblitzProjectsMock = [
     'tag': [{
       'danger': 'angular'
     }],
-    'icon': 'fa-code',
+    'icon': 'github',
     'flagShowHide': true
   },
   {
@@ -16,7 +16,7 @@ export const LabStackblitzProjectsMock = [
     'tag': [{
       'danger': 'angular'
     }],
-    'icon': 'fa-code',
+    'icon': 'github',
     'flagShowHide': true
   },
   {
@@ -26,7 +26,7 @@ export const LabStackblitzProjectsMock = [
     'tag': [{
       'danger': 'angular'
     }],
-    'icon': 'fa-code',
+    'icon': 'github',
     'flagShowHide': true
   },
   {
@@ -36,7 +36,7 @@ export const LabStackblitzProjectsMock = [
     'tag': [{
       'danger': 'angular'
     }],
-    'icon': 'fa-code',
+    'icon': 'github',
     'flagShowHide': false
   }
 ];

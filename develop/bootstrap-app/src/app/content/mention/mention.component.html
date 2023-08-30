@@ -18,7 +18,8 @@
           <div *ngFor="let mentionData of mentionMock" class="card mb-3">
             <div *ngIf="mentionData.flagShowHide">
               <h5 class="card-header background-base-light-2 font-color-white">
-                <i class="fa fa-xs {{mentionData.icon}} font-color-white"></i>
+                <!-- <i class="fa fa-xs {{mentionData.icon}} font-color-white"></i> -->
+                <img height="32" width="32" src="https://cdn.simpleicons.org/{{mentionData.icon}}/ffffff" />
                 {{mentionData.company}}
               </h5>
               <div *ngFor="let mentionItem of mentionData.mentions" class="card-body">

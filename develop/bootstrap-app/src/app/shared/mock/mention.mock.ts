@@ -1,7 +1,7 @@
 export const MentionMock = [
   {
     'flagShowHide': true,
-    'icon': 'fa-laptop',
+    'icon': 'googlemessages',
     'company': 'BRQ digital solutions',
     'mentions': [
       {
@@ -18,7 +18,7 @@ export const MentionMock = [
   },
   {
     'flagShowHide': true,
-    'icon': 'fa-mobile',
+    'icon': 'googlemessages',
     'company': 'Viewit Mobile',
     'mentions': [
       {
@@ -30,7 +30,7 @@ export const MentionMock = [
   },
   {
     'flagShowHide': true,
-    'icon': 'fa-gamepad',
+    'icon': 'googlemessages',
     'company': 'Ongame Entertainment',
     'mentions': [
       {
@@ -57,7 +57,7 @@ export const MentionMock = [
   },
   {
     'flagShowHide': true,
-    'icon': 'fa-graduation-cap',
+    'icon': 'googlemessages',
     'company': 'Technology College of State of São Paulo(Fatec)',
     'mentions': [
       {

@@ -6,7 +6,7 @@ export const LabIndependentProjectsMock = [
     'tag': [{
       'success': 'nodejs'
     }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': true
   },
   {
@@ -16,7 +16,7 @@ export const LabIndependentProjectsMock = [
     'tag': [{
       'success': 'nodejs'
     }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': false
   },
   {
@@ -26,8 +26,8 @@ export const LabIndependentProjectsMock = [
     'tag':[{
       'success': 'nodejs'
     }],
-    'icon':'fa-github',
-    'flagShowHide': true
+    'icon':'github',
+    'flagShowHide': false
   },
   {
     'title':'Shot on the target',
@@ -36,7 +36,7 @@ export const LabIndependentProjectsMock = [
     'tag':[{
       'warning': 'javascript'
     }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': true
   },
   {
@@ -46,8 +46,8 @@ export const LabIndependentProjectsMock = [
     'tag':[{
       'secondary': 'java'
     }],
-    'icon':'fa-github',
-    'flagShowHide': true
+    'icon':'github',
+    'flagShowHide': false
   },
   {
     'title':'Contact book',
@@ -56,7 +56,7 @@ export const LabIndependentProjectsMock = [
     'tag':[{
       'secondary': 'java'
     }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': false
   },
   {
@@ -66,27 +66,7 @@ export const LabIndependentProjectsMock = [
     'tag':[{
       'secondary': 'java'
     }],
-    'icon':'fa-github',
-    'flagShowHide': false
-  },
-  {
-    'title':'Framework Grid CSS',
-    'description':'CSS framework adaptation based on grid concept, for facilitates the website interface development. A sample page can be accessed on the Framework Grid CSS.',
-    'link':'https://github.com/brunogaudino/framework-grid-css',
-    'tag':[{
-      'primary': 'css'
-    }],
-    'icon':'fa-github',
-    'flagShowHide': false
-  },
-  {
-    'title':'Minimalist jekyll blog',
-    'description':'Minimalist blog development using jekyll, with posts lists, pagination, commentary with disqus, and contact form. A sample page can be accessed on the minimalist jekyll blog.',
-    'link':'https://brunogaudino.github.io/minimalist-jekyll-blog/',
-    'tag':[{
-      'warning': 'javascript'
-    }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': false
   },
   {
@@ -97,7 +77,7 @@ export const LabIndependentProjectsMock = [
       'danger': 'angular',
       'success': 'nodejs'
     }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': false
   },
   {
@@ -107,7 +87,7 @@ export const LabIndependentProjectsMock = [
     'tag':[{
       'danger': 'angular'
     }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': false
   }
 ]

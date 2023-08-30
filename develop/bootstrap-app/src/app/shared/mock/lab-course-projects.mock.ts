@@ -6,7 +6,7 @@ export const LabCourseProjectsMock = [
     'tag':[{
       'success': 'nodejs'
     }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': true
   },
   {
@@ -16,7 +16,7 @@ export const LabCourseProjectsMock = [
     'tag':[{
       'warning': 'javascript'
     }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': false
   },
   {
@@ -26,7 +26,7 @@ export const LabCourseProjectsMock = [
     'tag':[{
       'warning': 'javascript'
     }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': true
   },
   {
@@ -36,7 +36,7 @@ export const LabCourseProjectsMock = [
     'tag':[{
       'warning': 'javascript'
     }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': true
   },
   {
@@ -46,7 +46,7 @@ export const LabCourseProjectsMock = [
     'tag': [{
       'success': 'nodejs'
     }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': false
   },
   {
@@ -56,7 +56,7 @@ export const LabCourseProjectsMock = [
     'tag':[{
       'danger': 'angular'
     }],
-    'icon':'fa-github',
+    'icon':'github',
     'flagShowHide': false
   }
 ]
