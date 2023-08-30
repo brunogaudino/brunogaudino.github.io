@@ -5,10 +5,11 @@
       <div *ngIf="socialNetwork; else socialNetworkError" class="container">
         <ul class="list-inline">
           <li class="d-inline p-2" *ngFor="let itemSocialNetwork of socialNetwork">
-            <a title="{{itemSocialNetwork.title}}"
-            href="{{itemSocialNetwork.link}}"
-            target="_blank">
-              <i class="fa {{itemSocialNetwork.icon}} fa-2x"></i>
+            <a 
+              title="{{itemSocialNetwork.title}}"
+              href="{{itemSocialNetwork.link}}"
+              target="_blank">
+                <img height="32" width="32" src="https://cdn.simpleicons.org/{{itemSocialNetwork.icon}}/ffffff" />
             </a>
           </li>
         </ul>
