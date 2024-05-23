@@ -7,7 +7,7 @@ export const LabIndependentProjectsMock = [
       'success': 'nodejs'
     }],
     'icon':'github',
-    'flagShowHide': true
+    'flagShowHide': false
   },
   {
     'title':'API gateway',
@@ -17,7 +17,7 @@ export const LabIndependentProjectsMock = [
       'success': 'nodejs'
     }],
     'icon':'github',
-    'flagShowHide': false
+    'flagShowHide': true
   },
   {
     'title':'Developer nodejs project',
@@ -37,7 +37,7 @@ export const LabIndependentProjectsMock = [
       'warning': 'javascript'
     }],
     'icon':'github',
-    'flagShowHide': true
+    'flagShowHide': false
   },
   {
     'title':'Contact simple list',
