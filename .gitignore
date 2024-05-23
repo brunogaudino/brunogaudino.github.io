@@ -1,8 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Projects
-/develop/bootstrap-app/node_modules
-
+/develop
+/bootstrap-app/node_modules
 # compiled output
 /dist
 /tmp
