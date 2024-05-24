@@ -1,0 +1,283 @@
+<main class="hide" id="resume" *ngIf="isResumeActive; else oldResume">
+  
+  <bg-menu></bg-menu>
+  
+  <div class="container mb-5">
+    <div class="row text-center mt-2">
+      <div class="col-12">        
+        <h1 class="mb-2">Resume</h1>
+        <p class="text-center">Section Resume contains informations about my work experience and works realized in companies.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" *ngIf="resumeMock.length > 0">
+    <div class="row text-center mt-2" *ngFor="let itemResume of resumeMock">
+      <div *ngIf="itemResume.flagShowHide" class="col-12 pt-2 pb-2 background-base-dark-1 border-0 text-left">
+        <h2 class="mb-2 text-left text-uppercase">{{itemResume.category}}</h2>
+        <table class="table table-borderless" *ngFor="let itemField of itemResume.fields">
+<!-- Tbody Work-->
+          <tbody *ngIf="itemResume.tagCategory == 'work'" class="tbody-work">
+            <tr *ngFor="let imgField of itemField.image" class="row">
+              <div *ngIf="imgField.flagShowHide" class="mx-auto mt-2 mb-2 text-center">
+                <img 
+                  src="{{imgField.srcImage}}" 
+                  class="img-thumbnail" 
+                  alt="{{imgField.alt}}"
+                  width="{{imgField.width}}"
+                  height="{{imgField.height}}">
+              </div>
+            </tr>
+            <tr class="row">
+              <td class="col-md-1 col-1"></td>
+              <td class="col-md-10 col-12 text-left">
+                <h5 class="mb-2">{{itemField.position}}</h5>
+                <h6 class="display-6">{{itemField.company}}</h6>
+                <p>{{itemField.description}}</p>
+              </td>
+              <td class="col-md-1 col-1"></td>
+            </tr>
+          </tbody>
+<!-- Tbody Work-->
+
+<!-- Tbody education-->
+          <tbody *ngIf="itemResume.tagCategory == 'education'" class="tbody-education">
+            <tr *ngFor="let imgField of itemField.image" class="row">
+              <div *ngIf="imgField.flagShowHide" class="mx-auto mt-2 mb-2 text-center">
+                <img 
+                  src="{{imgField.srcImage}}" 
+                  class="img-thumbnail" 
+                  alt="{{imgField.alt}}"
+                  width="{{imgField.width}}"
+                  height="{{imgField.height}}">
+              </div>
+            </tr>
+            <tr class="row">
+              <td class="col-md-1 col-1"></td>
+              <td class="col-md-10 col-12 text-left">
+                <h5 class="mb-2">{{itemField.position}}</h5>
+                <h6 class="display-6">{{itemField.company}}</h6>
+                <p>{{itemField.description}}</p>
+              </td>
+              <td class="col-md-1 col-1"></td>
+            </tr>
+          </tbody>
+<!--Tbody education-->
+
+<!-- Tbody skills-->
+          <tbody *ngIf="itemResume.tagCategory == 'skills'" class="tbody-skills">
+            <tr *ngFor="let imgField of itemField.image" class="row">
+              <div *ngIf="imgField.flagShowHide" class="mx-auto mt-2 mb-2 text-center">
+                <img 
+                  src="{{imgField.srcImage}}" 
+                  class="img-thumbnail" 
+                  alt="{{imgField.alt}}"
+                  width="{{imgField.width}}"
+                  height="{{imgField.height}}">
+              </div>
+            </tr>
+            <tr class="row" *ngIf="itemField.flagShowHide">
+              <td class="col-md-1 col-1"></td>
+              <td class="col-md-10 col-12 text-left">
+                <h5 class="mb-2">{{itemField.position}}</h5>
+                <h6 class="display-6">{{itemField.company}}</h6>
+                <p>{{itemField.description}}</p>
+              </td>
+              <td class="col-md-1 col-1"></td>
+            </tr>
+          </tbody>
+<!--Tbody skills-->
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <bg-logo-presentation></bg-logo-presentation>
+  
+  <bg-social-network></bg-social-network>
+
+  <bg-footer></bg-footer>
+
+</main>
+
+<ng-template #oldResume>
+  <main class="hide" id="old-resume">
+    
+    <bg-menu></bg-menu>
+    
+    <div class="container">
+      <div class="row text-center mt-2">
+        <div class="col-12">        
+          <h1 class="mb-2">Resume</h1>
+          <p class="text-center">Section Resume contains informations about my work experience and works realized in companies.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row text-center mt-2">
+        <div class="col-12 card pt-2 pb-2 background-base-dark-1 border-0">
+          <h2 class="mb-2 text-left">I.T. Companies</h2>       
+          <div class="accordion text-left" id="accordion-course">
+
+            <div class="card border-color background-base-dark-1">
+              <div class="card-header border-color background-base-light-2" id="headingOne">
+                <h2 class="mb-0 font-color-white">
+                  <i class="fa fa-xs fa-laptop"></i>
+                  <button class="btn collapsed font-color-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    BRQ Digital Solutions
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-course">
+                <div class="card-body border-color">
+                  <!-- <p class="font-weight-bold">May 2017 - currently</p> -->
+                  <p class="font-weight-bold">{{jobPosition}}</p>
+                  <p class="font-weight-normal">{{jobPosition}}, development with HTML, CSS, JavaScript, NodeJS, Angular.</p>
+                  <div class="text-center">
+                    <img width="180px" src="../../../assets/img/portfolio/brq/brq-digital-solutions.png" class="rounded" title="BRQ logo" alt="BRQ logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card border-color background-base-dark-1">
+              <div class="card-header border-color background-base-light-2" id="headingTwo">
+                <h2 class="mb-0 font-color-white">
+                  <i class="fa fa-xs fa-mobile"></i>
+                  <button class="btn collapsed font-color-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Viewit Mobile
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-course">
+                <div class="card-body border-color">
+                  <!-- <p class="font-weight-bold">Nov 2014 - Apr 2017</p> -->
+                  <p class="font-weight-bold">Front-End developer</p>
+                  <p class="font-weight-normal">Development of mobile-oriented websites in a Mac OS development environment using HTML, CSS, JavaScript, Jquery, Sass, Git technologies.</p>
+                  <div class="text-center">
+                    <img width="180px" src="../../../assets/img/portfolio/viewit/logo-viewit.png" class="rounded" title="Viewit logo" alt="Viewit logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-color background-base-dark-1">
+              <div class="card-header border-color background-base-light-2" id="headingThree">
+                <h2 class="mb-0 font-color-white">
+                  <i class="fa fa-xs fa-gamepad"></i>
+                  <button class="btn collapsed font-color-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Ongame Entertainment
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-course">
+                <div class="card-body border-color">
+                  <!-- <p class="font-weight-bold">Jul 2010 - Oct 2014</p> -->
+                  <p class="font-weight-bold">Front-End / Web Designer</p>
+                  <p class="font-weight-normal">Ongame is the first brazilian company to distribute online games in Brazil, located in the city of São Paulo, it takes care of all the game placement and supports all players registered.</p>
+                  <div class="text-center">
+                    <img width="180px" src="../../../assets/img/portfolio/ongame/logo-ongame.png" class="rounded" title="Viewit logo" alt="Viewit logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row text-center mt-2">
+          <div class="col-12 card pt-2 pb-2 background-base-dark-1 border-0">
+            <h2 class="mb-2 text-left">Education experience</h2>
+            <div class="accordion text-left" id="accordion-projects">
+              
+              <div class="card border-color background-base-dark-1">
+                <div class="card-header border-color background-base-light-2" id="headingOne">
+                  <h2 class="mb-0">
+                    <i class="fa fa-xs fa-book font-color-white"></i>
+                    <button class="btn collapsed font-color-white" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseOne">
+                      ETEC - Carmargo Aranha
+                    </button>
+                  </h2>
+                </div>
+            
+                <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-projects">
+                  <div class="card-body border-color">
+                    <!-- <p class="font-weight-bold">Mar 2011 - Dec 2012</p> -->
+                    <p class="font-weight-bold">Teacher / Coordinator</p>
+                    <p class="font-weight-normal">I taught the courses of Applications for Projects, for the courses of Computer science and Computer science for Internet. Computerized Accounting Applications for Accounting Course. I also acted as coordinator of the Informatics course.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card border-color background-base-dark-1">
+                  <div class="card-header border-color background-base-light-2" id="headingOne">
+                    <h2 class="mb-0">
+                      <i class="fa fa-xs fa-desktop font-color-white"></i>
+                      <button class="btn collapsed font-color-white" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseOne">
+                        Escotec
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-projects">
+                    <div class="card-body">
+                      <!-- <p class="font-weight-bold">Feb 2009 - May 2009</p> -->
+                      <p class="font-weight-bold">Computing instructor</p>
+                      <p class="font-weight-normal">Instructor - He taught computer science at basic level, Windows XP, Word 2007, Excel 2007, Internet.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container">
+      <div class="row text-center mt-2">
+        <div class="col-12 card pt-2 pb-2 background-base-dark-1 border-0">
+          <h2 class="mb-2 text-left">Others companies</h2>
+          <div class="accordion text-left" id="accordion-projects">
+
+            <div class="card border-color background-base-dark-1">
+              <div class="card-header border-color background-base-light-2" id="headingOne">
+                <h2 class="mb-0">
+                  <i class="fa fa-xs fa-industry font-color-white"></i>
+                  <button class="btn collapsed font-color-white" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseOne">
+                    Rigiline Ind. e Com. de Plásticos LTDA
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-projects">
+                <div class="card-body border-color">
+                  <!-- <p class="font-weight-bold">Dec 2009 - Jun 2010</p> -->
+                  <p class="font-weight-bold">Administrative assistant for Quality Management</p>
+                  <p class="font-weight-normal">Development routines for quality assurance using quality tools, developed indicative graphics for quality control, documentation control.</p>
+                  <!-- <p class="font-weight-bold">Jun 2009 - Dec 2009</p> -->
+                  <p class="font-weight-bold">Trainee in the Quality Management sector</p>
+                  <p class="font-weight-normal">Organization of product documentation, development of spreadsheets to control the withdrawal of documents, elaboration of charts for quality control.</p>
+                </div>  
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <bg-logo-presentation></bg-logo-presentation>
+    
+    <bg-social-network></bg-social-network>
+
+    <bg-footer></bg-footer>
+
+  </main>
+</ng-template>
+
+<!--bg-load-spinner></bg-load-spinner-->

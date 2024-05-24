@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row text-center mt-3">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <div *ngIf="socialNetwork; else socialNetworkError" class="container">
+        <ul class="list-inline">
+          <li class="d-inline p-2" *ngFor="let itemSocialNetwork of socialNetwork">
+            <a 
+              title="{{itemSocialNetwork.title}}"
+              href="{{itemSocialNetwork.link}}"
+              target="_blank">
+                <img height="32" width="32" src="https://cdn.simpleicons.org/{{itemSocialNetwork.icon}}/ffffff" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ng-template #socialNetworkError>
+        <div class="col-md-12 col-12 mb-2 text-left">
+          <div class="alert alert-secondary" role="alert">
+            <p class="mb-0">The social network links are crash, we work to solve this problem.</p>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+    <div class="col-1"></div>
+  </div>
+</div>
+
+  
