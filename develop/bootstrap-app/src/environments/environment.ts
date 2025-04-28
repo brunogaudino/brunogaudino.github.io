@@ -4,10 +4,10 @@
 
 export const environment = {
   production: false,
-  jobPosition: 'Systems analyst',
+  jobPosition: 'Systems analyst front-end',
   college: 'Technician\'s license',
-  employer: 'BRQ digital solutions',
-  employerWebSite:'http://www.brq.com/'
+  employer: 'WBA Software',
+  employerWebSite:'https://wba.com.br/'
 };
 
 /*

@@ -6,6 +6,31 @@ export const MentionMock = [
     'mentions': [
       {
         'flagShowHide': true,
+        'description': "Bruno, it was a great pleasure working with you, a qualified professional, always concerned about your deliveries and very organized. Evolving with each delivery and showing great agility in learning new things.",
+        'author': 'Ingredy Thais de Souza - IT Specialist'
+      },
+      {
+        'flagShowHide': true,
+        'description': "An exemplary professional, focused and committed to delivering any task received, always attentive to details, definitely a reliable collaborator.",
+        'author': 'Heliomar Pereira Marques dos Santos - Senior Software Engineer'
+      },
+      {
+        'flagShowHide': true,
+        'description': "I am pleased to recommend Bruno, a highly competent and committed professional in the technology field. During the period we worked together, Bruno demonstrated exceptional technical skills, the ability to solve complex problems, and a strong sense of responsibility.",
+        'author': 'Andre Veiga - Senior Software Engineer'
+      },
+      {
+        'flagShowHide': true,
+        'description': "Working with Bruno was super smooth. A committed professional, agile and always ready to solve whatever is needed. Besides being a really nice person, he delivers everything with quality and attention to detail. I recommend him without hesitation!",
+        'author': 'Victor Alves - Front-end Developer'
+      },
+      {
+        'flagShowHide': true,
+        'description': "Working with Bruno Gaudino was one of the best experiences I've had in the development field. From the start, he proved to be a highly competent professional, with an incredible ability to transform complex problems into simple, well-structured solutions. But what impressed me the most was how he deals with the team: always present, accessible, willing to help and share knowledge. Bruno has solid technical expertise, knows development best practices very well, and is always looking to stay updated. But more than that, he has a keen eye for what really makes a difference in daily work: collaboration, clear communication, empathy, and commitment to collective results.",
+        'author': 'Elves Neves - Front-End Developer'
+      },
+      {
+        'flagShowHide': true,
         'description': 'It was a honor to have Gaudino in my squad. He is a super dedicated professional, partner, concerned with delivering his best and contributing to deliveries on time.',
         'author': 'Caelha Rodrigues - Product Owner Specialist.'
       },

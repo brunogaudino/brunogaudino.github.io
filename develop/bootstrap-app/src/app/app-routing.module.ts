@@ -20,10 +20,10 @@ const appRoutes: Routes = [
     path: 'about',
     component: AboutComponent
   },
-  {
+/*  {
     path: 'lab',
     component: LabComponent
-  },
+  },*/
   {
     path: 'mention',
     component: MentionComponent

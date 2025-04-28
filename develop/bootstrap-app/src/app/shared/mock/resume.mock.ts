@@ -6,9 +6,25 @@ export const ResumeMock = [
     'fields': [
       {
         'flagShowHide': true,
-        'period': 'May 2017 - present',
+        'period': 'Octuber 2024 - present',
+        'position': 'Systems Analyst Front-End',
+        'company': 'WBA Software - current job',
+        'description': 'Systems Analyst web front-end, development with Angular framework.',
+        'image':[
+          {
+            'flagShowHide': false,
+            'srcImage': 'assets/img/portfolio/wba/wba.png',
+            'alt': 'WBA Software logo',
+            'width': '200',
+            'height': '100'
+          }
+        ]
+      },
+      {
+        'flagShowHide': true,
+        'period': 'May 2017 - Octuber 2024',
         'position': 'Systems Analyst/Programmer',
-        'company': 'BRQ Digital Solutions - current job',
+        'company': 'BRQ Digital Solutions',
         'description': 'Systems Analyst/Programmer web front-end, development with HTML, CSS, JavaScript, Java, Angular.',
         'image':[
           {

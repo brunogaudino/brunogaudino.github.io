@@ -2,7 +2,13 @@ export const SocialNetworkMock = [
     {
         'title': 'Linkedin',
         'link': 'https://linkedin.com/in/brunocesarweb/?locale=en_US',
-        'icon': 'linkedin',
+        'icon': 'readdotcv',
+        'flagShowHide': false
+    },
+    {
+        'title': 'Linktree',
+        'link': 'https://linktr.ee/brunocagaudino',
+        'icon': 'linktree',
         'flagShowHide': true
     },
     {
@@ -12,16 +18,10 @@ export const SocialNetworkMock = [
         'flagShowHide': true
     },
     {
-        'title': 'Linktree',
-        'link': 'https://linktr.ee/brunocagaudino',
-        'icon': 'linktree',
-        'flagShowHide': true
-    },
-    {
         'title': 'Medium',
         'link': 'https://medium.com/@brunogaudino',
         'icon': 'medium',
-        'flagShowHide': true
+        'flagShowHide': false
     },
     {
         'title': 'Stackblitz',

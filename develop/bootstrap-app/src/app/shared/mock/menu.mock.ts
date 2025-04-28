@@ -12,7 +12,7 @@ export const MenuMock = [
     "routerLinkActive": "router-link-active"
   },
   {
-    "flagShowHide": true,
+    "flagShowHide": false,
     "labelName": "Lab",
     "routerLink": "/lab",
     "routerLinkActive": "router-link-active"
