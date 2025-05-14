@@ -2,13 +2,13 @@ export const SocialNetworkMock = [
     {
         'title': 'Linkedin',
         'link': 'https://linkedin.com/in/brunocesarweb/?locale=en_US',
-        'icon': 'readdotcv',
-        'flagShowHide': false
+        'icon': 'linkedin',
+        'flagShowHide': true
     },
     {
         'title': 'Linktree',
         'link': 'https://linktr.ee/brunocagaudino',
-        'icon': 'linktree',
+        'icon': 'tree',
         'flagShowHide': true
     },
     {
