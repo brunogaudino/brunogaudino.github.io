@@ -9,9 +9,13 @@
               title="{{itemSocialNetwork.title}}"
               href="{{itemSocialNetwork.link}}"
               target="_blank">
-                <img height="32" width="32" src="https://cdn.simpleicons.org/{{itemSocialNetwork.icon}}/ffffff" />
-            </a>
+              <i class="fa fa-{{itemSocialNetwork.icon}} fa-2x"></i></a>
           </li>
+          <!--li class="d-inline p-2" *ngFor="let itemSocialNetwork of socialNetwork">
+            <a title="{{itemSocialNetwork.title}}" href="{{itemSocialNetwork.link}}" target="_blank">
+              <img height="32" width="32" src="https://cdn.simpleicons.org/{{itemSocialNetwork.icon}}/ffffff" />
+            </a>
+          </li-->
         </ul>
       </div>
       <ng-template #socialNetworkError>
