@@ -16,6 +16,11 @@ export const MentionMock = [
       },
       {
         'flagShowHide': true,
+        'description': "I worked with Bruno on a help page project and noticed his extreme dedication. He was always willing to listen to improvement points, as well as propose solutions. During the time we worked together, I witnessed his professional growth, being an important asset in each squad he was part of. Bruno, you are a fantastic professional, and any company would be pleased to have you as a collaborator. Much success on your journey!",
+        'author': 'Fernanda Gonçalves de Lima - IT Engineering Analyst'
+      },
+      {
+        'flagShowHide': true,
         'description': "I am pleased to recommend Bruno, a highly competent and committed professional in the technology field. During the period we worked together, Bruno demonstrated exceptional technical skills, the ability to solve complex problems, and a strong sense of responsibility.",
         'author': 'Andre Veiga - Senior Software Engineer'
       },

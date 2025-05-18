@@ -25,7 +25,7 @@ export const ResumeMock = [
         'period': 'May 2017 - Octuber 2024',
         'position': 'Systems Analyst/Programmer',
         'company': 'BRQ Digital Solutions',
-        'description': 'Systems Analyst/Programmer web front-end, development with HTML, CSS, JavaScript, Java, Angular.',
+        'description': 'Systems Analyst/Programmer web front-end, development with HTML, CSS, JavaScript, Java/Spring, Angular.',
         'image':[
           {
             'flagShowHide': false,
